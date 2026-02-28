@@ -1,0 +1,146 @@
+{
+  "common": {
+    "appName": "MediLife",
+    "loading": "加载中...",
+    "error": "发生错误",
+    "retry": "重试",
+    "save": "保存",
+    "cancel": "取消",
+    "delete": "删除",
+    "edit": "编辑",
+    "back": "返回",
+    "next": "下一步",
+    "done": "完成",
+    "search": "搜索",
+    "noResults": "未找到结果",
+    "seeAll": "查看全部"
+  },
+  "nav": {
+    "home": "首页",
+    "learn": "学习",
+    "guide": "指南",
+    "jobs": "工作",
+    "profile": "个人资料"
+  },
+  "home": {
+    "welcome": "你好，{name}！",
+    "visaStatus": "签证状态",
+    "daysRemaining": "剩余{days}天",
+    "quickActions": "快捷操作",
+    "aiAssistant": "AI咨询",
+    "hospitalSearch": "医院搜索",
+    "remittanceCompare": "汇款比较",
+    "jobSearch": "找工作",
+    "todaysTasks": "今日待办",
+    "recommendedArticles": "推荐文章",
+    "emergencyContacts": "紧急联系人"
+  },
+  "auth": {
+    "login": "登录",
+    "register": "注册",
+    "email": "邮箱地址",
+    "password": "密码",
+    "forgotPassword": "忘记密码？",
+    "loginWithGoogle": "使用Google登录",
+    "loginWithLine": "使用LINE登录",
+    "noAccount": "还没有账号？",
+    "hasAccount": "已有账号？"
+  },
+  "onboarding": {
+    "selectLanguage": "选择语言",
+    "basicInfo": "基本信息",
+    "visaType": "签证类型",
+    "residence": "居住地",
+    "japaneseLevel": "日语水平",
+    "interests": "兴趣爱好",
+    "getStarted": "开始使用"
+  },
+  "visa": {
+    "title": "签证信息",
+    "status": "状态",
+    "expiryDate": "到期日",
+    "daysLeft": "剩余天数",
+    "safe": "安全",
+    "caution": "注意",
+    "warning": "警告",
+    "expired": "已过期",
+    "renewalTimeline": "续签时间表",
+    "documents": "所需材料",
+    "reminder": "提醒"
+  },
+  "life": {
+    "title": "生活指南",
+    "housing": "住房",
+    "banking": "银行与金融",
+    "transport": "交通出行",
+    "taxPension": "税务与养老金",
+    "garbage": "垃圾分类",
+    "emergency": "紧急应对",
+    "shopping": "购物",
+    "communication": "通讯与网络",
+    "childcare": "育儿与教育",
+    "legalRights": "法律权益",
+    "culture": "文化与礼仪",
+    "food": "饮食"
+  },
+  "health": {
+    "title": "医疗支持",
+    "hospitalSearch": "医院搜索",
+    "booking": "预约挂号",
+    "insurance": "医疗保险",
+    "symptomChecker": "症状检查",
+    "phrasebook": "医疗常用语",
+    "nearbyHospitals": "附近医院",
+    "languageSupport": "多语言支持",
+    "nhsAccepted": "可使用国民健康保险"
+  },
+  "money": {
+    "title": "汇款",
+    "compare": "比较",
+    "history": "汇款记录",
+    "sendMoney": "汇款",
+    "fee": "手续费",
+    "exchangeRate": "汇率",
+    "speed": "到账速度"
+  },
+  "jobs": {
+    "title": "招聘信息",
+    "search": "搜索工作",
+    "saved": "已收藏",
+    "applied": "已申请",
+    "apply": "申请",
+    "salary": "薪资",
+    "location": "工作地点",
+    "type": "雇用形式",
+    "mediflowBadge": "MediFlow认证"
+  },
+  "community": {
+    "title": "社区",
+    "groups": "群组",
+    "posts": "帖子",
+    "events": "活动",
+    "newPost": "发布新帖",
+    "anonymous": "匿名"
+  },
+  "ai": {
+    "title": "AI咨询",
+    "placeholder": "有什么问题尽管问...",
+    "categories": {
+      "general": "综合",
+      "visa": "签证",
+      "medical": "医疗",
+      "life": "生活",
+      "work": "工作",
+      "legal": "法律",
+      "japanese": "日语学习"
+    }
+  },
+  "profile": {
+    "title": "个人资料",
+    "settings": "设置",
+    "language": "语言",
+    "notifications": "通知",
+    "subscription": "订阅",
+    "logout": "退出登录"
+  }
+}

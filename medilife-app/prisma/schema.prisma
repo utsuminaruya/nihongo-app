@@ -1,0 +1,487 @@
+generator client {
+  provider = "prisma-client-js"
+}
+
+datasource db {
+  provider = "postgresql"
+  url      = env("DATABASE_URL")
+}
+
+// ============================================
+// ユーザー管理
+// ============================================
+
+model User {
+  id                String    @id @default(uuid())
+  email             String    @unique
+  phone             String?   @unique
+  name              String
+  nameKana          String?
+  nationality       String
+  nativeLanguage    String    @default("vi")
+  dateOfBirth       DateTime? @db.Date
+  gender            String?
+  avatarUrl         String?
+  residenceStatus   ResidenceStatus?
+  residenceCardNo   String?
+  currentAddress    String?
+  prefecture        String?
+  city              String?
+  japaneseLevel     JlptLevel?
+  occupation        String?
+  employer          String?
+  subscriptionTier  AppTier   @default(FREE)
+  stripeCustomerId  String?   @unique
+  lineUserId        String?   @unique
+  fcmToken          String?
+  onboardingDone    Boolean   @default(false)
+  createdAt         DateTime  @default(now())
+  updatedAt         DateTime  @updatedAt
+
+  visaRecords       VisaRecord[]
+  learningProgress  LearningProgress[]
+  hospitalBookings  HospitalBooking[]
+  remittanceRecords RemittanceRecord[]
+  jobApplications   JobApplication[]
+  savedJobs         SavedJob[]
+  communityPosts    CommunityPost[]
+  aiConversations   AiConversation[]
+  notifications     Notification[]
+  subscription      Subscription?
+  lifeGuideBookmarks LifeGuideBookmark[]
+
+  @@map("users")
+}
+
+enum ResidenceStatus {
+  SPECIFIED_SKILLED_1
+  SPECIFIED_SKILLED_2
+  TECHNICAL_INTERN_1
+  TECHNICAL_INTERN_2
+  TECHNICAL_INTERN_3
+  EPA
+  STUDENT
+  PERMANENT_RESIDENT
+  SPOUSE
+  LONG_TERM_RESIDENT
+  ENGINEER_SPECIALIST
+  IKUJIKYU
+  OTHER
+}
+
+enum JlptLevel {
+  NONE
+  N5
+  N4
+  N3
+  N2
+  N1
+}
+
+enum AppTier {
+  FREE
+  PLUS
+  PRO
+}
+
+// ============================================
+// ビザ管理
+// ============================================
+
+model VisaRecord {
+  id               String    @id @default(uuid())
+  userId           String
+  residenceStatus  ResidenceStatus
+  issueDate        DateTime  @db.Date
+  expiryDate       DateTime  @db.Date
+  renewalDeadline  DateTime  @db.Date
+  status           VisaStatus @default(ACTIVE)
+  notes            String?
+  documentUrls     String[]
+  createdAt        DateTime  @default(now())
+  updatedAt        DateTime  @updatedAt
+
+  user             User      @relation(fields: [userId], references: [id])
+  reminders        VisaReminder[]
+  checklist        VisaChecklist[]
+
+  @@map("visa_records")
+}
+
+enum VisaStatus {
+  ACTIVE
+  EXPIRING_SOON
+  RENEWAL_PENDING
+  EXPIRED
+  CHANGED
+}
+
+model VisaReminder {
+  id             String    @id @default(uuid())
+  visaRecordId   String
+  reminderDate   DateTime
+  reminderType   String
+  isSent         Boolean   @default(false)
+  createdAt      DateTime  @default(now())
+
+  visaRecord     VisaRecord @relation(fields: [visaRecordId], references: [id])
+
+  @@map("visa_reminders")
+}
+
+model VisaChecklist {
+  id             String    @id @default(uuid())
+  visaRecordId   String
+  documentName   Json
+  description    Json
+  isRequired     Boolean   @default(true)
+  isCompleted    Boolean   @default(false)
+  fileUrl        String?
+  order          Int
+
+  visaRecord     VisaRecord @relation(fields: [visaRecordId], references: [id])
+
+  @@map("visa_checklists")
+}
+
+// ============================================
+// 生活ガイド
+// ============================================
+
+model LifeGuideArticle {
+  id            String    @id @default(uuid())
+  category      LifeGuideCategory
+  subcategory   String?
+  title         Json
+  content       Json
+  summary       Json
+  prefecture    String?
+  city          String?
+  tags          String[]
+  isPublished   Boolean   @default(false)
+  viewCount     Int       @default(0)
+  order         Int       @default(0)
+  createdAt     DateTime  @default(now())
+  updatedAt     DateTime  @updatedAt
+
+  bookmarks     LifeGuideBookmark[]
+
+  @@map("life_guide_articles")
+}
+
+enum LifeGuideCategory {
+  HOUSING
+  BANKING
+  TRANSPORT
+  TAX_PENSION
+  GARBAGE
+  EMERGENCY
+  SHOPPING
+  COMMUNICATION
+  CHILDCARE
+  LEGAL_RIGHTS
+  CULTURE
+  FOOD
+}
+
+model LifeGuideBookmark {
+  id          String    @id @default(uuid())
+  userId      String
+  articleId   String
+  createdAt   DateTime  @default(now())
+
+  user        User      @relation(fields: [userId], references: [id])
+  article     LifeGuideArticle @relation(fields: [articleId], references: [id])
+
+  @@unique([userId, articleId])
+  @@map("life_guide_bookmarks")
+}
+
+// ============================================
+// 医療・病院
+// ============================================
+
+model Hospital {
+  id              String    @id @default(uuid())
+  name            Json
+  address         String
+  latitude        Float
+  longitude       Float
+  phone           String
+  website         String?
+  specialties     String[]
+  languages       String[]
+  acceptsNhi      Boolean   @default(true)
+  hasInterpreter  Boolean   @default(false)
+  openingHours    Json
+  rating          Float?
+  reviewCount     Int       @default(0)
+  imageUrl        String?
+  prefecture      String
+  city            String
+  isVerified      Boolean   @default(false)
+  createdAt       DateTime  @default(now())
+  updatedAt       DateTime  @updatedAt
+
+  bookings        HospitalBooking[]
+
+  @@map("hospitals")
+}
+
+model HospitalBooking {
+  id            String    @id @default(uuid())
+  userId        String
+  hospitalId    String
+  dateTime      DateTime
+  specialty     String
+  symptoms      Json?
+  status        BookingStatus @default(PENDING)
+  notes         String?
+  createdAt     DateTime  @default(now())
+  updatedAt     DateTime  @updatedAt
+
+  user          User      @relation(fields: [userId], references: [id])
+  hospital      Hospital  @relation(fields: [hospitalId], references: [id])
+
+  @@map("hospital_bookings")
+}
+
+enum BookingStatus {
+  PENDING
+  CONFIRMED
+  CANCELLED
+  COMPLETED
+}
+
+// ============================================
+// 送金
+// ============================================
+
+model RemittanceProvider {
+  id            String    @id @default(uuid())
+  name          String
+  logoUrl       String?
+  website       String
+  affiliateUrl  String?
+  countries     String[]
+  fee           Json
+  exchangeRate  Json?
+  speed         String
+  rating        Float?
+  isPartner     Boolean   @default(false)
+  createdAt     DateTime  @default(now())
+  updatedAt     DateTime  @updatedAt
+
+  records       RemittanceRecord[]
+
+  @@map("remittance_providers")
+}
+
+model RemittanceRecord {
+  id            String    @id @default(uuid())
+  userId        String
+  providerId    String
+  amount        Float
+  receivedAmount Float?
+  currency      String
+  fee           Float?
+  exchangeRate  Float?
+  country       String
+  status        String    @default("completed")
+  sentAt        DateTime  @default(now())
+
+  user          User      @relation(fields: [userId], references: [id])
+  provider      RemittanceProvider @relation(fields: [providerId], references: [id])
+
+  @@map("remittance_records")
+}
+
+// ============================================
+// 求人
+// ============================================
+
+model Job {
+  id              String    @id @default(uuid())
+  companyName     String
+  companyLogoUrl  String?
+  title           Json
+  description     Json
+  requirements    Json
+  salary          Json
+  location        String
+  prefecture      String
+  employmentType  EmploymentType
+  visaTypes       ResidenceStatus[]
+  industry        String
+  requiredLevel   JlptLevel?
+  benefits        Json?
+  isActive        Boolean   @default(true)
+  isMediflow      Boolean   @default(false)
+  viewCount       Int       @default(0)
+  createdAt       DateTime  @default(now())
+  updatedAt       DateTime  @updatedAt
+
+  applications    JobApplication[]
+  savedBy         SavedJob[]
+
+  @@map("jobs")
+}
+
+enum EmploymentType {
+  FULL_TIME
+  PART_TIME
+  CONTRACT
+  DISPATCH
+}
+
+model JobApplication {
+  id          String    @id @default(uuid())
+  userId      String
+  jobId       String
+  status      ApplicationStatus @default(APPLIED)
+  resumeUrl   String?
+  coverLetter String?
+  appliedAt   DateTime  @default(now())
+  updatedAt   DateTime  @updatedAt
+
+  user        User      @relation(fields: [userId], references: [id])
+  job         Job       @relation(fields: [jobId], references: [id])
+
+  @@unique([userId, jobId])
+  @@map("job_applications")
+}
+
+enum ApplicationStatus {
+  APPLIED
+  SCREENING
+  INTERVIEW
+  OFFERED
+  ACCEPTED
+  REJECTED
+  WITHDRAWN
+}
+
+model SavedJob {
+  id        String    @id @default(uuid())
+  userId    String
+  jobId     String
+  createdAt DateTime  @default(now())
+
+  user      User      @relation(fields: [userId], references: [id])
+  job       Job       @relation(fields: [jobId], references: [id])
+
+  @@unique([userId, jobId])
+  @@map("saved_jobs")
+}
+
+// ============================================
+// コミュニティ
+// ============================================
+
+model CommunityGroup {
+  id          String    @id @default(uuid())
+  name        Json
+  description Json
+  category    String
+  language    String
+  memberCount Int       @default(0)
+  imageUrl    String?
+  isOfficial  Boolean   @default(false)
+  createdAt   DateTime  @default(now())
+
+  posts       CommunityPost[]
+
+  @@map("community_groups")
+}
+
+model CommunityPost {
+  id          String    @id @default(uuid())
+  userId      String
+  groupId     String
+  content     String
+  language    String
+  imageUrls   String[]
+  likeCount   Int       @default(0)
+  replyCount  Int       @default(0)
+  isAnonymous Boolean   @default(false)
+  createdAt   DateTime  @default(now())
+  updatedAt   DateTime  @updatedAt
+
+  user        User      @relation(fields: [userId], references: [id])
+  group       CommunityGroup @relation(fields: [groupId], references: [id])
+
+  @@map("community_posts")
+}
+
+// ============================================
+// AI会話・通知
+// ============================================
+
+model AiConversation {
+  id          String    @id @default(uuid())
+  userId      String
+  category    String
+  messages    Json
+  language    String
+  createdAt   DateTime  @default(now())
+  updatedAt   DateTime  @updatedAt
+
+  user        User      @relation(fields: [userId], references: [id])
+
+  @@map("ai_conversations")
+}
+
+model Notification {
+  id          String    @id @default(uuid())
+  userId      String
+  type        String
+  title       Json
+  body        Json
+  data        Json?
+  isRead      Boolean   @default(false)
+  createdAt   DateTime  @default(now())
+
+  user        User      @relation(fields: [userId], references: [id])
+
+  @@map("notifications")
+}
+
+// ============================================
+// サブスクリプション
+// ============================================
+
+model Subscription {
+  id                   String    @id @default(uuid())
+  userId               String    @unique
+  stripeSubscriptionId String    @unique
+  tier                 AppTier
+  status               String
+  currentPeriodStart   DateTime
+  currentPeriodEnd     DateTime
+  createdAt            DateTime  @default(now())
+  updatedAt            DateTime  @updatedAt
+
+  user                 User      @relation(fields: [userId], references: [id])
+
+  @@map("subscriptions")
+}
+
+// ============================================
+// 日本語学習
+// ============================================
+
+model LearningProgress {
+  id              String    @id @default(uuid())
+  userId          String
+  lessonType      String
+  lessonId        String
+  score           Int?
+  timeSpent       Int       @default(0)
+  isCompleted     Boolean   @default(false)
+  completedAt     DateTime?
+  createdAt       DateTime  @default(now())
+
+  user            User      @relation(fields: [userId], references: [id])
+
+  @@map("learning_progress")
+}

@@ -1,0 +1,146 @@
+{
+  "common": {
+    "appName": "MediLife",
+    "loading": "Naglo-load...",
+    "error": "May naganap na error",
+    "retry": "Subukan muli",
+    "save": "I-save",
+    "cancel": "Kanselahin",
+    "delete": "Burahin",
+    "edit": "I-edit",
+    "back": "Bumalik",
+    "next": "Susunod",
+    "done": "Tapos na",
+    "search": "Maghanap",
+    "noResults": "Walang resulta",
+    "seeAll": "Tingnan lahat"
+  },
+  "nav": {
+    "home": "Home",
+    "learn": "Matuto",
+    "guide": "Gabay",
+    "jobs": "Trabaho",
+    "profile": "Profile"
+  },
+  "home": {
+    "welcome": "Maligayang pagdating, {name}!",
+    "visaStatus": "Status ng Visa",
+    "daysRemaining": "{days} araw na lang ang natitira",
+    "quickActions": "Mabilisang Aksyon",
+    "aiAssistant": "Konsultasyon sa AI",
+    "hospitalSearch": "Maghanap ng Ospital",
+    "remittanceCompare": "Ikumpara ang Padala",
+    "jobSearch": "Maghanap ng Trabaho",
+    "todaysTasks": "Mga Gawain Ngayong Araw",
+    "recommendedArticles": "Mga Inirerekomendang Artikulo",
+    "emergencyContacts": "Mga Emergency Contact"
+  },
+  "auth": {
+    "login": "Mag-log in",
+    "register": "Mag-sign up",
+    "email": "Email Address",
+    "password": "Password",
+    "forgotPassword": "Nakalimutan ang password?",
+    "loginWithGoogle": "Mag-log in gamit ang Google",
+    "loginWithLine": "Mag-log in gamit ang LINE",
+    "noAccount": "Wala pang account?",
+    "hasAccount": "Mayroon nang account?"
+  },
+  "onboarding": {
+    "selectLanguage": "Pumili ng Wika",
+    "basicInfo": "Pangunahing Impormasyon",
+    "visaType": "Uri ng Visa",
+    "residence": "Lugar ng Tirahan",
+    "japaneseLevel": "Antas ng Japanese",
+    "interests": "Mga Interes",
+    "getStarted": "Magsimula"
+  },
+  "visa": {
+    "title": "Impormasyon ng Visa",
+    "status": "Status",
+    "expiryDate": "Petsa ng Pag-expire",
+    "daysLeft": "Natitirang Araw",
+    "safe": "Ligtas",
+    "caution": "Pag-iingat",
+    "warning": "Babala",
+    "expired": "Na-expire na",
+    "renewalTimeline": "Iskedyul ng Pag-renew",
+    "documents": "Mga Kinakailangang Dokumento",
+    "reminder": "Paalala"
+  },
+  "life": {
+    "title": "Gabay sa Pamumuhay",
+    "housing": "Tirahan",
+    "banking": "Bangko at Pinansyal",
+    "transport": "Transportasyon",
+    "taxPension": "Buwis at Pensyon",
+    "garbage": "Paghihiwalay ng Basura",
+    "emergency": "Tugon sa Emergency",
+    "shopping": "Pamimili",
+    "communication": "Komunikasyon at Internet",
+    "childcare": "Pangangalaga ng Bata at Edukasyon",
+    "legalRights": "Mga Karapatan sa Batas",
+    "culture": "Kultura at Kaugalian",
+    "food": "Pagkain"
+  },
+  "health": {
+    "title": "Suportang Medikal",
+    "hospitalSearch": "Maghanap ng Ospital",
+    "booking": "Mag-book",
+    "insurance": "Health Insurance",
+    "symptomChecker": "Suriin ang Sintomas",
+    "phrasebook": "Mga Pangungusap sa Medikal",
+    "nearbyHospitals": "Mga Ospital sa Malapit",
+    "languageSupport": "Suporta sa Wika",
+    "nhsAccepted": "Tinatanggap ang Pambansang Health Insurance"
+  },
+  "money": {
+    "title": "Padala",
+    "compare": "Ikumpara",
+    "history": "Kasaysayan ng Padala",
+    "sendMoney": "Magpadala ng Pera",
+    "fee": "Bayad",
+    "exchangeRate": "Palitan ng Pera",
+    "speed": "Bilis ng Pagpapadala"
+  },
+  "jobs": {
+    "title": "Mga Bakanteng Trabaho",
+    "search": "Maghanap ng Trabaho",
+    "saved": "Na-save",
+    "applied": "Na-apply na",
+    "apply": "Mag-apply",
+    "salary": "Sahod",
+    "location": "Lokasyon",
+    "type": "Uri ng Trabaho",
+    "mediflowBadge": "Sertipikadong MediFlow"
+  },
+  "community": {
+    "title": "Komunidad",
+    "groups": "Mga Grupo",
+    "posts": "Mga Post",
+    "events": "Mga Event",
+    "newPost": "Bagong Post",
+    "anonymous": "Anonymous"
+  },
+  "ai": {
+    "title": "Konsultasyon sa AI",
+    "placeholder": "Magtanong ng kahit ano...",
+    "categories": {
+      "general": "Pangkalahatan",
+      "visa": "Visa",
+      "medical": "Medikal",
+      "life": "Pamumuhay",
+      "work": "Trabaho",
+      "legal": "Legal",
+      "japanese": "Pag-aaral ng Japanese"
+    }
+  },
+  "profile": {
+    "title": "Profile",
+    "settings": "Mga Setting",
+    "language": "Wika",
+    "notifications": "Mga Notipikasyon",
+    "subscription": "Subscription",
+    "logout": "Mag-log out"
+  }
+}

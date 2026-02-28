@@ -1,0 +1,146 @@
+{
+  "common": {
+    "appName": "MediLife",
+    "loading": "Memuat...",
+    "error": "Terjadi kesalahan",
+    "retry": "Coba lagi",
+    "save": "Simpan",
+    "cancel": "Batal",
+    "delete": "Hapus",
+    "edit": "Edit",
+    "back": "Kembali",
+    "next": "Berikutnya",
+    "done": "Selesai",
+    "search": "Cari",
+    "noResults": "Tidak ada hasil",
+    "seeAll": "Lihat semua"
+  },
+  "nav": {
+    "home": "Beranda",
+    "learn": "Belajar",
+    "guide": "Panduan",
+    "jobs": "Lowongan",
+    "profile": "Profil"
+  },
+  "home": {
+    "welcome": "Selamat datang, {name}!",
+    "visaStatus": "Status Visa",
+    "daysRemaining": "{days} hari tersisa",
+    "quickActions": "Aksi Cepat",
+    "aiAssistant": "Konsultasi AI",
+    "hospitalSearch": "Cari Rumah Sakit",
+    "remittanceCompare": "Bandingkan Pengiriman Uang",
+    "jobSearch": "Cari Kerja",
+    "todaysTasks": "Tugas Hari Ini",
+    "recommendedArticles": "Artikel Rekomendasi",
+    "emergencyContacts": "Kontak Darurat"
+  },
+  "auth": {
+    "login": "Masuk",
+    "register": "Daftar",
+    "email": "Alamat Email",
+    "password": "Kata Sandi",
+    "forgotPassword": "Lupa kata sandi?",
+    "loginWithGoogle": "Masuk dengan Google",
+    "loginWithLine": "Masuk dengan LINE",
+    "noAccount": "Belum punya akun?",
+    "hasAccount": "Sudah punya akun?"
+  },
+  "onboarding": {
+    "selectLanguage": "Pilih Bahasa",
+    "basicInfo": "Informasi Dasar",
+    "visaType": "Jenis Visa",
+    "residence": "Tempat Tinggal",
+    "japaneseLevel": "Tingkat Bahasa Jepang",
+    "interests": "Minat",
+    "getStarted": "Mulai"
+  },
+  "visa": {
+    "title": "Informasi Visa",
+    "status": "Status",
+    "expiryDate": "Tanggal Kedaluwarsa",
+    "daysLeft": "Sisa Hari",
+    "safe": "Aman",
+    "caution": "Perhatian",
+    "warning": "Peringatan",
+    "expired": "Kedaluwarsa",
+    "renewalTimeline": "Jadwal Perpanjangan",
+    "documents": "Dokumen yang Diperlukan",
+    "reminder": "Pengingat"
+  },
+  "life": {
+    "title": "Panduan Hidup",
+    "housing": "Tempat Tinggal",
+    "banking": "Perbankan & Keuangan",
+    "transport": "Transportasi",
+    "taxPension": "Pajak & Pensiun",
+    "garbage": "Pemilahan Sampah",
+    "emergency": "Tanggap Darurat",
+    "shopping": "Belanja",
+    "communication": "Komunikasi & Internet",
+    "childcare": "Penitipan Anak & Pendidikan",
+    "legalRights": "Hak Hukum",
+    "culture": "Budaya & Etika",
+    "food": "Makanan"
+  },
+  "health": {
+    "title": "Dukungan Medis",
+    "hospitalSearch": "Cari Rumah Sakit",
+    "booking": "Reservasi",
+    "insurance": "Asuransi Kesehatan",
+    "symptomChecker": "Pemeriksa Gejala",
+    "phrasebook": "Frasa Medis",
+    "nearbyHospitals": "Rumah Sakit Terdekat",
+    "languageSupport": "Dukungan Bahasa",
+    "nhsAccepted": "Menerima Asuransi Kesehatan Nasional"
+  },
+  "money": {
+    "title": "Pengiriman Uang",
+    "compare": "Bandingkan",
+    "history": "Riwayat Transfer",
+    "sendMoney": "Kirim Uang",
+    "fee": "Biaya",
+    "exchangeRate": "Kurs",
+    "speed": "Kecepatan Transfer"
+  },
+  "jobs": {
+    "title": "Informasi Lowongan",
+    "search": "Cari Kerja",
+    "saved": "Tersimpan",
+    "applied": "Sudah Melamar",
+    "apply": "Lamar",
+    "salary": "Gaji",
+    "location": "Lokasi",
+    "type": "Jenis Pekerjaan",
+    "mediflowBadge": "Bersertifikat MediFlow"
+  },
+  "community": {
+    "title": "Komunitas",
+    "groups": "Grup",
+    "posts": "Postingan",
+    "events": "Acara",
+    "newPost": "Postingan Baru",
+    "anonymous": "Anonim"
+  },
+  "ai": {
+    "title": "Konsultasi AI",
+    "placeholder": "Tanyakan apa saja...",
+    "categories": {
+      "general": "Umum",
+      "visa": "Visa",
+      "medical": "Medis",
+      "life": "Kehidupan",
+      "work": "Pekerjaan",
+      "legal": "Hukum",
+      "japanese": "Belajar Bahasa Jepang"
+    }
+  },
+  "profile": {
+    "title": "Profil",
+    "settings": "Pengaturan",
+    "language": "Bahasa",
+    "notifications": "Notifikasi",
+    "subscription": "Langganan",
+    "logout": "Keluar"
+  }
+}

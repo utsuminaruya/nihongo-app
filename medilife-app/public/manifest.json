@@ -1,0 +1,28 @@
+{
+  "name": "MediLife - 外国人労働者サポートアプリ",
+  "short_name": "MediLife",
+  "description": "日本で生きる外国人労働者の生活をワンストップで支えるスーパーアプリ",
+  "start_url": "/ja/home",
+  "display": "standalone",
+  "background_color": "#F8FAFC",
+  "theme_color": "#2563EB",
+  "orientation": "portrait",
+  "scope": "/",
+  "icons": [
+    {
+      "src": "/icons/icon-192x192.png",
+      "sizes": "192x192",
+      "type": "image/png",
+      "purpose": "any maskable"
+    },
+    {
+      "src": "/icons/icon-512x512.png",
+      "sizes": "512x512",
+      "type": "image/png",
+      "purpose": "any maskable"
+    }
+  ],
+  "categories": ["lifestyle", "health", "education", "business"],
+  "lang": "ja",
+  "dir": "ltr"
+}

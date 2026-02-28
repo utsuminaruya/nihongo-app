@@ -1,0 +1,146 @@
+{
+  "common": {
+    "appName": "MediLife",
+    "loading": "読み込み中...",
+    "error": "エラーが発生しました",
+    "retry": "再試行",
+    "save": "保存",
+    "cancel": "キャンセル",
+    "delete": "削除",
+    "edit": "編集",
+    "back": "戻る",
+    "next": "次へ",
+    "done": "完了",
+    "search": "検索",
+    "noResults": "結果が見つかりません",
+    "seeAll": "すべて見る"
+  },
+  "nav": {
+    "home": "ホーム",
+    "learn": "学ぶ",
+    "guide": "ガイド",
+    "jobs": "仕事",
+    "profile": "プロフィール"
+  },
+  "home": {
+    "welcome": "ようこそ、{name}さん！",
+    "visaStatus": "ビザ状況",
+    "daysRemaining": "残り{days}日",
+    "quickActions": "クイックアクション",
+    "aiAssistant": "AI相談",
+    "hospitalSearch": "病院検索",
+    "remittanceCompare": "送金比較",
+    "jobSearch": "仕事探し",
+    "todaysTasks": "今日のタスク",
+    "recommendedArticles": "おすすめ記事",
+    "emergencyContacts": "緊急連絡先"
+  },
+  "auth": {
+    "login": "ログイン",
+    "register": "新規登録",
+    "email": "メールアドレス",
+    "password": "パスワード",
+    "forgotPassword": "パスワードを忘れた方",
+    "loginWithGoogle": "Googleでログイン",
+    "loginWithLine": "LINEでログイン",
+    "noAccount": "アカウントをお持ちでない方",
+    "hasAccount": "すでにアカウントをお持ちの方"
+  },
+  "onboarding": {
+    "selectLanguage": "言語を選択",
+    "basicInfo": "基本情報",
+    "visaType": "ビザの種類",
+    "residence": "居住地",
+    "japaneseLevel": "日本語レベル",
+    "interests": "興味・関心",
+    "getStarted": "始める"
+  },
+  "visa": {
+    "title": "ビザ情報",
+    "status": "ステータス",
+    "expiryDate": "有効期限",
+    "daysLeft": "残り日数",
+    "safe": "安全",
+    "caution": "注意",
+    "warning": "警告",
+    "expired": "期限切れ",
+    "renewalTimeline": "更新スケジュール",
+    "documents": "必要書類",
+    "reminder": "リマインダー"
+  },
+  "life": {
+    "title": "生活ガイド",
+    "housing": "住まい",
+    "banking": "銀行・金融",
+    "transport": "交通",
+    "taxPension": "税金・年金",
+    "garbage": "ゴミの出し方",
+    "emergency": "緊急時の対応",
+    "shopping": "買い物",
+    "communication": "通信・インターネット",
+    "childcare": "子育て・教育",
+    "legalRights": "法的権利",
+    "culture": "文化・マナー",
+    "food": "食生活"
+  },
+  "health": {
+    "title": "医療サポート",
+    "hospitalSearch": "病院検索",
+    "booking": "予約",
+    "insurance": "健康保険",
+    "symptomChecker": "症状チェッカー",
+    "phrasebook": "医療フレーズ集",
+    "nearbyHospitals": "近くの病院",
+    "languageSupport": "多言語対応",
+    "nhsAccepted": "国民健康保険対応"
+  },
+  "money": {
+    "title": "送金",
+    "compare": "比較",
+    "history": "送金履歴",
+    "sendMoney": "送金する",
+    "fee": "手数料",
+    "exchangeRate": "為替レート",
+    "speed": "送金速度"
+  },
+  "jobs": {
+    "title": "求人情報",
+    "search": "求人検索",
+    "saved": "保存済み",
+    "applied": "応募済み",
+    "apply": "応募する",
+    "salary": "給与",
+    "location": "勤務地",
+    "type": "雇用形態",
+    "mediflowBadge": "MediFlow認定"
+  },
+  "community": {
+    "title": "コミュニティ",
+    "groups": "グループ",
+    "posts": "投稿",
+    "events": "イベント",
+    "newPost": "新規投稿",
+    "anonymous": "匿名"
+  },
+  "ai": {
+    "title": "AI相談",
+    "placeholder": "何でも聞いてください...",
+    "categories": {
+      "general": "一般",
+      "visa": "ビザ",
+      "medical": "医療",
+      "life": "生活",
+      "work": "仕事",
+      "legal": "法律",
+      "japanese": "日本語学習"
+    }
+  },
+  "profile": {
+    "title": "プロフィール",
+    "settings": "設定",
+    "language": "言語",
+    "notifications": "通知",
+    "subscription": "サブスクリプション",
+    "logout": "ログアウト"
+  }
+}

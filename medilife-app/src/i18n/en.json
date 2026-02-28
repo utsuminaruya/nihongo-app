@@ -1,0 +1,146 @@
+{
+  "common": {
+    "appName": "MediLife",
+    "loading": "Loading...",
+    "error": "An error occurred",
+    "retry": "Retry",
+    "save": "Save",
+    "cancel": "Cancel",
+    "delete": "Delete",
+    "edit": "Edit",
+    "back": "Back",
+    "next": "Next",
+    "done": "Done",
+    "search": "Search",
+    "noResults": "No results found",
+    "seeAll": "See All"
+  },
+  "nav": {
+    "home": "Home",
+    "learn": "Learn",
+    "guide": "Guide",
+    "jobs": "Jobs",
+    "profile": "Profile"
+  },
+  "home": {
+    "welcome": "Welcome, {name}!",
+    "visaStatus": "Visa Status",
+    "daysRemaining": "{days} days remaining",
+    "quickActions": "Quick Actions",
+    "aiAssistant": "AI Consultation",
+    "hospitalSearch": "Hospital Search",
+    "remittanceCompare": "Remittance Compare",
+    "jobSearch": "Job Search",
+    "todaysTasks": "Today's Tasks",
+    "recommendedArticles": "Recommended Articles",
+    "emergencyContacts": "Emergency Contacts"
+  },
+  "auth": {
+    "login": "Log In",
+    "register": "Sign Up",
+    "email": "Email Address",
+    "password": "Password",
+    "forgotPassword": "Forgot Password?",
+    "loginWithGoogle": "Log in with Google",
+    "loginWithLine": "Log in with LINE",
+    "noAccount": "Don't have an account?",
+    "hasAccount": "Already have an account?"
+  },
+  "onboarding": {
+    "selectLanguage": "Select Language",
+    "basicInfo": "Basic Information",
+    "visaType": "Visa Type",
+    "residence": "Place of Residence",
+    "japaneseLevel": "Japanese Level",
+    "interests": "Interests",
+    "getStarted": "Get Started"
+  },
+  "visa": {
+    "title": "Visa Information",
+    "status": "Status",
+    "expiryDate": "Expiry Date",
+    "daysLeft": "Days Left",
+    "safe": "Safe",
+    "caution": "Caution",
+    "warning": "Warning",
+    "expired": "Expired",
+    "renewalTimeline": "Renewal Timeline",
+    "documents": "Required Documents",
+    "reminder": "Reminder"
+  },
+  "life": {
+    "title": "Life Guide",
+    "housing": "Housing",
+    "banking": "Banking & Finance",
+    "transport": "Transportation",
+    "taxPension": "Tax & Pension",
+    "garbage": "Garbage Sorting",
+    "emergency": "Emergency Response",
+    "shopping": "Shopping",
+    "communication": "Communication & Internet",
+    "childcare": "Childcare & Education",
+    "legalRights": "Legal Rights",
+    "culture": "Culture & Manners",
+    "food": "Food & Dining"
+  },
+  "health": {
+    "title": "Medical Support",
+    "hospitalSearch": "Hospital Search",
+    "booking": "Booking",
+    "insurance": "Health Insurance",
+    "symptomChecker": "Symptom Checker",
+    "phrasebook": "Medical Phrasebook",
+    "nearbyHospitals": "Nearby Hospitals",
+    "languageSupport": "Language Support",
+    "nhsAccepted": "National Health Insurance Accepted"
+  },
+  "money": {
+    "title": "Remittance",
+    "compare": "Compare",
+    "history": "Transfer History",
+    "sendMoney": "Send Money",
+    "fee": "Fee",
+    "exchangeRate": "Exchange Rate",
+    "speed": "Transfer Speed"
+  },
+  "jobs": {
+    "title": "Job Listings",
+    "search": "Job Search",
+    "saved": "Saved",
+    "applied": "Applied",
+    "apply": "Apply",
+    "salary": "Salary",
+    "location": "Location",
+    "type": "Employment Type",
+    "mediflowBadge": "MediFlow Certified"
+  },
+  "community": {
+    "title": "Community",
+    "groups": "Groups",
+    "posts": "Posts",
+    "events": "Events",
+    "newPost": "New Post",
+    "anonymous": "Anonymous"
+  },
+  "ai": {
+    "title": "AI Consultation",
+    "placeholder": "Ask me anything...",
+    "categories": {
+      "general": "General",
+      "visa": "Visa",
+      "medical": "Medical",
+      "life": "Daily Life",
+      "work": "Work",
+      "legal": "Legal",
+      "japanese": "Japanese Learning"
+    }
+  },
+  "profile": {
+    "title": "Profile",
+    "settings": "Settings",
+    "language": "Language",
+    "notifications": "Notifications",
+    "subscription": "Subscription",
+    "logout": "Log Out"
+  }
+}
