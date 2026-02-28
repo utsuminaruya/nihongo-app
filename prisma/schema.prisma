@@ -1,0 +1,218 @@
+generator client {
+  provider = "prisma-client-js"
+}
+
+datasource db {
+  provider = "postgresql"
+  url      = env("DATABASE_URL")
+}
+
+// ============ ユーザー管理 ============
+
+model User {
+  id               String           @id @default(uuid())
+  email            String           @unique
+  name             String?
+  nativeLanguage   String           @default("vi") // vi, en, zh, id, tl, my
+  currentLevel     JlptLevel        @default(N5)
+  targetLevel      JlptLevel        @default(N3)
+  subscriptionTier SubscriptionTier @default(FREE)
+  stripeCustomerId String?          @unique
+  avatarUrl        String?
+  timezone         String           @default("Asia/Tokyo")
+  createdAt        DateTime         @default(now())
+  updatedAt        DateTime         @updatedAt
+
+  progress      LessonProgress[]
+  quizResults   QuizResult[]
+  conversations AiConversation[]
+  streaks       StudyStreak[]
+  subscription  Subscription?
+
+  @@map("users")
+}
+
+enum JlptLevel {
+  N5
+  N4
+  N3
+  N2
+  N1
+}
+
+enum SubscriptionTier {
+  FREE // 1日3レッスン、広告あり
+  BASIC // 月980円：無制限レッスン、広告なし
+  PRO // 月1,980円：AIチューター無制限、模試
+  PREMIUM // 月2,980円：介護特化コース、1on1サポート
+}
+
+// ============ コンテンツ管理 ============
+
+model Course {
+  id          String         @id @default(uuid())
+  title       Json // { ja: "...", vi: "...", en: "..." }
+  description Json
+  level       JlptLevel
+  category    CourseCategory
+  order       Int
+  isPublished Boolean        @default(false)
+  createdAt   DateTime       @default(now())
+
+  lessons Lesson[]
+
+  @@map("courses")
+}
+
+enum CourseCategory {
+  JLPT_GENERAL // JLPT対策（汎用）
+  KAIGO // 介護日本語
+  KANGO // 看護日本語
+  BUSINESS // ビジネス日本語
+  DAILY_LIFE // 生活日本語
+}
+
+model Lesson {
+  id         String   @id @default(uuid())
+  courseId    String
+  title      Json // 多言語対応
+  content    Json // レッスン内容（構造化JSON）
+  grammar    Json? // 文法ポイント
+  vocabulary Json? // 単語リスト
+  audioUrl   String? // 音声ファイルURL
+  order      Int
+  duration   Int      @default(15) // 分
+  xpReward   Int      @default(10)
+  createdAt  DateTime @default(now())
+
+  course   Course           @relation(fields: [courseId], references: [id])
+  progress LessonProgress[]
+  quizzes  Quiz[]
+
+  @@map("lessons")
+}
+
+model Quiz {
+  id          String    @id @default(uuid())
+  lessonId    String?
+  level       JlptLevel
+  type        QuizType
+  question    Json // 問題文（多言語）
+  options     Json? // 選択肢
+  answer      String // 正解
+  explanation Json // 解説（多言語）
+  audioUrl    String?
+  imageUrl    String?
+  difficulty  Int       @default(1) // 1-5
+  tags        String[]
+  createdAt   DateTime  @default(now())
+
+  lesson  Lesson?      @relation(fields: [lessonId], references: [id])
+  results QuizResult[]
+
+  @@map("quizzes")
+}
+
+enum QuizType {
+  MULTIPLE_CHOICE // 選択式
+  FILL_BLANK // 穴埋め
+  LISTENING // リスニング
+  READING // 読解
+  KANJI_READING // 漢字の読み
+  KANJI_WRITING // 漢字の書き
+  GRAMMAR // 文法
+  ESSAY // 作文（AI添削）
+}
+
+// ============ 学習進捗 ============
+
+model LessonProgress {
+  id          String         @id @default(uuid())
+  userId      String
+  lessonId    String
+  status      ProgressStatus @default(NOT_STARTED)
+  score       Int?
+  xpEarned    Int            @default(0)
+  timeSpent   Int            @default(0) // 秒
+  completedAt DateTime?
+  createdAt   DateTime       @default(now())
+  updatedAt   DateTime       @updatedAt
+
+  user   User   @relation(fields: [userId], references: [id])
+  lesson Lesson @relation(fields: [lessonId], references: [id])
+
+  @@unique([userId, lessonId])
+  @@map("lesson_progress")
+}
+
+enum ProgressStatus {
+  NOT_STARTED
+  IN_PROGRESS
+  COMPLETED
+  REVIEW // 復習推奨
+}
+
+model QuizResult {
+  id         String   @id @default(uuid())
+  userId     String
+  quizId     String
+  isCorrect  Boolean
+  userAnswer String
+  timeSpent  Int // 秒
+  createdAt  DateTime @default(now())
+
+  user User @relation(fields: [userId], references: [id])
+  quiz Quiz @relation(fields: [quizId], references: [id])
+
+  @@map("quiz_results")
+}
+
+model StudyStreak {
+  id               String   @id @default(uuid())
+  userId           String
+  date             DateTime @db.Date
+  minutesStudied   Int      @default(0)
+  lessonsCompleted Int      @default(0)
+  xpEarned         Int      @default(0)
+
+  user User @relation(fields: [userId], references: [id])
+
+  @@unique([userId, date])
+  @@map("study_streaks")
+}
+
+// ============ AIチューター ============
+
+model AiConversation {
+  id        String    @id @default(uuid())
+  userId    String
+  topic     String?
+  level     JlptLevel
+  scenario  String? // "hospital_reception", "care_facility", etc.
+  messages  Json // メッセージ履歴
+  feedback  Json? // AI評価・フィードバック
+  createdAt DateTime  @default(now())
+  updatedAt DateTime  @updatedAt
+
+  user User @relation(fields: [userId], references: [id])
+
+  @@map("ai_conversations")
+}
+
+// ============ サブスクリプション ============
+
+model Subscription {
+  id                   String           @id @default(uuid())
+  userId               String           @unique
+  stripeSubscriptionId String           @unique
+  tier                 SubscriptionTier
+  status               String // active, canceled, past_due
+  currentPeriodStart   DateTime
+  currentPeriodEnd     DateTime
+  createdAt            DateTime         @default(now())
+  updatedAt            DateTime         @updatedAt
+
+  user User @relation(fields: [userId], references: [id])
+
+  @@map("subscriptions")
+}
