@@ -20,7 +20,7 @@ export async function POST(request: NextRequest) {
         { role: 'user' as const, content: message },
       ];
 
-      const response = await anthropic.messages.create({
+      const response = await anthropic!.messages.create({
         model: 'claude-sonnet-4-20250514',
         max_tokens: 1024,
         system: `${SYMPTOM_CHECKER_PROMPT}\n\nユーザーの言語: ${locale}`,
