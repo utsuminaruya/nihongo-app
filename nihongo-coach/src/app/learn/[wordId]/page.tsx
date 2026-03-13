@@ -4,7 +4,7 @@ import { use } from 'react';
 import { Header } from '@/components/layout/Header';
 import { Navigation } from '@/components/layout/Navigation';
 import { AudioPlayer } from '@/components/ui/AudioPlayer';
-import { getWordById, getCategoryByType, getAdjacentWords, categories } from '@/lib/data';
+import { getWordById, getAdjacentWords, categories } from '@/lib/data';
 import { notFound } from 'next/navigation';
 import Link from 'next/link';
 import { ChevronLeft, ChevronRight } from 'lucide-react';
