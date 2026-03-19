@@ -60,11 +60,11 @@ function t(locale: string, key: string): string {
 }
 
 const popularArticles = [
-  { title: { ja: '銀行口座の開設方法', en: 'How to open a bank account' }, category: 'BANKING', views: 12500 },
-  { title: { ja: 'ゴミの分別ルール', en: 'Garbage sorting rules' }, category: 'GARBAGE', views: 10200 },
-  { title: { ja: '在留カードの住所変更', en: 'Address change on residence card' }, category: 'LEGAL_RIGHTS', views: 9800 },
-  { title: { ja: '国民健康保険の加入', en: 'Joining National Health Insurance' }, category: 'BANKING', views: 8900 },
-  { title: { ja: '電車の乗り方ガイド', en: 'Guide to riding trains' }, category: 'TRANSPORT', views: 8500 },
+  { title: { ja: '日本の銀行口座の開き方', en: 'How to Open a Bank Account in Japan' }, category: 'banking', id: 'open-bank-account', views: 12500 },
+  { title: { ja: 'ゴミの分別ルール完全ガイド', en: 'Complete Guide to Garbage Sorting' }, category: 'garbage', id: 'garbage-sorting-rules', views: 10200 },
+  { title: { ja: '在留カードの住所変更・更新手続き', en: 'Updating and Renewing Your Residence Card' }, category: 'legal_rights', id: 'residence-card-update', views: 9800 },
+  { title: { ja: '国民健康保険の加入手続き', en: 'Joining National Health Insurance' }, category: 'banking', id: 'national-health-insurance', views: 8900 },
+  { title: { ja: '電車の乗り方完全ガイド', en: 'Complete Guide to Riding Trains' }, category: 'transport', id: 'reading-train-map', views: 8500 },
 ];
 
 export default function LifeGuidePage() {
@@ -135,19 +135,21 @@ export default function LifeGuidePage() {
               animate={{ opacity: 1, x: 0 }}
               transition={{ delay: 0.3 + index * 0.05 }}
             >
-              <Card hoverable padding="sm">
-                <div className="flex items-center justify-between">
-                  <div className="flex-1 min-w-0">
-                    <p className="text-sm font-medium text-slate-800 truncate">
-                      {locale === 'ja' ? article.title.ja : article.title.en}
-                    </p>
-                    <p className="text-xs text-text-light mt-0.5">
-                      {t(locale, article.category)} · {article.views.toLocaleString()} views
-                    </p>
+                  <Link href={`/${locale}/life/${article.category}/${article.id}`}>
+                <Card hoverable padding="sm">
+                  <div className="flex items-center justify-between">
+                    <div className="flex-1 min-w-0">
+                      <p className="text-sm font-medium text-slate-800 truncate">
+                        {locale === 'ja' ? article.title.ja : article.title.en}
+                      </p>
+                      <p className="text-xs text-text-light mt-0.5">
+                        {t(locale, article.category.toUpperCase())} · {article.views.toLocaleString()} views
+                      </p>
+                    </div>
+                    <ChevronRight className="h-4 w-4 text-slate-400 flex-shrink-0 ml-2" />
                   </div>
-                  <ChevronRight className="h-4 w-4 text-slate-400 flex-shrink-0 ml-2" />
-                </div>
-              </Card>
+                </Card>
+              </Link>
             </motion.div>
           ))}
         </div>
