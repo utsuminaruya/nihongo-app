@@ -142,6 +142,8 @@ export default function EmotionPage({ params }: Props) {
               labelVi={`Nghe "${word.word_ja}" theo ngữ cảnh ${currentPattern.pattern_name}`}
               icon="🔊"
               audioUrl={currentPattern.audio_url}
+              text={word.word_ja}
+              audioType="standard"
             />
           </div>
         )}
@@ -169,9 +171,6 @@ export default function EmotionPage({ params }: Props) {
               </div>
             ))}
           </div>
-          <p className="text-[10px] text-[#b2aca6] mt-3 text-center">
-            ※ 全パターンの音声比較はPhase 2で追加予定
-          </p>
         </div>
 
         {/* 前後ナビゲーション（タイプDのみ） */}

@@ -100,7 +100,7 @@ export default function LearnPage({ params }: Props) {
           </div>
         )}
 
-        {/* 音声（Phase 2で有効化） */}
+        {/* 音声再生 */}
         <div className="card-warm p-4 mt-3">
           <h3 className="text-xs font-bold text-[#636e72] uppercase tracking-wide mb-3">
             🔊 音声で聞く / Nghe phát âm
@@ -111,25 +111,28 @@ export default function LearnPage({ params }: Props) {
               labelVi="Tốc độ chuẩn"
               icon="🗣️"
               audioUrl={word.audio_url_standard}
+              text={word.word_ja}
+              audioType="standard"
             />
             <AudioPlayer
-              label="ゆっくり"
-              labelVi="Chậm hơn"
-              icon="🐢"
-              audioUrl={word.audio_url_standard}
+              label="早口（スタッフの指示）"
+              labelVi="Nhanh (hướng dẫn nhân viên)"
+              icon="⚡"
+              audioUrl={word.audio_url_fast}
+              text={word.word_ja}
+              audioType="fast"
             />
-            {cat.type === 'A' || cat.type === 'B' ? (
+            {(cat.type === 'A' || cat.type === 'B') && (
               <AudioPlayer
                 label="高齢者の話し方"
                 labelVi="Giọng người cao tuổi"
                 icon="👴"
                 audioUrl={word.audio_url_elderly}
+                text={word.word_ja}
+                audioType="elderly"
               />
-            ) : null}
+            )}
           </div>
-          <p className="text-[10px] text-[#b2aca6] mt-3 text-center">
-            ※ 音声機能はPhase 2で追加予定 / Tính năng âm thanh sẽ ra mắt ở Phase 2
-          </p>
         </div>
 
         {/* 前後ナビゲーション */}
