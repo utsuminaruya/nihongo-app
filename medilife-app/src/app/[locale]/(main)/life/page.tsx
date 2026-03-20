@@ -17,6 +17,9 @@ import {
   UtensilsCrossed,
   ChevronRight,
   Search,
+  Stethoscope,
+  ShieldAlert,
+  Briefcase,
 } from 'lucide-react';
 import { Card } from '@/components/ui';
 import { useState } from 'react';
@@ -35,6 +38,9 @@ const categories = [
   { key: 'LEGAL_RIGHTS', icon: Scale, color: 'bg-slate-100 text-slate-600' },
   { key: 'CULTURE', icon: Heart, color: 'bg-orange-100 text-orange-600' },
   { key: 'FOOD', icon: UtensilsCrossed, color: 'bg-yellow-100 text-yellow-600' },
+  { key: 'HEALTHCARE', icon: Stethoscope, color: 'bg-teal-100 text-teal-600' },
+  { key: 'DISASTER', icon: ShieldAlert, color: 'bg-red-100 text-red-700' },
+  { key: 'WORK', icon: Briefcase, color: 'bg-cyan-100 text-cyan-600' },
 ];
 
 function t(locale: string, key: string): string {
@@ -54,6 +60,9 @@ function t(locale: string, key: string): string {
     LEGAL_RIGHTS: { ja: '法律・権利', vi: 'Pháp luật & Quyền', en: 'Legal Rights', zh: '法律权益', id: 'Hak Hukum', tl: 'Legal na Karapatan', my: 'ဥပဒေအခွင့်အရေး' },
     CULTURE: { ja: '文化', vi: 'Văn hóa', en: 'Culture', zh: '文化', id: 'Budaya', tl: 'Kultura', my: 'ယဉ်ကျေးမှု' },
     FOOD: { ja: '食事', vi: 'Ẩm thực', en: 'Food', zh: '饮食', id: 'Makanan', tl: 'Pagkain', my: 'အစားအသောက်' },
+    HEALTHCARE: { ja: '医療', vi: 'Y tế', en: 'Healthcare', zh: '医疗', id: 'Kesehatan', tl: 'Pangangalagang Pangkalusugan', my: 'ကျန်းမာရေးစောင့်ရှောက်မှု' },
+    DISASTER: { ja: '防災', vi: 'Phòng chống thiên tai', en: 'Disaster Prep', zh: '防灾', id: 'Bencana', tl: 'Pag-iwas sa Sakuna', my: 'သဘာဝဘေးအန္တရာယ်ကြိုတင်ကာကွယ်ရေး' },
+    WORK: { ja: '仕事', vi: 'Công việc', en: 'Work', zh: '工作', id: 'Pekerjaan', tl: 'Trabaho', my: 'အလုပ်' },
     popular: { ja: '人気の記事', vi: 'Bài viết phổ biến', en: 'Popular Articles', zh: '热门文章', id: 'Artikel Populer', tl: 'Mga Sikat na Artikulo', my: 'လူကြိုက်များသောဆောင်းပါး' },
   };
   return texts[key]?.[locale] || texts[key]?.['en'] || key;

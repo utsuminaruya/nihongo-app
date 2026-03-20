@@ -547,6 +547,737 @@ export const courses: Course[] = [
       },
     ],
   },
+
+  // ============================
+  // COURSE 7: 買い物の日本語
+  // ============================
+  {
+    id: 'shopping-japanese',
+    title: { ja: '買い物の日本語', en: 'Shopping Japanese', vi: 'Tiếng Nhật mua sắm', zh: '购物日语', id: 'Bahasa Jepang Belanja', tl: 'Japanese sa Pamimili', my: 'ဈေးဝယ် ဂျပန်ဘာသာ' },
+    description: { ja: 'コンビニ・スーパー・お店での買い物に必要な日本語。値段交渉からレジまで完全カバー', en: 'Japanese for shopping at convenience stores, supermarkets, and shops — from prices to checkout', vi: 'Tiếng Nhật mua sắm tại cửa hàng tiện lợi, siêu thị — từ hỏi giá đến thanh toán', zh: '在便利店、超市购物的日语——从询价到结账完整覆盖', id: 'Bahasa Jepang untuk belanja di toko, supermarket — dari harga hingga kasir', tl: 'Japanese para sa pamimili sa convenience store, supermarket', my: 'ဈေးဆိုင်၊ စူပါမားကတ်တွင် ဈေးဝယ်ရန် ဂျပန်ဘာသာ' },
+    level: 'beginner',
+    jlptLevel: 'N5',
+    color: 'from-orange-400 to-amber-500',
+    totalLessons: 4,
+    estimatedHours: 3,
+    lessons: [
+      {
+        id: 'shopping-basics',
+        title: { ja: '値段を聞く・払う', en: 'Asking Prices & Paying', vi: 'Hỏi giá và thanh toán', zh: '询价与付款' },
+        duration: 15,
+        content: [
+          {
+            type: 'intro',
+            title: { ja: 'この授業について', en: 'About this lesson' },
+            text: { ja: 'コンビニやスーパーで使える基本フレーズを学びます。「いくらですか？」「これをください」など、毎日使える表現です。', en: 'Learn essential phrases for convenience stores and supermarkets. Expressions like "How much?" and "I\'ll take this" that you can use every day.' },
+          },
+          {
+            type: 'vocab',
+            title: { ja: '値段・支払いに関する言葉', en: 'Price & Payment Vocabulary' },
+            items: [
+              { japanese: 'いくらですか', reading: 'ikura desu ka', meaning: { ja: '値段を聞く', en: 'How much is it?', vi: 'Bao nhiêu tiền?', zh: '多少钱？', id: 'Berapa harganya?', tl: 'Magkano?', my: 'ဘယ်လောက်လဲ?' }, example: 'これはいくらですか？', exampleReading: 'Kore wa ikura desu ka?', exampleMeaning: { ja: 'これの値段を聞く', en: 'How much is this?', vi: 'Cái này bao nhiêu tiền?' } },
+              { japanese: 'これをください', reading: 'kore wo kudasai', meaning: { ja: 'これを買いたい', en: 'I\'ll take this / Please give me this', vi: 'Cho tôi cái này', zh: '请给我这个', id: 'Tolong berikan ini', tl: 'Ibigay mo ito sa akin', my: 'ဒါပေးပါ' }, example: 'これをひとつください。', exampleReading: 'Kore wo hitotsu kudasai.', exampleMeaning: { ja: 'これを1つください', en: 'One of these please.', vi: 'Cho tôi một cái này.' } },
+              { japanese: 'レシートをお願いします', reading: 'reshiito wo onegaishimasu', meaning: { ja: '領収書を要求する', en: 'Receipt please', vi: 'Cho tôi hóa đơn', zh: '请给我收据', id: 'Tolong berikan kuitansi', tl: 'Receipt po', my: 'ဘောင်ချာပေးပါ' } },
+              { japanese: 'おつりはいりません', reading: 'otsuri wa irimasen', meaning: { ja: 'おつり不要', en: 'No change needed (keep the change)', vi: 'Không cần thối lại', zh: '不用找零', id: 'Tidak perlu kembalian', tl: 'Hindi na kailangan ng sukli', my: 'အမ်းငွေမလိုပါ' } },
+              { japanese: 'クレジットカードで払えますか', reading: 'kurejitto kaado de haraemasu ka', meaning: { ja: 'カード払い可能か確認', en: 'Can I pay by credit card?', vi: 'Tôi có thể trả bằng thẻ tín dụng không?', zh: '可以用信用卡付款吗？', id: 'Bisakah bayar dengan kartu kredit?', tl: 'Maaari bang bayad sa credit card?', my: 'ခရက်ဒစ်ကတ်နဲ့ ပေးလို့ရမလား?' } },
+              { japanese: 'PayPayで払えますか', reading: 'PayPay de haraemasu ka', meaning: { ja: 'スマホ決済の確認', en: 'Can I pay with PayPay?', vi: 'Có thể thanh toán bằng PayPay không?', zh: '可以用PayPay付款吗？', id: 'Bisakah bayar dengan PayPay?', tl: 'Pwede bang bayad sa PayPay?', my: 'PayPay နဲ့ ပေးလို့ရမလား?' } },
+              { japanese: 'ふくろはいりますか', reading: 'fukuro wa irimasu ka', meaning: { ja: 'レジ袋が必要か', en: 'Do you need a bag?', vi: 'Bạn có cần túi không?', zh: '需要袋子吗？', id: 'Apakah perlu kantong?', tl: 'Kailangan mo ng bag?', my: 'အိတ်လိုအပ်လားဆိုတာ' } },
+              { japanese: 'ふくろはけっこうです', reading: 'fukuro wa kekkou desu', meaning: { ja: '袋は不要', en: 'No bag needed', vi: 'Không cần túi', zh: '不需要袋子', id: 'Tidak perlu kantong', tl: 'Hindi na kailangan ng bag', my: 'အိတ်မလိုပါ' } },
+            ],
+          },
+          {
+            type: 'dialogue',
+            title: { ja: '会話例：コンビニでの買い物', en: 'Dialogue: Shopping at a Convenience Store' },
+            dialogue: [
+              { speaker: '店員', japanese: 'いらっしゃいませ！', reading: 'Irasshaimase!', meaning: { ja: 'ようこそ', en: 'Welcome!', vi: 'Chào mừng!', zh: '欢迎光临！', id: 'Selamat datang!', tl: 'Maligayang pagdating!', my: 'ကြိုဆိုပါသည်!' } },
+              { speaker: 'あなた', japanese: 'これとこれをください。', reading: 'Kore to kore wo kudasai.', meaning: { ja: 'これとこれを買いたい', en: 'I\'ll take this one and this one.', vi: 'Cho tôi cái này và cái này.', zh: '请给我这个和这个。', id: 'Tolong berikan ini dan ini.', tl: 'Ibigay mo ito at ito.', my: 'ဒါနဲ့ ဒါပေးပါ' } },
+              { speaker: '店員', japanese: '合計で548円になります。', reading: 'Goukei de go-hyaku-yonjuu-hachi-en ni narimasu.', meaning: { ja: '合計金額の案内', en: 'The total comes to 548 yen.', vi: 'Tổng cộng là 548 yên.', zh: '总共548日元。', id: 'Totalnya 548 yen.', tl: 'Kabuuan ay 548 yen.', my: 'စုစုပေါင်း 548 ယန်း ဖြစ်ပါသည်' } },
+              { speaker: 'あなた', japanese: 'カードで払えますか？', reading: 'Kaado de haraemasu ka?', meaning: { ja: 'カード払い可能か', en: 'Can I pay by card?', vi: 'Có thể trả bằng thẻ không?', zh: '可以刷卡吗？', id: 'Bisa bayar pakai kartu?', tl: 'Pwede bang card?', my: 'ကတ်နဲ့ပေးလို့ရမလား?' } },
+              { speaker: '店員', japanese: 'はい、こちらにタッチしてください。', reading: 'Hai, kochira ni tatch shite kudasai.', meaning: { ja: 'カードリーダーにタッチ', en: 'Yes, please tap here.', vi: 'Vâng, vui lòng chạm vào đây.', zh: '好的，请在这里刷卡。', id: 'Ya, silakan tap di sini.', tl: 'Oo, i-tap dito.', my: 'ဟုတ်ကဲ့၊ ဒီမှာ တို့ပါ' } },
+              { speaker: 'あなた', japanese: 'レシートをお願いします。', reading: 'Reshiito wo onegaishimasu.', meaning: { ja: 'レシートをもらう', en: 'Receipt please.', vi: 'Cho tôi hóa đơn.', zh: '请给我收据。', id: 'Tolong kuitansinya.', tl: 'Pakibigay ang resibo.', my: 'ဘောင်ချာပေးပါ' } },
+            ],
+          },
+          {
+            type: 'quiz',
+            quiz: [
+              { question: { ja: '値段を聞くときは何と言いますか？', en: 'What do you say when asking the price?' }, options: ['これをください', 'いくらですか', 'おつりはいりません', 'レシートをください'], correct: 1, explanation: { ja: '「いくらですか」で値段を聞きます。', en: '"Ikura desu ka" means "How much is it?"', vi: '"Ikura desu ka" có nghĩa là "Bao nhiêu tiền?"', zh: '「いくらですか」用于询问价格。', id: '"Ikura desu ka" artinya "Berapa harganya?"', tl: '"Ikura desu ka" ay ibig sabihin "Magkano?"', my: '"Ikura desu ka" ဆိုသည်မှာ "ဘယ်လောက်လဲ?" ဟု မေးသည်' } },
+              { question: { ja: '袋が不要なとき何と言いますか？', en: 'What do you say when you don\'t need a bag?' }, options: ['ふくろをください', 'ふくろはけっこうです', 'ふくろはいりますか', 'ふくろをどうぞ'], correct: 1, explanation: { ja: '「ふくろはけっこうです」は「袋は不要です」の丁寧な表現。', en: '"Fukuro wa kekkou desu" politely means "No bag needed".', vi: '"Fukuro wa kekkou desu" nghĩa là không cần túi.', zh: '「ふくろはけっこうです」礼貌地表示不需要袋子。', id: '"Fukuro wa kekkou desu" berarti tidak perlu kantong.', tl: '"Fukuro wa kekkou desu" ay ibig sabihin hindi na kailangan ng bag.', my: '"Fukuro wa kekkou desu" ဆိုသည်မှာ အိတ်မလိုဟု ယဉ်ကျေးစွာ ပြောသည်' } },
+            ],
+          },
+        ],
+      },
+      {
+        id: 'supermarket-japanese',
+        title: { ja: 'スーパーでの買い物', en: 'Shopping at the Supermarket', vi: 'Mua sắm ở siêu thị', zh: '在超市购物' },
+        duration: 15,
+        content: [
+          {
+            type: 'vocab',
+            title: { ja: 'スーパーで使う言葉', en: 'Supermarket Vocabulary' },
+            items: [
+              { japanese: '売り場／うりば', reading: 'uriba', meaning: { ja: '商品を売っているコーナー', en: 'sales floor / product section', vi: 'khu vực bán hàng', zh: '销售区域', id: 'area penjualan', tl: 'lugar ng pagbebenta', my: 'ရောင်းဝယ်ရာနေရာ' } },
+              { japanese: '野菜売り場／やさいうりば', reading: 'yasai uriba', meaning: { ja: '野菜コーナー', en: 'vegetable section', vi: 'khu rau củ', zh: '蔬菜区', id: 'bagian sayuran', tl: 'seksyon ng gulay', my: 'ဟင်းသီးဟင်းရွက် ဌာနခွဲ' } },
+              { japanese: '賞味期限／しょうみきげん', reading: 'shoumi kigen', meaning: { ja: '食べられる期限', en: 'best-by date', vi: 'hạn sử dụng', zh: '最佳食用期限', id: 'tanggal kadaluarsa', tl: 'petsa ng expiry', my: 'ကုန်ဆုံးရက်' }, example: '賞味期限を確認してください。', exampleReading: 'Shoumi kigen wo kakunin shite kudasai.', exampleMeaning: { en: 'Please check the best-by date.', vi: 'Hãy kiểm tra hạn sử dụng.' } },
+              { japanese: 'セール中／セールちゅう', reading: 'seeru chuu', meaning: { ja: 'セール実施中', en: 'on sale now', vi: 'đang sale', zh: '正在特卖', id: 'sedang sale', tl: 'sale ngayon', my: 'Sale ရောင်းနေသည်' } },
+              { japanese: '半額／はんがく', reading: 'hangaku', meaning: { ja: '50%オフ', en: 'half price / 50% off', vi: 'nửa giá', zh: '半价', id: 'setengah harga', tl: 'kalahating presyo', my: 'တစ်ဝက်ဈေး' }, example: '半額シールが貼ってあります。', exampleReading: 'Hangaku shiiru ga hatte arimasu.', exampleMeaning: { en: 'There is a half-price sticker on it.', vi: 'Có nhãn giá một nửa.' } },
+              { japanese: '〜円引き', reading: '〜en biki', meaning: { ja: '〜円割引', en: '〜 yen off (discount)', vi: 'giảm 〜 yên', zh: '减〜日元', id: 'diskon 〜 yen', tl: '〜 yen ang bawas', my: '〜 ယန်းလျှော့' }, example: '100円引きになります。', exampleReading: '100-en biki ni narimasu.', exampleMeaning: { en: 'That\'s 100 yen off.', vi: 'Giảm 100 yên.' } },
+              { japanese: 'ポイントカード', reading: 'pointo kaado', meaning: { ja: 'ポイントをためるカード', en: 'loyalty / points card', vi: 'thẻ tích điểm', zh: '积分卡', id: 'kartu poin', tl: 'points card', my: 'ပွိုင့်ကတ်' }, example: 'ポイントカードはお持ちですか？', exampleReading: 'Pointo kaado wa omochi desu ka?', exampleMeaning: { en: 'Do you have a points card?', vi: 'Bạn có thẻ tích điểm không?' } },
+            ],
+          },
+          {
+            type: 'grammar',
+            title: { ja: '「〜はありますか」で商品を探す', en: 'Finding products with 「〜wa arimasu ka」' },
+            grammar: [
+              {
+                pattern: '〜はどこにありますか',
+                explanation: { ja: '商品の場所を聞くときに使います。「どこ」は場所を聞く言葉です。', en: 'Use this to ask where a product is located. "Doko" means "where".', vi: 'Dùng để hỏi vị trí của sản phẩm. "Doko" nghĩa là "ở đâu".', zh: '用于询问商品在哪里。"どこ"表示"哪里"。', id: 'Digunakan untuk menanyakan lokasi produk.', tl: 'Gamitin ito para magtanong kung saan ang produkto.', my: 'ထုတ်ကုန်ဘယ်နေရာမှာ ရှိသလဲ မေးရန်' },
+                examples: [
+                  { japanese: 'お米はどこにありますか？', reading: 'Okome wa doko ni arimasu ka?', meaning: { ja: 'お米の売り場を聞く', en: 'Where is the rice?', vi: 'Gạo ở đâu ạ?', zh: '大米在哪里？', id: 'Beras ada di mana?', tl: 'Nasaan ang bigas?', my: 'ဆန် ဘယ်မှာ ရှိသလဲ?' } },
+                  { japanese: '冷凍食品はどこにありますか？', reading: 'Reitou shokuhin wa doko ni arimasu ka?', meaning: { ja: '冷凍食品の場所を聞く', en: 'Where are the frozen foods?', vi: 'Thức ăn đông lạnh ở đâu?', zh: '冷冻食品在哪里？', id: 'Makanan beku di mana?', tl: 'Nasaan ang frozen food?', my: 'အေးခဲအစားအစာ ဘယ်မှာ ရှိသလဲ?' } },
+                ],
+              },
+              {
+                pattern: '〜を2つください',
+                explanation: { ja: '数量を指定して商品を頼む表現。「ひとつ・ふたつ・みっつ」など和語で数えます。', en: 'Use this to request a specific quantity. Count using hitotsu, futatsu, mittsu...', vi: 'Dùng để yêu cầu số lượng cụ thể. Đếm bằng hitotsu, futatsu, mittsu...', zh: '用于指定数量购买。使用一个、两个、三个等日本数词。', id: 'Gunakan ini untuk meminta jumlah tertentu.', tl: 'Gamitin ito para humiling ng partikular na dami.', my: 'အရေအတွက် သတ်မှတ်၍ ထုတ်ကုန် တောင်းရန်' },
+                examples: [
+                  { japanese: 'りんごを3つください。', reading: 'Ringo wo mittsu kudasai.', meaning: { ja: 'リンゴを3個', en: 'Three apples please.', vi: 'Cho tôi 3 quả táo.', zh: '请给我3个苹果。', id: 'Tolong tiga apel.', tl: 'Tatlong mansanas po.', my: 'ပန်းသီး ၃ လုံးပေးပါ' } },
+                  { japanese: 'このジュースを2本ください。', reading: 'Kono juusu wo nihon kudasai.', meaning: { ja: 'ジュース2本', en: 'Two bottles of this juice please.', vi: 'Cho tôi 2 chai nước này.', zh: '请给我两瓶这个果汁。', id: 'Dua botol jus ini.', tl: 'Dalawang bote ng juice na ito.', my: 'ဒီရေသီးရည် ၂ ဘူးပေးပါ' } },
+                ],
+              },
+            ],
+          },
+          {
+            type: 'quiz',
+            quiz: [
+              { question: { ja: '「半額」の意味は？', en: 'What does "hangaku" mean?' }, options: ['10% off', '25% off', '50% off', '75% off'], correct: 2, explanation: { ja: '「半額」は「はんがく」と読み、50%オフの意味です。', en: '"Hangaku" means half price, which is 50% off.', vi: '"Hangaku" nghĩa là nửa giá, tức là giảm 50%.', zh: '「半額」读作"hangaku"，意为五折。', id: '"Hangaku" berarti setengah harga, diskon 50%.', tl: '"Hangaku" ay ibig sabihin kalahating presyo, 50% diskwento.', my: '"Hangaku" ဆိုသည်မှာ တစ်ဝက်ဈေး ၅၀% လျှော့ဟု အဓိပ္ပာယ်ရသည်' } },
+              { question: { ja: 'りんごを2個買いたいとき何と言う？', en: 'When you want to buy 2 apples, what do you say?' }, options: ['りんごを2本ください', 'りんごをふたつください', 'りんごを2冊ください', 'りんごを2枚ください'], correct: 1, explanation: { ja: 'りんごなど個数を数えるときは「ひとつ・ふたつ」を使います。', en: 'For counting items like fruit, use "hitotsu, futatsu". 2 is "futatsu".', vi: 'Đếm vật phẩm như quả táo dùng "hitotsu, futatsu". 2 là "futatsu".', zh: '数水果等物品时使用"一つ・二つ"。', id: 'Untuk menghitung benda seperti buah, gunakan "hitotsu, futatsu".', tl: 'Para sa pagbibilang ng prutas, gamitin ang "hitotsu, futatsu".', my: 'သစ်သီးကဲ့သို့ ပစ္စည်းများ ရေတွက်ရာတွင် "hitotsu, futatsu" ကိုသုံးသည်' } },
+            ],
+          },
+        ],
+      },
+      {
+        id: 'sale-discount',
+        title: { ja: 'セール・割引の表現', en: 'Sales & Discount Expressions', vi: 'Biểu hiện giảm giá và sale', zh: '促销与折扣表达' },
+        duration: 12,
+        content: [
+          {
+            type: 'vocab',
+            title: { ja: 'セール・割引の言葉', en: 'Sale & Discount Vocabulary' },
+            items: [
+              { japanese: 'セール／sale', reading: 'seeru', meaning: { ja: '特売・値引きセール', en: 'sale', vi: 'đợt giảm giá', zh: '促销', id: 'penjualan', tl: 'sale', my: 'ဈေးလျော့ရောင်း' } },
+              { japanese: '割引／わりびき', reading: 'waribiki', meaning: { ja: '値段を引くこと', en: 'discount', vi: 'chiết khấu / giảm giá', zh: '折扣', id: 'diskon', tl: 'diskwento', my: 'လျှော့ဈေး' }, example: '10%割引になります。', exampleReading: 'Juu-paasento waribiki ni narimasu.', exampleMeaning: { en: 'There is a 10% discount.', vi: 'Giảm giá 10%.' } },
+              { japanese: '特売／とくばい', reading: 'tokubai', meaning: { ja: '特別価格で売ること', en: 'special sale', vi: 'khuyến mãi đặc biệt', zh: '特卖', id: 'penjualan spesial', tl: 'espesyal na sale', my: 'အထူးရောင်းချ' } },
+              { japanese: 'タイムセール', reading: 'taimu seeru', meaning: { ja: '時間限定セール', en: 'time-limited sale', vi: 'sale có thời hạn', zh: '限时特卖', id: 'penjualan terbatas waktu', tl: 'time-limited sale', my: 'အချိန်ကန့်သတ် ဈေးလျော့ရောင်း' } },
+              { japanese: '〜%オフ', reading: '〜paasento ofu', meaning: { ja: '〜%値引き', en: '〜% off', vi: 'giảm 〜%', zh: '打〜折', id: 'diskon 〜%', tl: '〜% off', my: '〜% လျှော့' } },
+              { japanese: 'お得／おとく', reading: 'otoku', meaning: { ja: 'お買い得、コスパが良い', en: 'good deal / bargain', vi: 'hời / tiết kiệm', zh: '划算', id: 'hemat / murah meriah', tl: 'sulit', my: 'ဈေးသင့်' }, example: 'これはお得ですね！', exampleReading: 'Kore wa otoku desu ne!', exampleMeaning: { en: 'This is a good deal!', vi: 'Cái này hời thật!' } },
+            ],
+          },
+          {
+            type: 'dialogue',
+            title: { ja: '会話例：セールの商品を買う', en: 'Dialogue: Buying Sale Items' },
+            dialogue: [
+              { speaker: 'あなた', japanese: 'このジャケット、セール中ですか？', reading: 'Kono jaketto, seeru chuu desu ka?', meaning: { ja: 'セール中か確認', en: 'Is this jacket on sale?', vi: 'Cái áo khoác này có đang sale không?', zh: '这件夹克正在打折吗？', id: 'Jaket ini sedang sale?', tl: 'Naka-sale ba ang jacket na ito?', my: 'ဒီဂျာကင်က Sale ရောင်းနေသလား?' } },
+              { speaker: '店員', japanese: 'はい、今週末まで30%オフです！', reading: 'Hai, konshuu-matsu made sanjuu-paasento ofu desu!', meaning: { ja: '週末まで30%割引', en: 'Yes, it\'s 30% off until this weekend!', vi: 'Vâng, giảm 30% đến cuối tuần này!', zh: '是的，到这个周末前打七折！', id: 'Ya, diskon 30% sampai akhir minggu ini!', tl: 'Oo, 30% off hanggang katapusan ng linggo!', my: 'ဟုတ်ကဲ့၊ ဒီသောကြာနေ့အထိ ၃၀% လျှော့ပါ!' } },
+              { speaker: 'あなた', japanese: 'じゃあ、これをください。サイズはMです。', reading: 'Jaa, kore wo kudasai. Saizu wa M desu.', meaning: { ja: 'Mサイズを購入', en: 'Then I\'ll take this one. Size M.', vi: 'Vậy thì cho tôi cái này. Cỡ M.', zh: '那么给我这件，尺寸M。', id: 'Kalau begitu saya ambil ini. Ukuran M.', tl: 'Sige, ito na. Size M.', my: 'ဒါဆိုရင် ဒါပေးပါ။ Size M ပါ' } },
+              { speaker: '店員', japanese: '元値が5,000円で、割引後は3,500円になります。', reading: 'Motone ga go-sen-en de, waribiki go wa san-zen-go-hyaku-en ni narimasu.', meaning: { ja: '元値5000円、割引後3500円', en: 'The original price is 5,000 yen, and after discount it\'s 3,500 yen.', vi: 'Giá gốc 5.000 yên, sau giảm còn 3.500 yên.', zh: '原价5000日元，折扣后3500日元。', id: 'Harga asli 5.000 yen, setelah diskon 3.500 yen.', tl: 'Ang original na presyo ay 5,000 yen, at pagkatapos ng diskwento ay 3,500 yen.', my: 'မူလဈေးနှုန်း ၅၀၀၀ ယန်း ဖြစ်ပြီး လျှော့ပြီးနောက် ၃၅၀၀ ယန်း ဖြစ်ပါသည်' } },
+            ],
+          },
+          {
+            type: 'quiz',
+            quiz: [
+              { question: { ja: '「タイムセール」とはどういう意味ですか？', en: 'What does "taimu seeru" mean?' }, options: ['時間通りの営業', '時間限定の特売', '時間の節約', '営業時間'], correct: 1, explanation: { ja: '「タイムセール」は時間限定の特売のことです。閉店前などに行われることが多いです。', en: '"Taimu seeru" is a time-limited sale, often done before closing time.', vi: '"Taimu seeru" là đợt sale có thời hạn, thường diễn ra trước giờ đóng cửa.', zh: '「タイムセール」是限时特卖，经常在关店前进行。', id: '"Taimu seeru" adalah penjualan terbatas waktu, sering dilakukan sebelum toko tutup.', tl: '"Taimu seeru" ay time-limited sale, kadalasan bago magsara ang tindahan.', my: '"Taimu seeru" ဆိုသည်မှာ အချိန်ကန့်သတ် ဈေးလျော့ရောင်းချမှု ဖြစ်သည်' } },
+              { question: { ja: '「30%オフ」の元値5000円の商品はいくらですか？', en: 'With 30% off, how much is a product originally priced at 5000 yen?' }, options: ['1500円', '3000円', '3500円', '4000円'], correct: 2, explanation: { ja: '5000円 × 70% = 3500円です。30%オフは70%の値段になります。', en: '5000 yen × 70% = 3500 yen. 30% off means you pay 70%.', vi: '5000 yên × 70% = 3500 yên. Giảm 30% tức là trả 70%.', zh: '5000日元×70%=3500日元。打七折即原价的70%。', id: '5000 yen × 70% = 3500 yen.', tl: '5000 yen × 70% = 3500 yen.', my: '5000 ယန်း × 70% = 3500 ယန်း ဖြစ်သည်' } },
+            ],
+          },
+        ],
+      },
+      {
+        id: 'receipt-complaint',
+        title: { ja: '領収書・返品・クレーム', en: 'Receipts, Returns & Complaints', vi: 'Biên lai, trả hàng và khiếu nại', zh: '收据、退货与投诉' },
+        duration: 12,
+        content: [
+          {
+            type: 'vocab',
+            title: { ja: '返品・クレームの言葉', en: 'Return & Complaint Vocabulary' },
+            items: [
+              { japanese: '領収書／りょうしゅうしょ', reading: 'ryoushuusho', meaning: { ja: '正式な領収書（税務用）', en: 'official receipt (for tax purposes)', vi: 'hóa đơn chính thức', zh: '正式收据（用于税务）', id: 'kuitansi resmi', tl: 'opisyal na resibo', my: 'တရားဝင် ငွေလက်ခံပြေစာ' } },
+              { japanese: '返品／へんぴん', reading: 'henpin', meaning: { ja: '商品を返すこと', en: 'product return', vi: 'trả hàng', zh: '退货', id: 'retur produk', tl: 'ibalik ang produkto', my: 'ကုန်ပစ္စည်း ပြန်အမ်း' }, example: 'これを返品したいのですが。', exampleReading: 'Kore wo henpin shitai no desu ga.', exampleMeaning: { en: 'I\'d like to return this.', vi: 'Tôi muốn trả lại cái này.' } },
+              { japanese: '交換／こうかん', reading: 'koukan', meaning: { ja: '商品を別のものと替える', en: 'exchange', vi: 'đổi hàng', zh: '换货', id: 'tukar produk', tl: 'palitan ang produkto', my: 'ကုန်ပစ္စည်း လဲလှယ်' } },
+              { japanese: 'レシートはありますか', reading: 'reshiito wa arimasu ka', meaning: { ja: 'レシートの有無確認', en: 'Do you have your receipt?', vi: 'Bạn có hóa đơn không?', zh: '您有收据吗？', id: 'Apakah ada struk belanja?', tl: 'Mayroon kang resibo?', my: 'ဘောင်ချာ ရှိပါသလား?' } },
+              { japanese: '壊れている／こわれている', reading: 'kowarete iru', meaning: { ja: '商品が壊れている', en: 'broken / damaged', vi: 'bị hỏng', zh: '坏掉了', id: 'rusak', tl: 'sira', my: 'ပျက်နေသည်' }, example: '買ったとき、すでに壊れていました。', exampleReading: 'Katta toki, sude ni kowarete imashita.', exampleMeaning: { en: 'It was already broken when I bought it.', vi: 'Khi mua đã bị hỏng rồi.' } },
+            ],
+          },
+          {
+            type: 'dialogue',
+            title: { ja: '会話例：商品の返品', en: 'Dialogue: Returning a Product' },
+            dialogue: [
+              { speaker: 'あなた', japanese: 'すみません、これを返品したいのですが。', reading: 'Sumimasen, kore wo henpin shitai no desu ga.', meaning: { ja: '返品を申し出る', en: 'Excuse me, I\'d like to return this.', vi: 'Xin lỗi, tôi muốn trả lại cái này.', zh: '打扰一下，我想退这个商品。', id: 'Permisi, saya ingin mengembalikan ini.', tl: 'Excuse me, gusto ko itong ibalik.', my: 'တောင်းပန်ပါသည်၊ ဒါကို ပြန်အမ်းချင်ပါတယ်' } },
+              { speaker: '店員', japanese: 'レシートはお持ちですか？', reading: 'Reshiito wa omochi desu ka?', meaning: { ja: 'レシートの確認', en: 'Do you have your receipt?', vi: 'Bạn có mang hóa đơn không?', zh: '您带了收据吗？', id: 'Apakah membawa struk?', tl: 'Mayroon ka bang resibo?', my: 'ဘောင်ချာ ပါလာသလား?' } },
+              { speaker: 'あなた', japanese: 'はい、こちらです。買ったとき壊れていました。', reading: 'Hai, kochira desu. Katta toki kowarete imashita.', meaning: { ja: 'レシートを渡し、壊れていた旨を伝える', en: 'Yes, here it is. It was broken when I bought it.', vi: 'Vâng, đây ạ. Khi mua nó đã bị hỏng rồi.', zh: '在这里。购买时它就是坏的。', id: 'Ya, ini dia. Sudah rusak saat dibeli.', tl: 'Oo, ito. Sira na siya nang bilhin ko.', my: 'ဟုတ်ကဲ့၊ ဒီမှာပါ။ ဝယ်တုန်းက ပျက်နေပြီ ဖြစ်ပါသည်' } },
+              { speaker: '店員', japanese: '申し訳ございません。交換いたします。', reading: 'Moushiwake gozaimasen. Koukan itashimasu.', meaning: { ja: '謝罪して交換を提案', en: 'I sincerely apologize. We will exchange it.', vi: 'Tôi thành thật xin lỗi. Chúng tôi sẽ đổi hàng cho bạn.', zh: '非常抱歉。我们将为您换货。', id: 'Mohon maaf. Kami akan menggantinya.', tl: 'Humihingi kami ng paumanhin. Papalitan namin ito.', my: 'တောင်းပန်ပါသည်။ လဲပေးပါမည်' } },
+            ],
+          },
+          {
+            type: 'quiz',
+            quiz: [
+              { question: { ja: '「領収書」と「レシート」の違いは？', en: 'What is the difference between "ryoushuusho" and "reshiito"?' }, options: ['同じ意味', '領収書は税務用の正式書類', 'レシートは海外用', '領収書はスーパーのみ'], correct: 1, explanation: { ja: '「レシート」はレジで発行する簡易書類。「領収書」は宛名と印鑑が入った税務用の正式な書類です。', en: '"Reshiito" is a simple cash register receipt. "Ryoushuusho" is an official receipt with the recipient\'s name and stamp, used for tax purposes.', vi: '"Reshiito" là biên lai đơn giản từ máy tính tiền. "Ryoushuusho" là biên lai chính thức có tên người nhận và con dấu.', zh: '「レシート」是简单的收银机凭据。「領収書」是含有收件人和印章的正式税务收据。', id: '"Reshiito" adalah struk kasir sederhana. "Ryoushuusho" adalah kuitansi resmi untuk keperluan pajak.', tl: '"Reshiito" ay simpleng resibo mula sa cash register. "Ryoushuusho" ay opisyal na resibo para sa buwis.', my: '"Reshiito" သည် ကက်ရှ်ရာ ပြေစာ ဖြစ်ပြီး "Ryoushuusho" သည် အခွန်ရည်ရွယ်ချက်အတွက် တရားဝင် ပြေစာ ဖြစ်သည်' } },
+            ],
+          },
+        ],
+      },
+    ],
+  },
+
+  // ============================
+  // COURSE 8: 数字・時間・日付
+  // ============================
+  {
+    id: 'numbers-time',
+    title: { ja: '数字・時間・日付', en: 'Numbers, Time & Dates', vi: 'Số, Thời gian & Ngày tháng', zh: '数字、时间与日期', id: 'Angka, Waktu & Tanggal', tl: 'Mga Numero, Oras at Petsa', my: 'ဂဏန်းများ၊ အချိန်နှင့် ရက်စွဲ' },
+    description: { ja: '日本語の数え方（和語数詞・漢語数詞）、時間の読み方、曜日・月・年号を完全マスター', en: 'Master Japanese counting (native and Sino-Japanese numbers), telling time, days, months, and years', vi: 'Thành thạo cách đếm (số thuần Nhật và Hán-Nhật), đọc giờ, ngày trong tuần, tháng, năm', zh: '完全掌握日语数数（和语数词・汉语数词）、时间、星期、月份和年号', id: 'Kuasai cara berhitung Jepang, membaca jam, hari, bulan, dan tahun', tl: 'Master ang Japanese na pagbibilang, pagbabasa ng oras, araw, buwan, at taon', my: 'ဂျပန် ဂဏန်းရေတွက်နည်း၊ အချိန်ဖတ်နည်း၊ ရက်သတ္တပတ်၊ လ၊ နှစ်တို့ကို တတ်မြောက်' },
+    level: 'beginner',
+    jlptLevel: 'N5',
+    color: 'from-yellow-400 to-orange-500',
+    totalLessons: 4,
+    estimatedHours: 3,
+    lessons: [
+      {
+        id: 'wago-numbers',
+        title: { ja: '和語数詞（ひとつ・ふたつ）', en: 'Native Japanese Numbers (hitotsu, futatsu...)', vi: 'Số đếm thuần Nhật (hitotsu, futatsu...)', zh: '日本固有数词（一つ・二つ...）' },
+        duration: 15,
+        content: [
+          {
+            type: 'intro',
+            title: { ja: '和語数詞とは？', en: 'What are Native Japanese Numbers?' },
+            text: { ja: '日本語には2種類の数え方があります。「いち・に・さん」（漢語数詞）と「ひとつ・ふたつ・みっつ」（和語数詞）です。和語数詞は1〜10のものを数えるときに使います。', en: 'Japanese has two counting systems: "ichi, ni, san..." (Sino-Japanese) and "hitotsu, futatsu, mittsu..." (native Japanese). Native numbers are used for counting 1-10 objects.' },
+          },
+          {
+            type: 'vocab',
+            title: { ja: '和語数詞 1〜10', en: 'Native Japanese Numbers 1–10' },
+            items: [
+              { japanese: 'ひとつ（一つ）', reading: 'hitotsu', meaning: { ja: '1個・1つ', en: 'one (item)', vi: 'một (đồ vật)', zh: '一个', id: 'satu (benda)', tl: 'isa', my: 'တစ်ခု' }, example: 'りんごをひとつください。', exampleReading: 'Ringo wo hitotsu kudasai.', exampleMeaning: { en: 'One apple please.', vi: 'Cho tôi một quả táo.' } },
+              { japanese: 'ふたつ（二つ）', reading: 'futatsu', meaning: { ja: '2個・2つ', en: 'two (items)', vi: 'hai', zh: '两个', id: 'dua', tl: 'dalawa', my: 'နှစ်ခု' } },
+              { japanese: 'みっつ（三つ）', reading: 'mittsu', meaning: { ja: '3個・3つ', en: 'three (items)', vi: 'ba', zh: '三个', id: 'tiga', tl: 'tatlo', my: 'သုံးခု' } },
+              { japanese: 'よっつ（四つ）', reading: 'yottsu', meaning: { ja: '4個・4つ', en: 'four (items)', vi: 'bốn', zh: '四个', id: 'empat', tl: 'apat', my: 'လေးခု' } },
+              { japanese: 'いつつ（五つ）', reading: 'itsutsu', meaning: { ja: '5個・5つ', en: 'five (items)', vi: 'năm', zh: '五个', id: 'lima', tl: 'lima', my: 'ငါးခု' } },
+              { japanese: 'むっつ（六つ）', reading: 'muttsu', meaning: { ja: '6個・6つ', en: 'six (items)', vi: 'sáu', zh: '六个', id: 'enam', tl: 'anim', my: 'ခြောက်ခု' } },
+              { japanese: 'ななつ（七つ）', reading: 'nanatsu', meaning: { ja: '7個・7つ', en: 'seven (items)', vi: 'bảy', zh: '七个', id: 'tujuh', tl: 'pito', my: 'ခုနစ်ခု' } },
+              { japanese: 'やっつ（八つ）', reading: 'yattsu', meaning: { ja: '8個・8つ', en: 'eight (items)', vi: 'tám', zh: '八个', id: 'delapan', tl: 'walo', my: 'ရှစ်ခု' } },
+              { japanese: 'ここのつ（九つ）', reading: 'kokonotsu', meaning: { ja: '9個・9つ', en: 'nine (items)', vi: 'chín', zh: '九个', id: 'sembilan', tl: 'siyam', my: 'ကိုးခု' } },
+              { japanese: 'とお（十）', reading: 'too', meaning: { ja: '10個・10', en: 'ten (items)', vi: 'mười', zh: '十个', id: 'sepuluh', tl: 'sampu', my: 'ဆယ်ခု' } },
+            ],
+          },
+          {
+            type: 'grammar',
+            title: { ja: '助数詞（数え方）', en: 'Japanese Counters' },
+            grammar: [
+              {
+                pattern: '〜枚（まい）— 薄いもの',
+                explanation: { ja: '紙・シャツなど薄くて平らなものを数えます。', en: 'Used for counting flat, thin objects like paper and shirts.', vi: 'Dùng để đếm đồ mỏng, phẳng như giấy, áo.', zh: '用于计数薄而平的物品，如纸张、衬衫。', id: 'Digunakan untuk benda tipis dan datar.', tl: 'Ginagamit para sa manipis at patag na bagay.', my: 'စာရွက်၊ အင်္ကျီကဲ့သို့ ပါးသော၊ ပြားသော ပစ္စည်းများ ရေတွက်ရာတွင် သုံးသည်' },
+                examples: [
+                  { japanese: '紙を3枚ください。', reading: 'Kami wo san-mai kudasai.', meaning: { en: 'Three sheets of paper please.', vi: 'Cho tôi 3 tờ giấy.' } },
+                  { japanese: 'シャツを2枚買いました。', reading: 'Shatsu wo ni-mai kaimashita.', meaning: { en: 'I bought 2 shirts.', vi: 'Tôi mua 2 cái áo.' } },
+                ],
+              },
+              {
+                pattern: '〜本（ほん）— 細長いもの',
+                explanation: { ja: 'ペン・ペットボトルなど細長いものを数えます。', en: 'Used for counting long, thin objects like pens and bottles.', vi: 'Dùng để đếm đồ dài, mỏng như bút, chai.', zh: '用于计数细长物品，如钢笔、瓶子。', id: 'Digunakan untuk benda panjang dan tipis.', tl: 'Ginagamit para sa mahaba at manipis na bagay.', my: 'ဘောပင်၊ ဘူးကဲ့သို့ ရှည်သော ပစ္စည်းများ ရေတွက်ရာတွင် သုံးသည်' },
+                examples: [
+                  { japanese: 'ジュースを1本ください。', reading: 'Juusu wo ip-pon kudasai.', meaning: { en: 'One juice please.', vi: 'Cho tôi một chai nước.' } },
+                  { japanese: 'ペンを2本持っています。', reading: 'Pen wo ni-hon motte imasu.', meaning: { en: 'I have 2 pens.', vi: 'Tôi có 2 cái bút.' } },
+                ],
+              },
+            ],
+          },
+          {
+            type: 'quiz',
+            quiz: [
+              { question: { ja: '「ふたつ」はいくつですか？', en: 'How many is "futatsu"?' }, options: ['1', '2', '3', '4'], correct: 1, explanation: { ja: '「ふたつ」は「二つ」で2個を意味します。', en: '"Futatsu" means two items.', vi: '"Futatsu" có nghĩa là hai.', zh: '「ふたつ」即"二つ"，表示两个。', id: '"Futatsu" berarti dua.', tl: '"Futatsu" ay ibig sabihin dalawa.', my: '"Futatsu" ဆိုသည်မှာ နှစ်ခု ဟု အဓိပ္ပာယ်ရသည်' } },
+              { question: { ja: 'シャツ3枚は何と言いますか？', en: 'How do you say "3 shirts"?' }, options: ['シャツ3本', 'シャツ3枚', 'シャツ3個', 'シャツ3冊'], correct: 1, explanation: { ja: 'シャツなど薄くて平らなものは「〜枚（まい）」を使います。', en: 'Use 〜mai (枚) for flat, thin objects like shirts.', vi: 'Dùng 〜mai (枚) cho đồ mỏng như áo.', zh: '薄而平的物品如衬衫使用「〜枚（まい）」。', id: 'Gunakan 〜mai untuk benda tipis seperti baju.', tl: 'Gamitin ang 〜mai para sa manipis na bagay tulad ng damit.', my: 'အင်္ကျီကဲ့သို့ ပါးသောပစ္စည်းများတွင် 〜mai ကိုသုံးသည်' } },
+            ],
+          },
+        ],
+      },
+      {
+        id: 'telling-time',
+        title: { ja: '時間の読み方', en: 'Telling Time', vi: 'Đọc giờ', zh: '读时间' },
+        duration: 15,
+        content: [
+          {
+            type: 'vocab',
+            title: { ja: '時間に関する言葉', en: 'Time Vocabulary' },
+            items: [
+              { japanese: '〜時（じ）', reading: '〜ji', meaning: { ja: '〜時（時刻）', en: '〜 o\'clock', vi: '〜 giờ', zh: '〜点钟', id: '〜 jam', tl: '〜 ng oras', my: '〜 နာရီ' }, example: '今、何時ですか？', exampleReading: 'Ima, nanji desu ka?', exampleMeaning: { en: 'What time is it now?', vi: 'Bây giờ mấy giờ rồi?' } },
+              { japanese: '〜分（ふん・ぷん）', reading: '〜fun / pun', meaning: { ja: '〜分（分刻み）', en: '〜 minutes', vi: '〜 phút', zh: '〜分钟', id: '〜 menit', tl: '〜 minuto', my: '〜 မိနစ်' }, example: '3時15分です。', exampleReading: 'San-ji juu-go-fun desu.', exampleMeaning: { en: 'It is 3:15.', vi: '3 giờ 15 phút.' } },
+              { japanese: '午前／ごぜん', reading: 'gozen', meaning: { ja: '午前（AM）', en: 'AM / morning', vi: 'sáng (AM)', zh: '上午/AM', id: 'pagi (AM)', tl: 'umaga (AM)', my: 'နံနက် (AM)' } },
+              { japanese: '午後／ごご', reading: 'gogo', meaning: { ja: '午後（PM）', en: 'PM / afternoon', vi: 'chiều (PM)', zh: '下午/PM', id: 'sore (PM)', tl: 'hapon (PM)', my: 'နေ့လည်ပိုင်း (PM)' } },
+              { japanese: 'ちょうど', reading: 'choudo', meaning: { ja: 'ちょうど〜時（きっかり）', en: 'exactly (〜 o\'clock sharp)', vi: 'đúng 〜 giờ', zh: '正好〜点', id: 'tepat pukul 〜', tl: 'eksaktong 〜 oras', my: 'တိတိ 〜 နာရီ' }, example: 'ちょうど9時です。', exampleMeaning: { en: 'It is exactly 9 o\'clock.', vi: 'Đúng 9 giờ.' } },
+              { japanese: '〜分前／〜ふんまえ', reading: '〜fun mae', meaning: { ja: '〜分前の時刻', en: '〜 minutes before (to the hour)', vi: 'trước 〜 phút', zh: '差〜分', id: '〜 menit sebelum', tl: '〜 minuto bago', my: '〜 မိနစ်ကြို' }, example: '3時5分前です。', exampleReading: 'San-ji go-fun mae desu.', exampleMeaning: { en: '5 minutes to 3 (= 2:55).', vi: 'Còn 5 phút nữa là 3 giờ (= 2:55).' } },
+              { japanese: '〜時間（じかん）', reading: '〜jikan', meaning: { ja: '〜時間（期間）', en: '〜 hours (duration)', vi: '〜 tiếng đồng hồ', zh: '〜小时', id: '〜 jam (durasi)', tl: '〜 oras (tagal)', my: '〜 နာရီ (ကြာချိန်)' }, example: '2時間かかります。', exampleReading: 'Ni-jikan kakarimasu.', exampleMeaning: { en: 'It takes 2 hours.', vi: 'Mất 2 tiếng.' } },
+            ],
+          },
+          {
+            type: 'grammar',
+            title: { ja: '「〜から〜まで」時間の幅を表す', en: 'Expressing time ranges with 〜kara〜made' },
+            grammar: [
+              {
+                pattern: '〜時から〜時まで',
+                explanation: { ja: '「から」は開始時刻、「まで」は終了時刻を表します。', en: '"Kara" marks the start time and "made" marks the end time.', vi: '"Kara" đánh dấu thời gian bắt đầu và "made" đánh dấu thời gian kết thúc.', zh: '「から」表示开始时间，「まで」表示结束时间。', id: '"Kara" menandai waktu mulai, "made" menandai waktu selesai.', tl: '"Kara" ang simula ng oras, "made" ang katapusan.', my: '"Kara" သည် စတင်သောအချိန် ဖြစ်ပြီး "made" သည် ပြီးဆုံးသောအချိန် ဖြစ်သည်' },
+                examples: [
+                  { japanese: '9時から5時まで働きます。', reading: 'Ku-ji kara go-ji made hatarakimasu.', meaning: { en: 'I work from 9 to 5.', vi: 'Tôi làm việc từ 9 đến 5 giờ.', zh: '我从9点工作到5点。' } },
+                  { japanese: '店は10時から20時まで営業しています。', reading: 'Mise wa juu-ji kara ni-juu-ji made eigyou shite imasu.', meaning: { en: 'The store is open from 10am to 8pm.', vi: 'Cửa hàng mở cửa từ 10 giờ đến 20 giờ.' } },
+                ],
+              },
+            ],
+          },
+          {
+            type: 'quiz',
+            quiz: [
+              { question: { ja: '「午後3時30分」を正しく読むと？', en: 'How do you read "午後3時30分"?' }, options: ['ごごさんじさんじゅっぷん', 'ごぜんさんじさんじっぷん', 'ごごみっつさんじゅう', 'ごごさんじはんじかん'], correct: 0, explanation: { ja: '午後3時30分は「ごごさんじさんじゅっぷん」です。「半（はん）」を使って「さんじはん」とも言います。', en: '"Gogo san-ji sanjuppun" = 3:30 PM. You can also say "san-ji han" (half past 3).', vi: '"Gogo san-ji sanjuppun" = 3:30 chiều. Cũng có thể nói "san-ji han".', zh: '下午3时30分读作"ごごさんじさんじゅっぷん"，也可说"さんじはん"。' } },
+            ],
+          },
+        ],
+      },
+      {
+        id: 'days-months',
+        title: { ja: '曜日・月・日付', en: 'Days of Week, Months & Dates', vi: 'Ngày trong tuần, tháng và ngày tháng', zh: '星期、月份与日期' },
+        duration: 15,
+        content: [
+          {
+            type: 'vocab',
+            title: { ja: '曜日', en: 'Days of the Week' },
+            items: [
+              { japanese: '月曜日／げつようび', reading: 'getsuyoubi', meaning: { ja: '月曜日', en: 'Monday', vi: 'Thứ Hai', zh: '星期一', id: 'Senin', tl: 'Lunes', my: 'တနင်္လာ' } },
+              { japanese: '火曜日／かようび', reading: 'kayoubi', meaning: { ja: '火曜日', en: 'Tuesday', vi: 'Thứ Ba', zh: '星期二', id: 'Selasa', tl: 'Martes', my: 'အင်္ဂါ' } },
+              { japanese: '水曜日／すいようび', reading: 'suiyoubi', meaning: { ja: '水曜日', en: 'Wednesday', vi: 'Thứ Tư', zh: '星期三', id: 'Rabu', tl: 'Miyerkules', my: 'ဗုဒ္ဓဟူး' } },
+              { japanese: '木曜日／もくようび', reading: 'mokuyoubi', meaning: { ja: '木曜日', en: 'Thursday', vi: 'Thứ Năm', zh: '星期四', id: 'Kamis', tl: 'Huwebes', my: 'ကြာသပတေး' } },
+              { japanese: '金曜日／きんようび', reading: 'kinyoubi', meaning: { ja: '金曜日', en: 'Friday', vi: 'Thứ Sáu', zh: '星期五', id: 'Jumat', tl: 'Biyernes', my: 'သောကြာ' } },
+              { japanese: '土曜日／どようび', reading: 'doyoubi', meaning: { ja: '土曜日', en: 'Saturday', vi: 'Thứ Bảy', zh: '星期六', id: 'Sabtu', tl: 'Sabado', my: 'စနေ' } },
+              { japanese: '日曜日／にちようび', reading: 'nichiyoubi', meaning: { ja: '日曜日', en: 'Sunday', vi: 'Chủ nhật', zh: '星期日', id: 'Minggu', tl: 'Linggo', my: 'တနင်္ဂနွေ' } },
+            ],
+          },
+          {
+            type: 'vocab',
+            title: { ja: '月の言い方', en: 'Months of the Year' },
+            items: [
+              { japanese: '1月／いちがつ', reading: 'ichigatsu', meaning: { ja: '1月', en: 'January', vi: 'Tháng 1', zh: '一月', id: 'Januari', tl: 'Enero', my: 'ဇန်နဝါရီ' } },
+              { japanese: '2月／にがつ', reading: 'nigatsu', meaning: { ja: '2月', en: 'February', vi: 'Tháng 2', zh: '二月', id: 'Februari', tl: 'Pebrero', my: 'ဖေဖော်ဝါရီ' } },
+              { japanese: '3月／さんがつ', reading: 'sangatsu', meaning: { ja: '3月', en: 'March', vi: 'Tháng 3', zh: '三月', id: 'Maret', tl: 'Marso', my: 'မတ်' } },
+              { japanese: '4月／しがつ', reading: 'shigatsu', meaning: { ja: '4月（新年度）', en: 'April (new fiscal year in Japan)', vi: 'Tháng 4', zh: '四月（日本新学年/财年）', id: 'April', tl: 'Abril', my: 'ဧပြီ' } },
+              { japanese: '12月／じゅうにがつ', reading: 'juunigatsu', meaning: { ja: '12月', en: 'December', vi: 'Tháng 12', zh: '十二月', id: 'Desember', tl: 'Disyembre', my: 'ဒီဇင်ဘာ' } },
+            ],
+          },
+          {
+            type: 'vocab',
+            title: { ja: '日本の年号', en: 'Japanese Era Names' },
+            items: [
+              { japanese: '令和（れいわ）', reading: 'Reiwa', meaning: { ja: '現在の元号（2019年〜）', en: 'Current era (2019–present)', vi: 'Niên hiệu hiện tại (2019–nay)', zh: '当前年号（2019年至今）', id: 'Era saat ini (2019–sekarang)', tl: 'Kasalukuyang era (2019–kasalukuyan)', my: 'လက်ရှိ ခေတ်ကာလ (2019–ပစ္စုပ္ပန်)' }, example: '令和8年 = 2026年', exampleMeaning: { en: 'Reiwa 8 = 2026', vi: 'Reiwa 8 = 2026', zh: '令和8年 = 2026年' } },
+              { japanese: '平成（へいせい）', reading: 'Heisei', meaning: { ja: '前の元号（1989〜2019年）', en: 'Previous era (1989–2019)', vi: 'Niên hiệu trước (1989–2019)', zh: '上一个年号（1989–2019）', id: 'Era sebelumnya (1989–2019)', tl: 'Nakaraang era (1989–2019)', my: 'ယခင် ခေတ်ကာလ (1989–2019)' } },
+              { japanese: '西暦／せいれき', reading: 'seireki', meaning: { ja: 'グレゴリオ暦（西暦）', en: 'Western calendar (CE)', vi: 'Lịch Tây (Dương lịch)', zh: '公历', id: 'Kalender Masehi', tl: 'Kalendaryo ng Kanluran', my: 'နေ့တန်ဖိုး ပြက္ခဒိန်' } },
+            ],
+          },
+          {
+            type: 'quiz',
+            quiz: [
+              { question: { ja: '「水曜日」は何曜日ですか？', en: 'What day is 「水曜日」?' }, options: ['Monday', 'Tuesday', 'Wednesday', 'Thursday'], correct: 2, explanation: { ja: '水曜日（すいようび）はWednesdayです。水→水（みず）→Water（水の記号）で覚えましょう。', en: '"Suiyoubi" is Wednesday. The kanji 水 means water.', vi: '"Suiyoubi" là thứ Tư. Kanji 水 có nghĩa là nước.', zh: '水曜日（すいようび）是星期三，汉字"水"表示水。' } },
+              { question: { ja: '令和8年は西暦何年ですか？', en: 'What year in the Western calendar is Reiwa 8?' }, options: ['2025', '2026', '2027', '2028'], correct: 1, explanation: { ja: '令和1年 = 2019年です。令和8年 = 2019 + 7 = 2026年。', en: 'Reiwa 1 = 2019. Reiwa 8 = 2019 + 7 = 2026.', vi: 'Reiwa 1 = 2019. Reiwa 8 = 2019 + 7 = 2026.', zh: '令和1年=2019年，令和8年=2026年。' } },
+            ],
+          },
+        ],
+      },
+      {
+        id: 'date-expressions',
+        title: { ja: '日付の表現と予定の伝え方', en: 'Date Expressions & Scheduling', vi: 'Biểu đạt ngày tháng và lịch trình', zh: '日期表达与日程安排' },
+        duration: 12,
+        content: [
+          {
+            type: 'vocab',
+            title: { ja: '日にちの読み方（特殊なもの）', en: 'Special Date Readings' },
+            items: [
+              { japanese: '1日／ついたち', reading: 'tsuitachi', meaning: { ja: '1日（月の最初の日）', en: '1st of the month', vi: 'ngày 1', zh: '1日（每月第一天）', id: 'tanggal 1', tl: 'ika-1 ng buwan', my: 'လ၏ ၁ ရက်' } },
+              { japanese: '2日／ふつか', reading: 'futsuka', meaning: { ja: '2日', en: '2nd', vi: 'ngày 2', zh: '2日', id: 'tanggal 2', tl: 'ika-2', my: '၂ ရက်' } },
+              { japanese: '14日／じゅうよっか', reading: 'juuyokka', meaning: { ja: '14日', en: '14th', vi: 'ngày 14', zh: '14日', id: 'tanggal 14', tl: 'ika-14', my: '၁၄ ရက်' } },
+              { japanese: '20日／はつか', reading: 'hatsuka', meaning: { ja: '20日（特殊な読み）', en: '20th (special reading)', vi: 'ngày 20 (đọc đặc biệt)', zh: '20日（特殊读法）', id: 'tanggal 20 (bacaan khusus)', tl: 'ika-20 (espesyal na pagbabasa)', my: '၂၀ ရက် (အထူး ဖတ်ပုံ)' } },
+              { japanese: '〜年〜月〜日', reading: '〜nen 〜gatsu 〜nichi', meaning: { ja: '日付のフルフォーマット', en: 'Full date format: year-month-day', vi: 'Định dạng ngày đầy đủ: năm-tháng-ngày', zh: '完整日期格式：年月日', id: 'Format tanggal lengkap: tahun-bulan-tanggal', tl: 'Buong format ng petsa: taon-buwan-araw', my: 'ရက်စွဲ ပြည့်ဝသော ဖော်မတ်: နှစ်-လ-ရက်' }, example: '2026年3月20日（令和8年3月20日）', exampleMeaning: { en: 'March 20, 2026 (Reiwa 8)', vi: 'Ngày 20 tháng 3 năm 2026 (Reiwa 8)' } },
+            ],
+          },
+          {
+            type: 'dialogue',
+            title: { ja: '会話例：予定を確認する', en: 'Dialogue: Confirming a Schedule' },
+            dialogue: [
+              { speaker: 'A', japanese: '次の面接はいつですか？', reading: 'Tsugi no mensetsu wa itsu desu ka?', meaning: { ja: '次の面接日を確認', en: 'When is the next interview?', vi: 'Buổi phỏng vấn tiếp theo là khi nào?', zh: '下次面试是什么时候？', id: 'Wawancara berikutnya kapan?', tl: 'Kailan ang susunod na interview?', my: 'နောက် အင်တာဗျူး ဘယ်တော့လဲ?' } },
+              { speaker: 'B', japanese: '来週の火曜日、4月15日の午後2時です。', reading: 'Raishuu no kayoubi, shi-gatsu juu-go-nichi no gogo ni-ji desu.', meaning: { ja: '具体的な日時を伝える', en: 'Next Tuesday, April 15th at 2:00 PM.', vi: 'Thứ Ba tuần sau, ngày 15 tháng 4 lúc 2 giờ chiều.', zh: '下周二，4月15日下午2点。', id: 'Selasa depan, 15 April jam 2 siang.', tl: 'Susunod na Martes, Abril 15 ng 2:00 PM.', my: 'နောက်အပတ် အင်္ဂါနေ့၊ ဧပြီလ ၁၅ ရက် နေ့လည် ၂ နာရီ' } },
+              { speaker: 'A', japanese: 'わかりました。カレンダーに入れておきます。', reading: 'Wakarimashita. Karendaa ni irete okimasu.', meaning: { ja: '了解してカレンダーに記録', en: 'Understood. I\'ll put it in my calendar.', vi: 'Tôi hiểu rồi. Tôi sẽ ghi vào lịch.', zh: '明白了。我会记在日历里。', id: 'Mengerti. Akan saya masukkan ke kalender.', tl: 'Naiintindihan. Ilalagay ko sa aking kalendaryo.', my: 'နားလည်ပါသည်။ ပြက္ခဒိန်တွင် ထည့်ထားပါမည်' } },
+            ],
+          },
+          {
+            type: 'quiz',
+            quiz: [
+              { question: { ja: '「ついたち」は何日ですか？', en: 'What date is "tsuitachi"?' }, options: ['10日', '20日', '1日', '30日'], correct: 2, explanation: { ja: '「ついたち」は「1日」で、月の最初の日です。', en: '"Tsuitachi" is the 1st day of the month.', vi: '"Tsuitachi" là ngày 1 của tháng.', zh: '「ついたち」是「1日」，即每月第一天。' } },
+            ],
+          },
+        ],
+      },
+    ],
+  },
+
+  // ============================
+  // COURSE 9: 緊急・病院の日本語
+  // ============================
+  {
+    id: 'emergency-japanese',
+    title: { ja: '緊急・病院の日本語', en: 'Emergency & Hospital Japanese', vi: 'Tiếng Nhật cấp cứu & bệnh viện', zh: '紧急情况与医院日语', id: 'Bahasa Jepang Darurat & Rumah Sakit', tl: 'Japanese para sa Emergency at Ospital', my: 'အရေးပေါ် နှင့် ဆေးရုံ ဂျပန်ဘာသာ' },
+    description: { ja: '緊急時に命を守るための日本語。体調の伝え方から救急・警察への連絡、薬局での会話まで', en: 'Japanese to protect your life in emergencies — describing symptoms, calling ambulance/police, and pharmacy conversations', vi: 'Tiếng Nhật để bảo vệ tính mạng khi khẩn cấp — mô tả triệu chứng, gọi cứu thương/cảnh sát, hội thoại nhà thuốc', zh: '紧急时刻保护生命的日语——描述症状、联系救护车/警察、药局对话', id: 'Bahasa Jepang untuk kedaruratan — gejala, ambulans/polisi, apotek', tl: 'Japanese para maprotektahan ang iyong buhay sa emergency', my: 'အရေးပေါ်အချိန်တွင် အသက်ကာကွယ်ရန် ဂျပန်ဘာသာ' },
+    level: 'beginner',
+    jlptLevel: 'N5',
+    color: 'from-red-500 to-red-600',
+    totalLessons: 4,
+    estimatedHours: 3,
+    lessons: [
+      {
+        id: 'describing-symptoms',
+        title: { ja: '体調を伝える', en: 'Describing Your Condition', vi: 'Mô tả tình trạng sức khỏe', zh: '描述身体状况' },
+        duration: 15,
+        content: [
+          {
+            type: 'intro',
+            title: { ja: 'なぜ大切か', en: 'Why this matters' },
+            text: { ja: '体調が悪いとき、日本語で正確に伝えることが、早く適切な治療を受けるための鍵です。「〜が痛いです」「〜から〜が続いています」などの表現を覚えましょう。', en: 'When you are unwell, being able to accurately describe your condition in Japanese is key to receiving proper treatment quickly. Learn expressions like "〜ga itai desu" (My 〜 hurts).' },
+          },
+          {
+            type: 'vocab',
+            title: { ja: '体調を表す言葉', en: 'Health Condition Vocabulary' },
+            items: [
+              { japanese: '〜が痛いです', reading: '〜ga itai desu', meaning: { ja: '〜が痛い', en: 'My 〜 hurts', vi: '〜 của tôi đau', zh: '我的〜疼', id: '〜 saya sakit', tl: 'Masakit ang aking 〜', my: 'ကျွန်တော်/ကျွန်မ ၏ 〜 နာကျင်သည်' }, example: '胃が痛いです。', exampleReading: 'I ga itai desu.', exampleMeaning: { en: 'My stomach hurts.', vi: 'Dạ dày tôi đau.' } },
+              { japanese: '気分が悪いです', reading: 'kibun ga warui desu', meaning: { ja: '気持ちが悪い・吐き気', en: 'I feel sick / nauseous', vi: 'Tôi cảm thấy buồn nôn', zh: '我感觉不舒服/恶心', id: 'Saya merasa mual', tl: 'Masama ang pakiramdam ko', my: 'ကျွန်တော်/ကျွန်မ မကောင်းဘူး' } },
+              { japanese: '熱があります', reading: 'netsu ga arimasu', meaning: { ja: '発熱している', en: 'I have a fever', vi: 'Tôi bị sốt', zh: '我发烧了', id: 'Saya demam', tl: 'May lagnat ako', my: 'ကျွန်တော်/ကျွန်မ အဖျားရှိသည်' }, example: '39度の熱があります。', exampleReading: 'Sanjuu-kyuu-do no netsu ga arimasu.', exampleMeaning: { en: 'I have a 39°C fever.', vi: 'Tôi bị sốt 39 độ.' } },
+              { japanese: '〜から続いています', reading: '〜kara tsuzuite imasu', meaning: { ja: '〜から症状が続く', en: 'It has been continuing since 〜', vi: 'Liên tục từ 〜', zh: '从〜开始持续', id: 'Sudah berlanjut sejak 〜', tl: 'Nagpapatuloy mula noong 〜', my: '〜 မှ ဆက်လက် ဖြစ်နေသည်' }, example: '昨日の夜から続いています。', exampleReading: 'Kinou no yoru kara tsuzuite imasu.', exampleMeaning: { en: 'It has been continuing since last night.', vi: 'Liên tục từ tối hôm qua.' } },
+              { japanese: 'アレルギーがあります', reading: 'arerugii ga arimasu', meaning: { ja: 'アレルギーがある', en: 'I have allergies', vi: 'Tôi bị dị ứng', zh: '我有过敏', id: 'Saya punya alergi', tl: 'Mayroon akong allergy', my: 'ကျွန်တော်/ကျွန်မ အာလာဂျီရှိသည်' }, example: '卵アレルギーがあります。', exampleReading: 'Tamago arerugii ga arimasu.', exampleMeaning: { en: 'I have an egg allergy.', vi: 'Tôi bị dị ứng trứng.' } },
+              { japanese: '持病があります', reading: 'jibyou ga arimasu', meaning: { ja: '慢性の病気を持っている', en: 'I have a chronic condition', vi: 'Tôi có bệnh mãn tính', zh: '我有慢性病', id: 'Saya punya penyakit kronis', tl: 'Mayroon akong chronic na sakit', my: 'ကျွန်တော်/ကျွန်မ နာတာရှည် ရောဂါရှိသည်' } },
+            ],
+          },
+          {
+            type: 'dialogue',
+            title: { ja: '会話例：問診で', en: 'Dialogue: Medical Interview' },
+            dialogue: [
+              { speaker: '医師', japanese: 'どうされましたか？どこが痛いですか？', reading: 'Dou saremashita ka? Doko ga itai desu ka?', meaning: { ja: '症状と痛みの場所を聞く', en: 'What\'s wrong? Where does it hurt?', vi: 'Bạn bị làm sao? Đau ở đâu?', zh: '怎么了？哪里疼？', id: 'Ada apa? Mana yang sakit?', tl: 'Ano ang nangyari? Saan masakit?', my: 'ဘာဖြစ်သလဲ? ဘယ်နေရာ နာကျင်သလဲ?' } },
+              { speaker: 'あなた', japanese: '昨日の夜から、お腹が痛くて、下痢もしています。', reading: 'Kinou no yoru kara, onaka ga itakute, geri mo shite imasu.', meaning: { ja: '症状を具体的に説明', en: 'Since last night, I\'ve had stomach pain and also diarrhea.', vi: 'Từ tối hôm qua, tôi bị đau bụng và cũng bị tiêu chảy.', zh: '从昨晚开始，肚子疼，还有腹泻。', id: 'Sejak semalam, perut sakit dan juga diare.', tl: 'Mula kagabi, sumasakit ang tiyan ko at nagtatae rin ako.', my: '昨晩 မှ ဝမ်းနာကာ ဝမ်းလည်း ပျက်သည်' } },
+              { speaker: '医師', japanese: '熱はありますか？アレルギーはありますか？', reading: 'Netsu wa arimasu ka? Arerugii wa arimasu ka?', meaning: { ja: '熱とアレルギーを確認', en: 'Do you have a fever? Do you have any allergies?', vi: 'Bạn có sốt không? Bạn có dị ứng gì không?', zh: '有发烧吗？有过敏吗？', id: 'Ada demam? Ada alergi?', tl: 'Mayroon kang lagnat? Mayroon kang allergy?', my: 'အဖျားရှိသလား? အာလာဂျီ ရှိသလား?' } },
+              { speaker: 'あなた', japanese: '熱は37.8度あります。薬のアレルギーはありません。', reading: 'Netsu wa sanjuu-nana-ten-hachi-do arimasu. Kusuri no arerugii wa arimasen.', meaning: { ja: '熱の度数とアレルギーなしを伝える', en: 'I have a 37.8°C fever. I don\'t have any medication allergies.', vi: 'Tôi bị sốt 37.8°C. Tôi không bị dị ứng thuốc.', zh: '发烧37.8度。对药物没有过敏。', id: 'Demam 37.8°C. Tidak ada alergi obat.', tl: 'May lagnat ako ng 37.8°C. Wala akong allergy sa gamot.', my: 'အဖျား ၃၇.၈ ဒီဂရီ ရှိသည်။ ဆေး အာလာဂျီ မရှိပါ' } },
+            ],
+          },
+          {
+            type: 'quiz',
+            quiz: [
+              { question: { ja: '「頭が痛いです」を英語にすると？', en: 'What does "atama ga itai desu" mean?' }, options: ['I have a fever', 'My head hurts', 'I feel dizzy', 'I have a cold'], correct: 1, explanation: { ja: '「頭（あたま）」は「head」、「が痛いです」は「hurts」なので「My head hurts」です。', en: '"Atama" means head, "ga itai desu" means hurts, so it means "My head hurts".', vi: '"Atama" là đầu, "ga itai desu" là đau. Tức là "Đầu tôi đau".', zh: '「頭（あたま）」是"头"，「が痛いです」是"疼"，所以是"我头疼"。' } },
+            ],
+          },
+        ],
+      },
+      {
+        id: 'emergency-calls',
+        title: { ja: '救急・警察への連絡', en: 'Calling Ambulance & Police', vi: 'Gọi cứu thương & cảnh sát', zh: '联系救护车和警察' },
+        duration: 15,
+        content: [
+          {
+            type: 'vocab',
+            title: { ja: '緊急連絡に必要な言葉', en: 'Emergency Contact Vocabulary' },
+            items: [
+              { japanese: '救急車を呼んでください', reading: 'kyuukyuusha wo yonde kudasai', meaning: { ja: '救急車を要請する', en: 'Please call an ambulance', vi: 'Hãy gọi xe cứu thương', zh: '请叫救护车', id: 'Tolong panggil ambulans', tl: 'Pakitawagan ang ambulansya', my: 'အမ်ဗူလင်း ခေါ်ပေးပါ' }, example: '救急車を呼んでください！急いで！', exampleMeaning: { en: 'Call an ambulance! Hurry!', vi: 'Gọi xe cứu thương! Mau lên!' } },
+              { japanese: '警察を呼んでください', reading: 'keisatsu wo yonde kudasai', meaning: { ja: '警察を要請する', en: 'Please call the police', vi: 'Hãy gọi cảnh sát', zh: '请叫警察', id: 'Tolong panggil polisi', tl: 'Pakitawagan ang pulis', my: 'ရဲခေါ်ပေးပါ' } },
+              { japanese: '119番（ひゃくじゅうきゅうばん）', reading: 'hyaku-juu-kyuu-ban', meaning: { ja: '救急・消防の番号', en: 'Japan emergency number (ambulance/fire)', vi: 'Số khẩn cấp Nhật (cứu thương/cứu hỏa)', zh: '日本急救/消防电话号码', id: 'Nomor darurat Jepang (ambulans/pemadam)', tl: 'Emergency number ng Japan (ambulansya/bumbero)', my: 'ဂျပန် အရေးပေါ် နံပါတ် (အမ်ဗူလင်း/မီးသတ်)' } },
+              { japanese: '110番（ひゃくとおばん）', reading: 'hyaku-too-ban', meaning: { ja: '警察の番号', en: 'Japan police number', vi: 'Số cảnh sát Nhật', zh: '日本警察电话号码', id: 'Nomor polisi Jepang', tl: 'Numero ng pulisya sa Japan', my: 'ဂျပန် ရဲ နံပါတ်' } },
+              { japanese: '助けてください', reading: 'tasukete kudasai', meaning: { ja: '助けを求める', en: 'Help me please / Save me', vi: 'Cứu tôi với', zh: '救我 / 帮帮我', id: 'Tolong saya', tl: 'Tulungan mo ako', my: 'ကူညီပါ' } },
+              { japanese: '意識がありません', reading: 'ishiki ga arimasen', meaning: { ja: '意識がない状態', en: 'Unconscious / No consciousness', vi: 'Mất ý thức', zh: '失去意识', id: 'Tidak sadar', tl: 'Walang malay', my: 'သတိမရှိပါ' } },
+              { japanese: '呼吸をしていません', reading: 'kokyuu wo shite imasen', meaning: { ja: '呼吸停止', en: 'Not breathing', vi: 'Không thở', zh: '没有呼吸', id: 'Tidak bernafas', tl: 'Hindi humihinga', my: 'မသက်မဝင်ပါ' } },
+              { japanese: '大量に出血しています', reading: 'tairyou ni shukketsu shite imasu', meaning: { ja: '出血が多い', en: 'Heavy bleeding', vi: 'Chảy máu nhiều', zh: '大量出血', id: 'Pendarahan hebat', tl: 'Malaking dugo', my: 'သွေးများစွာ ထွက်နေသည်' } },
+            ],
+          },
+          {
+            type: 'grammar',
+            title: { ja: '119番への通報の仕方', en: 'How to Report to 119' },
+            grammar: [
+              {
+                pattern: '場所 + 住所の伝え方',
+                explanation: { ja: '119番や110番では、まず現在地を伝えることが最重要です。「〜にいます」「〜の前です」などの表現を使います。', en: 'When calling 119 or 110, giving your location is the most important first step. Use "〜ni imasu" (I am at 〜) or "〜no mae desu" (I am in front of 〜).', vi: 'Khi gọi 119 hoặc 110, cho biết vị trí là bước quan trọng nhất. Dùng "〜ni imasu" (Tôi đang ở 〜) hoặc "〜no mae desu" (Tôi đứng trước 〜).', zh: '打119或110时，首先告知所在位置最为重要。使用"〜にいます"（我在〜）或"〜の前です"（我在〜前面）。' },
+                examples: [
+                  { japanese: '東京都新宿区〇〇1-2-3にいます。', reading: 'Toukyou-to Shinjuku-ku ××× ichi-ni-san ni imasu.', meaning: { en: 'I am at 1-2-3 XXX, Shinjuku-ku, Tokyo.', vi: 'Tôi đang ở 1-2-3 XXX, Shinjuku, Tokyo.' } },
+                  { japanese: 'コンビニの前で人が倒れています。', reading: 'Konbini no mae de hito ga taorete imasu.', meaning: { en: 'A person has collapsed in front of the convenience store.', vi: 'Có người ngã trước cửa hàng tiện lợi.' } },
+                ],
+              },
+            ],
+          },
+          {
+            type: 'quiz',
+            quiz: [
+              { question: { ja: '日本で救急車を呼ぶ番号は？', en: 'What number do you call for an ambulance in Japan?' }, options: ['110', '119', '118', '117'], correct: 1, explanation: { ja: '日本の救急・消防は「119番」です。警察は「110番」、海上保安庁は「118番」です。', en: 'In Japan, ambulance and fire are 119. Police is 110. Coast guard is 118.', vi: 'Cứu thương và cứu hỏa Nhật là 119. Cảnh sát là 110.', zh: '日本救护车和消防是119，警察是110，海上保安厅是118。' } },
+              { question: { ja: '「助けてください」の意味は？', en: 'What does "tasukete kudasai" mean?' }, options: ['I need water', 'Help me please', 'I am lost', 'Call a doctor'], correct: 1, explanation: { ja: '「助けてください」は緊急時に使う「Help me please」です。', en: '"Tasukete kudasai" means "Help me please" used in emergencies.', vi: '"Tasukete kudasai" có nghĩa là "Cứu tôi với".', zh: '「助けてください」是紧急时使用的"救救我/帮帮我"。' } },
+            ],
+          },
+        ],
+      },
+      {
+        id: 'pharmacy-japanese',
+        title: { ja: '薬局での会話', en: 'Pharmacy Conversations', vi: 'Hội thoại ở nhà thuốc', zh: '药局对话' },
+        duration: 12,
+        content: [
+          {
+            type: 'vocab',
+            title: { ja: '薬局で使う言葉', en: 'Pharmacy Vocabulary' },
+            items: [
+              { japanese: '薬局／やっきょく', reading: 'yakkyoku', meaning: { ja: '薬を売るお店', en: 'pharmacy / drugstore', vi: 'nhà thuốc', zh: '药局', id: 'apotek', tl: 'parmasya', my: 'ဆေးဆိုင်' } },
+              { japanese: '処方箋／しょほうせん', reading: 'shohousen', meaning: { ja: '医師が書いた薬の指示書', en: 'prescription', vi: 'đơn thuốc', zh: '处方', id: 'resep dokter', tl: 'reseta ng doktor', my: 'ဆရာဝန် ဆေးစာ' }, example: '処方箋を持っています。', exampleMeaning: { en: 'I have a prescription.', vi: 'Tôi có đơn thuốc.' } },
+              { japanese: '痛み止め／いたみどめ', reading: 'itamidome', meaning: { ja: '鎮痛剤', en: 'painkiller', vi: 'thuốc giảm đau', zh: '止痛药', id: 'pereda nyeri', tl: 'pampawi ng sakit', my: 'နာကျင်မှုသက်သာဆေး' } },
+              { japanese: '解熱剤／げねつざい', reading: 'genetsuzai', meaning: { ja: '熱を下げる薬', en: 'fever reducer', vi: 'thuốc hạ sốt', zh: '退烧药', id: 'obat penurun demam', tl: 'gamot para sa lagnat', my: 'အဖျားသက်သာဆေး' } },
+              { japanese: '飲み方／のみかた', reading: 'nomikata', meaning: { ja: '薬の服用方法', en: 'how to take (the medicine)', vi: 'cách uống thuốc', zh: '服用方法', id: 'cara minum obat', tl: 'paraan ng pag-inom ng gamot', my: 'ဆေးသောက်နည်း' }, example: '1日3回、食後に飲んでください。', exampleReading: 'Ichinichi san-kai, shokugo ni nonde kudasai.', exampleMeaning: { en: 'Take 3 times a day, after meals.', vi: 'Uống 3 lần mỗi ngày, sau bữa ăn.' } },
+              { japanese: '副作用／ふくさよう', reading: 'fukusayou', meaning: { ja: '薬の副作用', en: 'side effect', vi: 'tác dụng phụ', zh: '副作用', id: 'efek samping', tl: 'side effect', my: 'ဆေး ဘေးထွက်ဆိုးကျိုး' } },
+            ],
+          },
+          {
+            type: 'dialogue',
+            title: { ja: '会話例：薬局で薬を受け取る', en: 'Dialogue: Picking Up Medicine at the Pharmacy' },
+            dialogue: [
+              { speaker: 'あなた', japanese: '処方箋をお願いします。', reading: 'Shohousen wo onegaishimasu.', meaning: { ja: '処方箋を渡す', en: 'Here is my prescription.', vi: 'Đây là đơn thuốc của tôi.', zh: '这是我的处方。', id: 'Ini resep saya.', tl: 'Ito ang aking reseta.', my: 'ဆေးစာပါ' } },
+              { speaker: '薬剤師', japanese: 'お名前をお聞きしてもよいですか？', reading: 'Onamae wo okiki shite mo yoi desu ka?', meaning: { ja: '名前の確認', en: 'May I ask your name?', vi: 'Tôi có thể hỏi tên bạn không?', zh: '可以告诉我您的姓名吗？', id: 'Boleh saya tanya nama Anda?', tl: 'Maaari ko bang malaman ang iyong pangalan?', my: 'နာမည် မေးလို့ ရပါသလား?' } },
+              { speaker: 'あなた', japanese: 'アンです。', reading: 'An desu.', meaning: { ja: '名前を伝える', en: 'My name is An.', vi: 'Tôi là An.', zh: '我叫An。', id: 'Nama saya An.', tl: 'An po ako.', my: 'ကျွန်တော်/ကျွန်မ An ပါ' } },
+              { speaker: '薬剤師', japanese: 'こちらの薬は1日3回、食後に飲んでください。眠くなることがあります。', reading: 'Kochira no kusuri wa ichinichi san-kai, shokugo ni nonde kudasai. Nemuku naru koto ga arimasu.', meaning: { ja: '服用法と副作用を説明', en: 'Take this medicine 3 times a day after meals. It may cause drowsiness.', vi: 'Uống thuốc này 3 lần mỗi ngày sau bữa ăn. Có thể gây buồn ngủ.', zh: '这个药请每天3次，饭后服用。可能会犯困。', id: 'Minum obat ini 3 kali sehari setelah makan. Mungkin menyebabkan kantuk.', tl: 'Inumin ang gamot na ito 3 beses sa isang araw pagkatapos kumain. Maaaring maging antok.', my: 'ဤဆေးကို တစ်နေ့ ၃ ကြိမ် ထမင်းစားပြီး သောက်ပါ။ အိပ်ငိုက်နိုင်သည်' } },
+            ],
+          },
+          {
+            type: 'quiz',
+            quiz: [
+              { question: { ja: '「1日3回、食後に飲んでください」の「食後」の意味は？', en: 'What does "shokugo" mean in "ichinichi san-kai, shokugo ni nonde kudasai"?' }, options: ['before meals', 'after meals', 'between meals', 'with meals'], correct: 1, explanation: { ja: '「食後（しょくご）」は「食べた後」、つまり「after meals」です。食前（しょくぜん）は「before meals」です。', en: '"Shokugo" (食後) means after meals. "Shokuzen" (食前) means before meals.', vi: '"Shokugo" (食後) nghĩa là sau bữa ăn. "Shokuzen" (食前) nghĩa là trước bữa ăn.', zh: '「食後（しょくご）」是饭后的意思。「食前（しょくぜん）」是饭前。' } },
+            ],
+          },
+        ],
+      },
+      {
+        id: 'hospital-navigation',
+        title: { ja: '病院での手続き', en: 'Hospital Procedures', vi: 'Thủ tục tại bệnh viện', zh: '医院手续' },
+        duration: 12,
+        content: [
+          {
+            type: 'vocab',
+            title: { ja: '病院でよく使う言葉', en: 'Common Hospital Words' },
+            items: [
+              { japanese: '受付／うけつけ', reading: 'uketsuke', meaning: { ja: '最初に行くカウンター', en: 'reception / check-in', vi: 'lễ tân', zh: '挂号处', id: 'resepsionis', tl: 'reception', my: 'လက်ခံကောင်တာ' } },
+              { japanese: '初診／しょしん', reading: 'shoshin', meaning: { ja: '初めての受診', en: 'first visit / new patient', vi: 'khám lần đầu', zh: '初诊', id: 'kunjungan pertama', tl: 'unang pagbisita', my: 'ပထမဆုံး လာရောက်စစ်ဆေးမှု' } },
+              { japanese: '保険証／ほけんしょう', reading: 'hokenshou', meaning: { ja: '健康保険証', en: 'health insurance card', vi: 'thẻ bảo hiểm y tế', zh: '健康保险证', id: 'kartu asuransi kesehatan', tl: 'health insurance card', my: 'ကျန်းမာရေး အာမခံကတ်' } },
+              { japanese: '問診票／もんしんひょう', reading: 'monshin-hyou', meaning: { ja: '症状を記入する用紙', en: 'medical questionnaire form', vi: 'phiếu hỏi bệnh', zh: '问诊表', id: 'formulir pertanyaan medis', tl: 'medical questionnaire', my: 'ဆေးဘက်ဆိုင်ရာ မေးခွန်းလွှာ' }, example: '問診票に記入してください。', exampleMeaning: { en: 'Please fill in the medical questionnaire.', vi: 'Vui lòng điền vào phiếu hỏi bệnh.' } },
+              { japanese: '何科を受診しますか', reading: 'nanika wo jusshin shimasu ka', meaning: { ja: '受診する科を聞かれる', en: 'Which department are you visiting?', vi: 'Bạn khám ở khoa nào?', zh: '您要看哪个科室？', id: 'Departemen mana yang akan Anda kunjungi?', tl: 'Anong department ang bibisitahin mo?', my: 'ဘယ်ဌာနခွဲ သွားမလဲ?' } },
+              { japanese: '内科／ないか', reading: 'naika', meaning: { ja: '内科（一般的な病気）', en: 'internal medicine / general doctor', vi: 'khoa nội', zh: '内科', id: 'penyakit dalam', tl: 'internal medicine', my: 'အတွင်းဆေးဌာနခွဲ' } },
+              { japanese: '外科／げか', reading: 'geka', meaning: { ja: '外科（手術など）', en: 'surgery / surgical department', vi: 'khoa ngoại', zh: '外科', id: 'bedah', tl: 'surgery', my: 'ခွဲစိတ်ဌာနခွဲ' } },
+            ],
+          },
+          {
+            type: 'dialogue',
+            title: { ja: '会話例：病院の受付', en: 'Dialogue: Hospital Reception' },
+            dialogue: [
+              { speaker: '受付', japanese: 'こんにちは。保険証はお持ちですか？', reading: 'Konnichiwa. Hokenshou wa omochi desu ka?', meaning: { en: 'Hello. Do you have your insurance card?', vi: 'Xin chào. Bạn có mang thẻ bảo hiểm không?', zh: '你好。您有健康保险证吗？' } },
+              { speaker: 'あなた', japanese: 'はい、こちらです。今日が初診です。', reading: 'Hai, kochira desu. Kyou ga shoshin desu.', meaning: { en: 'Yes, here it is. This is my first visit.', vi: 'Vâng, đây ạ. Hôm nay là lần đầu tôi khám.', zh: '是的，给您。今天是第一次来看诊。' } },
+              { speaker: '受付', japanese: 'では、この問診票に記入してください。何科を受診されますか？', reading: 'Dewa, kono monshin-hyou ni kinyuu shite kudasai. Nanika wo jusshin saremasu ka?', meaning: { en: 'Then please fill in this medical form. Which department are you visiting?', vi: 'Vậy hãy điền vào phiếu này. Bạn khám ở khoa nào?', zh: '那么请填写这张问诊表。您要看什么科？' } },
+              { speaker: 'あなた', japanese: '内科をお願いします。おなかが痛いので。', reading: 'Naika wo onegaishimasu. Onaka ga itai node.', meaning: { en: 'Internal medicine please. I have stomach pain.', vi: 'Cho tôi khám nội khoa. Vì tôi bị đau bụng.', zh: '请帮我预约内科，因为肚子疼。' } },
+            ],
+          },
+          {
+            type: 'quiz',
+            quiz: [
+              { question: { ja: '「初診」の意味は？', en: 'What does "shoshin" mean?' }, options: ['second visit', 'first visit / new patient', 'check-up', 'surgery'], correct: 1, explanation: { ja: '「初診（しょしん）」は「初めての受診」、つまり「first visit」です。2回目以降は「再診（さいしん）」と言います。', en: '"Shoshin" means first visit or new patient. Subsequent visits are called "saishin".', vi: '"Shoshin" nghĩa là lần khám đầu tiên. Các lần tiếp theo gọi là "saishin".', zh: '「初診（しょしん）」是初次就诊的意思。第二次之后称"再診（さいしん）"。' } },
+            ],
+          },
+        ],
+      },
+    ],
+  },
+
+  // ============================
+  // COURSE 10: 交通・移動の日本語
+  // ============================
+  {
+    id: 'transportation-japanese',
+    title: { ja: '交通・移動の日本語', en: 'Transportation Japanese', vi: 'Tiếng Nhật giao thông', zh: '交通出行日语', id: 'Bahasa Jepang Transportasi', tl: 'Japanese para sa Transportasyon', my: 'သယ်ယူပို့ဆောင်ရေး ဂျပန်ဘာသာ' },
+    description: { ja: '電車・バス・タクシーの乗り方、道の聞き方・教え方。日本の交通機関を使いこなす', en: 'How to use trains, buses, and taxis in Japan — buying tickets, asking directions, and navigating the city', vi: 'Cách sử dụng tàu điện, xe buýt, taxi ở Nhật — mua vé, hỏi đường, di chuyển trong thành phố', zh: '如何在日本乘坐电车、公交、出租车——购票、问路、城市导航', id: 'Cara menggunakan kereta, bus, dan taksi di Jepang', tl: 'Paano gumamit ng tren, bus, at taxi sa Japan', my: 'ဂျပန်တွင် ရထား၊ ဘတ်စ်ကား၊ တက္ကစီ စီးနင်းနည်း' },
+    level: 'beginner',
+    jlptLevel: 'N5',
+    color: 'from-blue-400 to-indigo-500',
+    totalLessons: 4,
+    estimatedHours: 3,
+    lessons: [
+      {
+        id: 'train-japanese',
+        title: { ja: '電車の乗り方', en: 'How to Ride the Train', vi: 'Cách đi tàu điện', zh: '乘坐电车' },
+        duration: 15,
+        content: [
+          {
+            type: 'intro',
+            title: { ja: '日本の電車について', en: 'About Japanese Trains' },
+            text: { ja: '日本の電車は複雑ですが、いくつかのキーワードを覚えれば安心です。「〜番線」「乗り換え」「終点」などの表現を学びましょう。', en: 'Japanese trains can seem complex, but learning key words makes it manageable. Learn expressions like "〜bansen" (platform number), "norikae" (transfer), and "shuuten" (terminus).' },
+          },
+          {
+            type: 'vocab',
+            title: { ja: '電車でよく使う言葉', en: 'Common Train Vocabulary' },
+            items: [
+              { japanese: '〜番線／〜ばんせん', reading: '〜bansen', meaning: { ja: 'ホームの番号', en: 'Platform number 〜', vi: 'Sân ga số 〜', zh: '第〜站台', id: 'jalur 〜', tl: 'platform 〜', my: '〜 နံပါတ် ပလပ်ဖောင်' }, example: '2番線から乗ってください。', exampleReading: 'Ni-bansen kara notte kudasai.', exampleMeaning: { en: 'Please board from platform 2.', vi: 'Hãy lên tàu từ sân ga số 2.' } },
+              { japanese: '乗り換え／のりかえ', reading: 'norikae', meaning: { ja: '電車を乗り継ぐこと', en: 'transfer (change trains)', vi: 'chuyển tàu', zh: '换乘', id: 'pindah kereta', tl: 'transfer ng tren', my: 'ရထားပြောင်းတည်' }, example: '渋谷で乗り換えてください。', exampleReading: 'Shibuya de norikae te kudasai.', exampleMeaning: { en: 'Please transfer at Shibuya.', vi: 'Hãy chuyển tàu ở Shibuya.' } },
+              { japanese: '終点／しゅうてん', reading: 'shuuten', meaning: { ja: 'その電車の最後の駅', en: 'terminus / last stop', vi: 'điểm cuối cùng', zh: '终点站', id: 'stasiun terakhir', tl: 'huling hinto', my: 'နောက်ဆုံးမှတ်တိုင်' } },
+              { japanese: 'Suica・PASMO', reading: 'suika / pasmo', meaning: { ja: '交通系ICカード', en: 'IC transport cards', vi: 'thẻ IC giao thông', zh: '交通IC卡', id: 'kartu IC transportasi', tl: 'IC transport card', my: 'IC သယ်ယူပို့ဆောင်ရေး ကတ်' } },
+              { japanese: '自動改札／じどうかいさつ', reading: 'jidou kaisatsu', meaning: { ja: '自動改札機', en: 'automatic ticket gate', vi: 'cổng kiểm soát tự động', zh: '自动检票口', id: 'gerbang tiket otomatis', tl: 'automatic ticket gate', my: 'အလိုအလျောက် လက်မှတ်စစ်ဆေးကိရိယာ' } },
+              { japanese: '急行／きゅうこう', reading: 'kyuukou', meaning: { ja: '各駅を止まらない速い電車', en: 'express train (skips some stations)', vi: 'tàu tốc hành', zh: '急行列车', id: 'kereta ekspres', tl: 'express train', my: 'အမြန်ရထား' } },
+              { japanese: '各駅停車／かくえきていしゃ', reading: 'kakueki teisha', meaning: { ja: '全ての駅に止まる電車', en: 'local train (stops at every station)', vi: 'tàu dừng mọi ga', zh: '各站停靠列车', id: 'kereta lokal (berhenti di semua stasiun)', tl: 'lokal na tren (humihinto sa lahat ng istasyon)', my: 'ဘုတ်တိုင်တိုင်ရပ်သည့် ရထား' } },
+            ],
+          },
+          {
+            type: 'grammar',
+            title: { ja: '「〜行き」で行き先を確認する', en: 'Checking the destination with 〜yuki' },
+            grammar: [
+              {
+                pattern: '〜行き（ゆき）',
+                explanation: { ja: '「〜行き」は電車やバスの終着駅・行き先を示します。乗る前に必ず確認しましょう。', en: '"〜yuki" indicates the train or bus destination. Always check before boarding.', vi: '"〜yuki" chỉ điểm đến của tàu hoặc xe buýt. Hãy kiểm tra trước khi lên.', zh: '「〜行き」表示列车或公交的终点站/目的地。上车前一定要确认。', id: '"〜yuki" menunjukkan tujuan kereta atau bus.', tl: '"〜yuki" ay nagpapakita ng destinasyon ng tren o bus.', my: '"〜yuki" သည် ရထား သို့မဟုတ် ဘတ်စ်ကားသွားသောနေရာ ပြသည်' },
+                examples: [
+                  { japanese: '新宿行きの電車はどれですか？', reading: 'Shinjuku-yuki no densha wa dore desu ka?', meaning: { en: 'Which is the train going to Shinjuku?', vi: 'Tàu đến Shinjuku là cái nào?' } },
+                  { japanese: 'この電車は渋谷行きですか？', reading: 'Kono densha wa Shibuya-yuki desu ka?', meaning: { en: 'Is this train going to Shibuya?', vi: 'Tàu này đến Shibuya không?' } },
+                ],
+              },
+            ],
+          },
+          {
+            type: 'dialogue',
+            title: { ja: '会話例：駅員に聞く', en: 'Dialogue: Asking a Station Staff' },
+            dialogue: [
+              { speaker: 'あなた', japanese: 'すみません、渋谷に行きたいのですが、何番線ですか？', reading: 'Sumimasen, Shibuya ni ikitai no desu ga, nani-bansen desu ka?', meaning: { ja: '渋谷へのホームを聞く', en: 'Excuse me, I want to go to Shibuya. Which platform?', vi: 'Xin lỗi, tôi muốn đến Shibuya. Sân ga số mấy?', zh: '打扰一下，我想去涩谷，请问几号站台？', id: 'Permisi, saya mau ke Shibuya. Jalur berapa?', tl: 'Excuse me, gusto kong pumunta sa Shibuya. Anong platform?', my: 'တောင်းပန်ပါသည်၊ Shibuya သွားချင်ပါတယ်။ ဘယ် platform လဲ?' } },
+              { speaker: '駅員', japanese: '5番線から山手線に乗ってください。渋谷まで直通です。', reading: 'Go-bansen kara Yamate-sen ni notte kudasai. Shibuya made chokutsu desu.', meaning: { ja: 'ホームと乗り換え不要を案内', en: 'Take the Yamanote Line from platform 5. It goes directly to Shibuya.', vi: 'Đi tuyến Yamanote từ sân ga số 5. Thẳng đến Shibuya.', zh: '请从5号站台乘山手线，直达涩谷。', id: 'Naik Jalur Yamanote dari platform 5, langsung ke Shibuya.', tl: 'Sakay sa Yamanote Line mula sa platform 5. Diretso sa Shibuya.', my: 'Platform 5 မှ Yamanote Line စီးပါ။ Shibuya အထိ တိုက်ရိုက်သွားသည်' } },
+              { speaker: 'あなた', japanese: 'ありがとうございます。何分くらいかかりますか？', reading: 'Arigatou gozaimasu. Nan-fun kurai kakarimasu ka?', meaning: { ja: '所要時間を確認', en: 'Thank you. How long does it take?', vi: 'Cảm ơn. Mất khoảng bao lâu?', zh: '谢谢。大约需要多少分钟？', id: 'Terima kasih. Berapa menit kira-kira?', tl: 'Salamat. Gaano katagal?', my: 'ကျေးဇူးတင်ပါသည်။ ဘယ်နှစ်မိနစ် ကြာမလဲ?' } },
+              { speaker: '駅員', japanese: '10分くらいです。', reading: 'Jup-pun kurai desu.', meaning: { ja: 'おおよその所要時間', en: 'About 10 minutes.', vi: 'Khoảng 10 phút.', zh: '大约10分钟。', id: 'Kira-kira 10 menit.', tl: 'Mga 10 minuto.', my: 'ခန့်မှန်း ၁၀ မိနစ် ကြာသည်' } },
+            ],
+          },
+          {
+            type: 'quiz',
+            quiz: [
+              { question: { ja: '「乗り換え」の意味は？', en: 'What does "norikae" mean?' }, options: ['final destination', 'platform number', 'transfer (change trains)', 'ticket machine'], correct: 2, explanation: { ja: '「乗り換え（のりかえ）」は他の路線・電車に乗り換えることです。', en: '"Norikae" means to transfer from one train line to another.', vi: '"Norikae" nghĩa là chuyển tàu sang tuyến khác.', zh: '「乗り換え（のりかえ）」是换乘其他路线/电车的意思。' } },
+            ],
+          },
+        ],
+      },
+      {
+        id: 'taxi-bus',
+        title: { ja: 'タクシー・バスの使い方', en: 'Using Taxis & Buses', vi: 'Sử dụng taxi và xe buýt', zh: '乘坐出租车和公交车' },
+        duration: 12,
+        content: [
+          {
+            type: 'vocab',
+            title: { ja: 'タクシー・バスの言葉', en: 'Taxi & Bus Vocabulary' },
+            items: [
+              { japanese: '〜までお願いします', reading: '〜made onegaishimasu', meaning: { ja: '目的地を伝える', en: 'To 〜 please (telling destination)', vi: 'Cho đến 〜 (nói điểm đến)', zh: '请送我去〜', id: 'ke 〜 tolong', tl: 'sa 〜 po', my: '〜 ကို သွားပေးပါ' }, example: '新宿駅までお願いします。', exampleReading: 'Shinjuku-eki made onegaishimasu.', exampleMeaning: { en: 'To Shinjuku station please.', vi: 'Đến ga Shinjuku nhé.' } },
+              { japanese: 'ここで降ろしてください', reading: 'koko de oroshite kudasai', meaning: { ja: 'ここで止めてほしい', en: 'Please let me off here', vi: 'Cho tôi xuống ở đây', zh: '请在这里让我下车', id: 'tolong turunkan saya di sini', tl: 'pakibaba ako dito', my: 'ဒီနေရာမှာ ချပေးပါ' } },
+              { japanese: 'メーターで', reading: 'meetaa de', meaning: { ja: 'メーター料金で', en: 'by the meter (metered fare)', vi: 'tính theo đồng hồ', zh: '按计价器', id: 'sesuai argo', tl: 'sa meter', my: 'မီတာနှင့် တွက်ချက်' } },
+              { japanese: 'バス停／バスてい', reading: 'basu tei', meaning: { ja: 'バスが止まる場所', en: 'bus stop', vi: 'trạm xe buýt', zh: '公交站', id: 'halte bus', tl: 'bus stop', my: 'ဘတ်စ်ကား မှတ်တိုင်' } },
+              { japanese: '〜バス停で降りてください', reading: '〜basu tei de orite kudasai', meaning: { ja: '〜のバス停で降りる指示', en: 'Get off at 〜 bus stop', vi: 'Xuống ở trạm 〜', zh: '在〜公交站下车', id: 'turun di halte bus 〜', tl: 'bumaba sa 〜 bus stop', my: '〜 မှတ်တိုင်မှာ ဆင်းပါ' } },
+              { japanese: '均一料金／きんいつりょうきん', reading: 'kinitsu ryoukin', meaning: { ja: 'どこまで乗っても同じ値段', en: 'flat rate (same fare regardless of distance)', vi: 'giá cố định (không phân biệt khoảng cách)', zh: '一律票价', id: 'tarif tetap', tl: 'flat rate', my: 'တစ်မျှတ နှုန်းထား' } },
+            ],
+          },
+          {
+            type: 'dialogue',
+            title: { ja: '会話例：タクシーに乗る', en: 'Dialogue: Taking a Taxi' },
+            dialogue: [
+              { speaker: 'あなた', japanese: '新宿駅の南口までお願いします。', reading: 'Shinjuku-eki no minami-guchi made onegaishimasu.', meaning: { ja: '目的地を指定（入口まで）', en: 'To the south exit of Shinjuku station please.', vi: 'Đến cổng nam ga Shinjuku nhé.', zh: '请送我到新宿站南口。', id: 'ke pintu selatan Shinjuku tolong.', tl: 'Sa south exit ng Shinjuku station po.', my: 'Shinjuku ဘူတာရုံ တောင်ဝင်ပေါက်အထိ သွားပေးပါ' } },
+              { speaker: '運転手', japanese: 'かしこまりました。高速は使いますか？', reading: 'Kashikomarimashita. Kousoku wa tsukaimasu ka?', meaning: { ja: '高速道路を使うか確認', en: 'Understood. Would you like to use the expressway?', vi: 'Tôi hiểu rồi. Bạn có muốn đi đường cao tốc không?', zh: '明白了。要走高速公路吗？', id: 'Baik. Apakah mau menggunakan jalan tol?', tl: 'Naiintindihan. Gusto mo bang gumamit ng expressway?', my: 'နားလည်ပါသည်။ အမြန်လမ်းသုံးမလား?' } },
+              { speaker: 'あなた', japanese: '使わなくて大丈夫です。', reading: 'Tsukawanakute daijoubu desu.', meaning: { ja: '高速道路不要', en: 'That\'s fine without it.', vi: 'Không cần đâu, không sao.', zh: '不用高速也没关系。', id: 'Tidak apa-apa tanpa tol.', tl: 'Okay lang walang expressway.', my: 'မသုံးလည်း ရပါတယ်' } },
+              { speaker: '運転手', japanese: '着きました。1,240円になります。', reading: 'Tsukimashita. Sen-nihyaku-yonjuu-en ni narimasu.', meaning: { ja: '到着と料金の案内', en: 'We\'ve arrived. That will be 1,240 yen.', vi: 'Chúng ta đã đến nơi. Tổng cộng 1.240 yên.', zh: '到了，一共1240日元。', id: 'Sudah sampai. 1.240 yen.', tl: 'Nakarating na tayo. 1,240 yen.', my: 'ရောက်ပါပြီ။ ၁,၂၄၀ ယန်း ဖြစ်ပါသည်' } },
+            ],
+          },
+          {
+            type: 'quiz',
+            quiz: [
+              { question: { ja: 'タクシーで目的地を伝えるとき何と言いますか？', en: 'How do you tell a taxi driver your destination?' }, options: ['〜に行きたい', '〜はどこですか', '〜までお願いします', '〜で降ります'], correct: 2, explanation: { ja: 'タクシーで「〜までお願いします」が最も自然な表現です。', en: '"〜made onegaishimasu" is the most natural way to tell a taxi your destination.', vi: '"〜made onegaishimasu" là cách tự nhiên nhất để nói điểm đến cho tài xế taxi.', zh: '在出租车中，「〜までお願いします」是最自然的表达方式。' } },
+            ],
+          },
+        ],
+      },
+      {
+        id: 'asking-directions',
+        title: { ja: '道を聞く・教える', en: 'Asking & Giving Directions', vi: 'Hỏi và chỉ đường', zh: '问路与指路' },
+        duration: 12,
+        content: [
+          {
+            type: 'vocab',
+            title: { ja: '方向・位置を表す言葉', en: 'Direction & Position Words' },
+            items: [
+              { japanese: '右に曲がる／みぎにまがる', reading: 'migi ni magaru', meaning: { ja: '右折する', en: 'turn right', vi: 'rẽ phải', zh: '右转', id: 'belok kanan', tl: 'lumiko sa kanan', my: 'ညာဘက် ကွေ့' } },
+              { japanese: '左に曲がる／ひだりにまがる', reading: 'hidari ni magaru', meaning: { ja: '左折する', en: 'turn left', vi: 'rẽ trái', zh: '左转', id: 'belok kiri', tl: 'lumiko sa kaliwa', my: 'ဘယ်ဘက် ကွေ့' } },
+              { japanese: 'まっすぐ行く', reading: 'massugu iku', meaning: { ja: '直進する', en: 'go straight', vi: 'đi thẳng', zh: '直行', id: 'jalan lurus', tl: 'diretso', my: 'တည့်တည့် သွား' } },
+              { japanese: '〜を越えたら', reading: '〜wo koetara', meaning: { ja: '〜を通り過ぎたら', en: 'once you pass 〜', vi: 'khi đi qua 〜', zh: '过了〜之后', id: 'setelah melewati 〜', tl: 'pagdaan ng 〜', my: '〜 ကျော်သွားပြီဆိုရင်' }, example: '信号を越えたら右です。', exampleReading: 'Shingou wo koetara migi desu.', exampleMeaning: { en: 'After you pass the traffic light, it\'s on the right.', vi: 'Qua đèn giao thông rồi rẽ phải.' } },
+              { japanese: '〜の角を曲がる', reading: '〜no kado wo magaru', meaning: { ja: '〜の角を曲がる', en: 'turn at the corner of 〜', vi: 'rẽ ở góc phố 〜', zh: '在〜的拐角处转弯', id: 'belok di sudut 〜', tl: 'lumiko sa kanto ng 〜', my: '〜 မှောင်ထောင့်မှ ကွေ့' } },
+              { japanese: '歩いて〜分', reading: 'aruite 〜fun', meaning: { ja: '徒歩〜分', en: '〜 minutes on foot / walking', vi: 'đi bộ 〜 phút', zh: '步行〜分钟', id: 'jalan kaki 〜 menit', tl: '〜 minuto sa paglalakad', my: 'လမ်းလျှောက် 〜 မိနစ်' } },
+            ],
+          },
+          {
+            type: 'grammar',
+            title: { ja: '道を教えるときの表現', en: 'Giving Directions Phrases' },
+            grammar: [
+              {
+                pattern: '〜たら（条件）+ 方向',
+                explanation: { ja: '「〜たら」は「〜した後に」の意味で、道案内でよく使います。「信号を越えたら右に曲がってください」のように使います。', en: '"〜tara" means "after you do 〜" and is commonly used in directions. Example: "After you pass the traffic light, turn right."', vi: '"〜tara" có nghĩa là "sau khi làm 〜" và hay dùng khi chỉ đường.', zh: '「〜たら」表示"做了〜之后"，常用于道路指引。例如"过了信号灯右转"。' },
+                examples: [
+                  { japanese: 'この道をまっすぐ行ったら、左手にコンビニが見えます。', reading: 'Kono michi wo massugu ittara, hidarite ni konbini ga miemasu.', meaning: { en: 'If you go straight down this road, you\'ll see a convenience store on the left.', vi: 'Đi thẳng con đường này, bạn sẽ thấy một cửa hàng tiện lợi ở bên trái.' } },
+                  { japanese: '橋を渡ったら、すぐそこです。', reading: 'Hashi wo watattara, sugu soko desu.', meaning: { en: 'Once you cross the bridge, it\'s right there.', vi: 'Qua cầu rồi là ngay đó.' } },
+                ],
+              },
+            ],
+          },
+          {
+            type: 'dialogue',
+            title: { ja: '会話例：道を聞く', en: 'Dialogue: Asking for Directions' },
+            dialogue: [
+              { speaker: 'あなた', japanese: 'すみません、郵便局はどこですか？', reading: 'Sumimasen, yuubinkyoku wa doko desu ka?', meaning: { ja: '郵便局の場所を聞く', en: 'Excuse me, where is the post office?', vi: 'Xin lỗi, bưu điện ở đâu ạ?', zh: '打扰一下，邮局在哪里？', id: 'Permisi, kantor pos di mana?', tl: 'Excuse me, nasaan ang post office?', my: 'တောင်းပန်ပါသည်၊ စာတိုက် ဘယ်မှာ ရှိသလဲ?' } },
+              { speaker: '人', japanese: 'この道をまっすぐ行って、信号を渡ったら右に曲がってください。歩いて5分くらいです。', reading: 'Kono michi wo massugu itte, shingou wo watattara migi ni magatte kudasai. Aruite go-fun kurai desu.', meaning: { ja: '具体的な道案内', en: 'Go straight down this road, cross the traffic light, then turn right. It\'s about 5 minutes on foot.', vi: 'Đi thẳng con đường này, qua đèn giao thông rồi rẽ phải. Đi bộ khoảng 5 phút.', zh: '沿这条路直走，过了信号灯后右转，步行约5分钟。', id: 'Jalan lurus, setelah lampu merah belok kanan. Sekitar 5 menit jalan kaki.', tl: 'Diretso sa daan na ito, pagdaan ng traffic light lumiko sa kanan. Mga 5 minuto sa paglalakad.', my: 'ဒီလမ်းမကြီးတည့်တည့် သွားပြီး မီးပွိုင့်ကျော်လျှင် ညာဘက်ကွေ့ပါ။ လမ်းလျှောက်ရင် ၅ မိနစ်ခန့် ကြာသည်' } },
+              { speaker: 'あなた', japanese: 'ありがとうございます。この先の信号ですか？', reading: 'Arigatou gozaimasu. Kono saki no shingou desu ka?', meaning: { ja: '確認の質問', en: 'Thank you. The traffic light just up ahead?', vi: 'Cảm ơn. Đèn giao thông phía trước kia à?', zh: '谢谢。是前面那个信号灯吗？', id: 'Terima kasih. Lampu merah yang di depan?', tl: 'Salamat. Ang traffic light sa harap?', my: 'ကျေးဇူးတင်ပါသည်။ ဆက်သွားရင် ရှိတဲ့ မီးပွိုင့် ဟုတ်သလား?' } },
+              { speaker: '人', japanese: 'そうです、そこです。頑張ってください！', reading: 'Sou desu, soko desu. Ganbatte kudasai!', meaning: { ja: '確認して激励', en: 'Yes, that\'s it. Good luck!', vi: 'Đúng rồi, đó rồi. Chúc may mắn!', zh: '是的，就是那里。加油！', id: 'Ya, itu dia. Semangat!', tl: 'Oo, doon nga. Ingat!', my: 'ဟုတ်ကဲ့၊ ဒီနေရာပါပဲ။ ကြိုးစားပါ!' } },
+            ],
+          },
+          {
+            type: 'quiz',
+            quiz: [
+              { question: { ja: '「まっすぐ行ってください」の意味は？', en: 'What does "massugu itte kudasai" mean?' }, options: ['Please turn right', 'Please turn left', 'Please go straight', 'Please stop here'], correct: 2, explanation: { ja: '「まっすぐ」は「straight」、「行ってください」は「please go」なので、「Please go straight」です。', en: '"Massugu" means straight, "itte kudasai" means please go, so it means "Please go straight".', vi: '"Massugu" là thẳng, "itte kudasai" là hãy đi, tức là "Hãy đi thẳng".', zh: '「まっすぐ」是"直走"，「行ってください」是"请走"，合起来就是"请直走"。' } },
+            ],
+          },
+        ],
+      },
+      {
+        id: 'buying-tickets',
+        title: { ja: '切符・チケットの買い方', en: 'Buying Train Tickets', vi: 'Mua vé tàu', zh: '购买车票' },
+        duration: 10,
+        content: [
+          {
+            type: 'vocab',
+            title: { ja: '切符購入に関する言葉', en: 'Ticket Purchase Vocabulary' },
+            items: [
+              { japanese: '切符／きっぷ', reading: 'kippu', meaning: { ja: '電車・バスの乗車券', en: 'ticket', vi: 'vé', zh: '车票', id: 'tiket', tl: 'tiket', my: 'လက်မှတ်' } },
+              { japanese: '片道／かたみち', reading: 'katamichi', meaning: { ja: '片道（行きだけ）', en: 'one-way', vi: 'một chiều', zh: '单程', id: 'satu arah', tl: 'isang daan', my: 'တစ်ဖက်တည်း' } },
+              { japanese: '往復／おうふく', reading: 'oufuku', meaning: { ja: '往復（行きと帰り）', en: 'round trip', vi: 'khứ hồi', zh: '往返', id: 'pulang pergi', tl: 'round trip', my: 'သွားလာ' } },
+              { japanese: '自由席／じゆうせき', reading: 'jiyuuseki', meaning: { ja: '座席指定なし', en: 'unreserved seat', vi: 'ghế tự do', zh: '自由席（不对号入座）', id: 'kursi bebas', tl: 'unreserved seat', my: 'ယူချင်ရာ ထိုင်ခုံ' } },
+              { japanese: '指定席／していせき', reading: 'shiteiseki', meaning: { ja: '座席を予約した席', en: 'reserved seat', vi: 'ghế đã đặt trước', zh: '指定席（对号入座）', id: 'kursi reservasi', tl: 'reserved seat', my: 'ကြိုတင်မှာထားသော ထိုင်ခုံ' } },
+              { japanese: 'IC カードにチャージする', reading: 'IC kaado ni chaaji suru', meaning: { ja: 'ICカードに金額を入金する', en: 'charge/load money onto IC card', vi: 'nạp tiền vào thẻ IC', zh: '向IC卡充值', id: 'isi ulang IC card', tl: 'mag-charge ng IC card', my: 'IC ကတ်တွင် ငွေဖြည့်' }, example: 'SuicaにICカードに1,000円チャージしました。', exampleMeaning: { en: 'I loaded 1,000 yen onto my Suica card.', vi: 'Tôi nạp 1.000 yên vào thẻ Suica.' } },
+            ],
+          },
+          {
+            type: 'dialogue',
+            title: { ja: '会話例：みどりの窓口で', en: 'Dialogue: At the JR Ticket Counter' },
+            dialogue: [
+              { speaker: 'あなた', japanese: '新大阪まで新幹線の指定席を2枚お願いします。', reading: 'Shin-Osaka made Shinkansen no shiteiseki wo ni-mai onegaishimasu.', meaning: { ja: '新幹線の指定席を購入', en: 'Two reserved Shinkansen seats to Shin-Osaka please.', vi: 'Cho tôi 2 vé Shinkansen ghế đặt trước đến Shin-Osaka.', zh: '两张新大阪的新干线指定席。', id: 'Dua tiket Shinkansen kursi reservasi ke Shin-Osaka.', tl: 'Dalawang reserved seat sa Shinkansen papunta Shin-Osaka.', my: 'Shin-Osaka ထိ Shinkansen ကြိုတင်မှာ ထိုင်ခုံ ၂ ခုပါ' } },
+              { speaker: '窓口', japanese: '日時はいつですか？', reading: 'Nichiji wa itsu desu ka?', meaning: { ja: '日時の確認', en: 'What date and time?', vi: 'Ngày giờ nào?', zh: '请问几月几号几点？', id: 'Tanggal dan waktu berapa?', tl: 'Anong petsa at oras?', my: 'ဘယ် ရက်ချိန်မှာ?' } },
+              { speaker: 'あなた', japanese: '3月25日の午前10時発でお願いします。', reading: 'San-gatsu nijuu-go-nichi no gozen juu-ji hatsu de onegaishimasu.', meaning: { ja: '日時の指定', en: 'Departing March 25th at 10:00 AM please.', vi: 'Khởi hành ngày 25 tháng 3, lúc 10 giờ sáng.', zh: '3月25日上午10点发车的。', id: 'Berangkat tanggal 25 Maret jam 10 pagi.', tl: 'Alis ng Marso 25 ng 10:00 AM.', my: 'မတ်လ ၂၅ ရက် နံနက် ၁၀ နာရီ ထွက်ဖို့ပါ' } },
+            ],
+          },
+          {
+            type: 'quiz',
+            quiz: [
+              { question: { ja: '「往復」と「片道」の違いは？', en: 'What is the difference between "oufuku" and "katamichi"?' }, options: ['oufuku=one-way, katamichi=round trip', 'oufuku=round trip, katamichi=one-way', 'both mean one-way', 'both mean round trip'], correct: 1, explanation: { ja: '「往復（おうふく）」は行きと帰りのセット（round trip）。「片道（かたみち）」は行きだけまたは帰りだけ（one-way）です。', en: '"Oufuku" is round trip (there and back). "Katamichi" is one-way (only one direction).', vi: '"Oufuku" là khứ hồi (đi và về). "Katamichi" là một chiều.', zh: '「往復（おうふく）」是往返（round trip）；「片道（かたみち）」是单程（one-way）。' } },
+            ],
+          },
+        ],
+      },
+    ],
+  },
 ];
 
 export function getCourseById(id: string): Course | undefined {
