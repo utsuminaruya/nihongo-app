@@ -11,7 +11,6 @@ import {
   Filter,
   Building2,
   BadgeCheck,
-  ChevronDown,
   X,
   Briefcase,
 } from 'lucide-react';
@@ -359,7 +358,6 @@ const jobs: Job[] = [
 
 const industries = ['介護・福祉', 'IT・テクノロジー', '飲食・フード', '建設・土木', '製造業', '医療・看護', '農業・食品', 'ホテル・観光', '清掃・設備管理', '物流・倉庫', '教育'];
 const prefectures = ['東京都', '神奈川県', '大阪府', '埼玉県', '千葉県', '愛知県'];
-const visaOptions = ['特定技能1号', '技術・人文知識・国際業務', '留学（資格外活動許可）', '永住者', '介護'];
 
 type Tab = 'all' | 'saved' | 'applied';
 

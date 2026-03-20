@@ -250,7 +250,7 @@ export default function LessonPage() {
   const lessonId = params.lessonId as string;
 
   const lesson = getLessonById(courseId, lessonId);
-  const [quizScore, setQuizScore] = useState<number | null>(null);
+  const [_quizScore, setQuizScore] = useState<number | null>(null);
 
   if (!lesson) {
     return (

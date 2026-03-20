@@ -7,14 +7,13 @@ import {
   GraduationCap,
   MessageSquare,
   Trophy,
-  Play,
   Star,
   Target,
   Clock,
   ChevronRight,
   Zap,
 } from 'lucide-react';
-import { Card, Badge, Button } from '@/components/ui';
+import { Card, Badge } from '@/components/ui';
 import { motion } from 'framer-motion';
 import { courses } from './_data/lessons';
 
