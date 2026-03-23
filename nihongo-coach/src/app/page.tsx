@@ -69,19 +69,19 @@ export default function HomePage() {
           <div className="space-y-3">
             {[
               {
-                icon: '🗣️',
+                icon: '🎙️',
                 title: 'スタッフの指示',
                 titleVi: 'Chỉ thị của nhân viên',
                 desc: '省略表現・現場用語・早口の指示',
               },
               {
-                icon: '👴',
+                icon: '🧓',
                 title: '利用者の言葉',
                 titleVi: 'Lời nói của người sử dụng',
                 desc: '高齢者特有の話し方・方言・曖昧表現',
               },
               {
-                icon: '💝',
+                icon: '🎭',
                 title: '気持ちの理解',
                 titleVi: 'Hiểu cảm xúc',
                 desc: '同じ言葉でも文脈で変わる「いいよ」「大丈夫」',

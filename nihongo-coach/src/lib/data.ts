@@ -9,7 +9,7 @@ export const categories: Category[] = [
     name_vi: 'Thuật ngữ chuyên môn',
     type: 'A',
     description: '介護現場で使われる漢語の専門用語',
-    icon: '🏥',
+    icon: '🩺',
     display_order: 1,
   },
   {
@@ -19,7 +19,7 @@ export const categories: Category[] = [
     name_vi: 'Từ ngữ hàng ngày dùng chuyên môn',
     type: 'B',
     description: '普通の言葉が介護現場で特別な意味を持つ',
-    icon: '💬',
+    icon: '🔄',
     display_order: 2,
   },
   {
@@ -29,7 +29,7 @@ export const categories: Category[] = [
     name_vi: 'Từ viết tắt',
     type: 'C',
     description: '現場で使われる略語・短縮表現',
-    icon: '⚡',
+    icon: '✂️',
     display_order: 3,
   },
   {
@@ -39,7 +39,7 @@ export const categories: Category[] = [
     name_vi: 'Từ phụ thuộc ngữ cảnh',
     type: 'D',
     description: '同じ言葉でも文脈で意味が変わる言葉',
-    icon: '💝',
+    icon: '🎭',
     display_order: 4,
   },
 ];

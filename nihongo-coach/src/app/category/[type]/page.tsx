@@ -60,7 +60,7 @@ export default function CategoryPage({ params }: Props) {
         {category.type === 'D' && (
           <div className="bg-[#FCE4EC] rounded-xl p-3 mb-4 border border-[#F8BBD0]">
             <p className="text-xs text-[#E91E63] font-semibold mb-1">
-              💝 文脈依存語について
+              🎭 文脈依存語について
             </p>
             <p className="text-[10px] text-[#636e72]">
               同じ言葉でも、声のトーンや場面によって意味が変わります。
@@ -75,7 +75,7 @@ export default function CategoryPage({ params }: Props) {
         {category.type === 'C' && (
           <div className="bg-[#FFF8E1] rounded-xl p-3 mb-4 border border-[#FFE082]">
             <p className="text-xs text-[#F57F17] font-semibold mb-1">
-              ⚡ 省略表現について
+              ✂️ 省略表現について
             </p>
             <p className="text-[10px] text-[#636e72]">
               介護現場では、正式な用語を短く省略して使います。

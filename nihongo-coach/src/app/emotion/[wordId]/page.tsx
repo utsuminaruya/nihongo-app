@@ -140,7 +140,7 @@ export default function EmotionPage({ params }: Props) {
             <AudioPlayer
               label={`「${word.word_ja}」（${currentPattern.pattern_name}）を聞く`}
               labelVi={`Nghe "${word.word_ja}" theo ngữ cảnh ${currentPattern.pattern_name}`}
-              icon="🔊"
+              icon="🎧"
               audioUrl={currentPattern.audio_url}
               text={word.word_ja}
               audioType="standard"
@@ -151,7 +151,7 @@ export default function EmotionPage({ params }: Props) {
         {/* 声のトーンのヒント */}
         <div className="card-warm p-4 mt-3">
           <h3 className="text-xs font-bold text-[#004E64] uppercase tracking-wide mb-3">
-            💡 声のトーンで聞き分けるコツ
+            🔑 声のトーンで聞き分けるコツ
           </h3>
           <div className="space-y-2">
             {patterns.map((pattern, i) => (

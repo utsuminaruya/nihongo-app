@@ -82,7 +82,7 @@ export default function LearnPage({ params }: Props) {
         {word.scene && (
           <div className="card-warm p-4 mt-3">
             <h3 className="text-xs font-bold text-[#FF6B35] uppercase tracking-wide mb-2">
-              📍 使われる場面 / Tình huống sử dụng
+              🎬 使われる場面 / Tình huống sử dụng
             </h3>
             <p className="text-sm text-[#2D3436] leading-relaxed">{word.scene}</p>
           </div>
@@ -92,7 +92,7 @@ export default function LearnPage({ params }: Props) {
         {word.example_sentence && (
           <div className="card-warm p-4 mt-3">
             <h3 className="text-xs font-bold text-[#004E64] uppercase tracking-wide mb-2">
-              💬 例文 / Ví dụ
+              ✍️ 例文 / Ví dụ
             </h3>
             <p className="text-sm font-medium text-[#2D3436] leading-relaxed">
               {word.example_sentence}
@@ -103,13 +103,13 @@ export default function LearnPage({ params }: Props) {
         {/* 音声再生 */}
         <div className="card-warm p-4 mt-3">
           <h3 className="text-xs font-bold text-[#636e72] uppercase tracking-wide mb-3">
-            🔊 音声で聞く / Nghe phát âm
+            🎧 音声で聞く / Nghe phát âm
           </h3>
           <div className="space-y-2">
             <AudioPlayer
               label="標準速度"
               labelVi="Tốc độ chuẩn"
-              icon="🗣️"
+              icon="🎙️"
               audioUrl={word.audio_url_standard}
               text={word.word_ja}
               audioType="standard"
@@ -117,7 +117,7 @@ export default function LearnPage({ params }: Props) {
             <AudioPlayer
               label="早口（スタッフの指示）"
               labelVi="Nhanh (hướng dẫn nhân viên)"
-              icon="⚡"
+              icon="💨"
               audioUrl={word.audio_url_fast}
               text={word.word_ja}
               audioType="fast"
@@ -126,7 +126,7 @@ export default function LearnPage({ params }: Props) {
               <AudioPlayer
                 label="高齢者の話し方"
                 labelVi="Giọng người cao tuổi"
-                icon="👴"
+                icon="🧓"
                 audioUrl={word.audio_url_elderly}
                 text={word.word_ja}
                 audioType="elderly"
