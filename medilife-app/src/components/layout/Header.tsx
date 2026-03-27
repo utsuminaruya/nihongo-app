@@ -2,10 +2,11 @@
 
 import { useState } from 'react';
 import Link from 'next/link';
-import { Bell, Globe, ChevronDown } from 'lucide-react';
+import { Bell, Globe, ChevronDown, LogIn } from 'lucide-react';
 import { Avatar } from '@/components/ui/Avatar';
 import { cn } from '@/lib/utils';
 import { LOCALE_NAMES, LOCALE_FLAGS, type Locale } from '@/lib/constants';
+import { useUserStore } from '@/stores/userStore';
 
 interface HeaderProps {
   locale: string;
@@ -24,6 +25,8 @@ export function Header({
   unreadCount = 0,
 }: HeaderProps) {
   const [showLangMenu, setShowLangMenu] = useState(false);
+  const { id: userId } = useUserStore();
+  const isLoggedIn = !!userId;
 
   return (
     <header className="sticky top-0 z-30 border-b border-slate-100 bg-white/95 backdrop-blur-sm">
@@ -96,14 +99,25 @@ export function Header({
             )}
           </Link>
 
-          {/* プロフィール */}
-          <Link
-            href={`/${locale}/profile`}
-            className="rounded-full"
-            aria-label="Profile"
-          >
-            <Avatar src={avatarUrl} alt={userName} size="sm" />
-          </Link>
+          {/* プロフィール or ログイン */}
+          {isLoggedIn ? (
+            <Link
+              href={`/${locale}/profile`}
+              className="rounded-full"
+              aria-label="Profile"
+            >
+              <Avatar src={avatarUrl} alt={userName} size="sm" />
+            </Link>
+          ) : (
+            <Link
+              href={`/${locale}/login`}
+              className="flex items-center gap-1 rounded-lg bg-blue-600 px-3 py-1.5 text-xs font-semibold text-white hover:bg-blue-700 transition-colors"
+              aria-label="Login"
+            >
+              <LogIn className="h-3.5 w-3.5" />
+              <span>ログイン</span>
+            </Link>
+          )}
         </div>
       </div>
     </header>
