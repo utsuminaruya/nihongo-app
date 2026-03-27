@@ -655,7 +655,7 @@ export default function AskPage() {
 
       {/* カテゴリタブ */}
       <div className="flex gap-2 overflow-x-auto pb-1 scrollbar-hide">
-        {CATEGORIES.map(({ key, icon: Icon, color }) => (
+        {CATEGORIES.map(({ key, icon: Icon }) => (
           <button
             key={key}
             onClick={() => setActiveCategory(key)}
