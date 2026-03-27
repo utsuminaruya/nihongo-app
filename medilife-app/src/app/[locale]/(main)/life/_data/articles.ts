@@ -24,7 +24,7 @@ export const articles: Article[] = [
     title: {
       ja: 'アパートの借り方ガイド',
       en: 'How to Rent an Apartment in Japan',
-      vi: 'Hướng dẫn thuê căn hộ tại Nhật',
+      vi: 'Hướng dẫn thuê căn hộ tại Nhật Bản',
       zh: '在日本租房指南',
       id: 'Panduan Sewa Apartemen di Jepang',
       tl: 'Gabay sa Pag-upa ng Apartment sa Japan',
@@ -33,7 +33,7 @@ export const articles: Article[] = [
     summary: {
       ja: '不動産会社の選び方から契約まで、外国人が日本でアパートを借りる際の完全ガイド。',
       en: 'Complete guide for foreigners renting apartments in Japan, from choosing an agency to signing the contract.',
-      vi: 'Hướng dẫn hoàn chỉnh cho người nước ngoài thuê nhà tại Nhật Bản.',
+      vi: 'Hướng dẫn đầy đủ cho người nước ngoài thuê nhà tại Nhật Bản — từ khâu chọn công ty bất động sản đến khi ký hợp đồng.',
       zh: '外国人在日本租房的完整指南，从选择房产公司到签合同。',
       id: 'Panduan lengkap untuk orang asing menyewa apartemen di Jepang.',
       tl: 'Kumpletong gabay para sa mga dayuhan na umuupa ng apartment sa Japan.',
@@ -71,7 +71,7 @@ export const articles: Article[] = [
     title: {
       ja: '電気・ガス・水道の開通手続き',
       en: 'Setting Up Utilities (Electricity, Gas, Water)',
-      vi: 'Đăng ký điện, gas, nước khi chuyển đến',
+      vi: 'Hướng dẫn đăng ký điện, gas và nước khi chuyển nhà',
       zh: '开通水电气的手续',
       id: 'Cara Mengaktifkan Listrik, Gas, dan Air',
       tl: 'Pag-set up ng Kuryente, Gas, at Tubig',
@@ -80,7 +80,7 @@ export const articles: Article[] = [
     summary: {
       ja: '引越し後に必要な電気・ガス・水道の開通申請方法をわかりやすく解説します。',
       en: 'How to activate electricity, gas, and water service after moving into your new home in Japan.',
-      vi: 'Cách đăng ký điện, gas và nước sau khi chuyển đến nhà mới ở Nhật.',
+      vi: 'Hướng dẫn cách kích hoạt điện, gas và nước sau khi chuyển vào nhà mới tại Nhật Bản. Lưu ý rằng gas bắt buộc phải có nhân viên đến mở van trực tiếp.',
       zh: '搬入新家后如何开通水电气服务。',
       id: 'Cara mengaktifkan listrik, gas, dan air setelah pindah rumah di Jepang.',
       tl: 'Paano mag-activate ng serbisyo ng kuryente, gas, at tubig pagkatapos lumipat.',
@@ -119,7 +119,7 @@ export const articles: Article[] = [
     title: {
       ja: '住民登録（転入届）の手続き',
       en: 'Resident Registration When Moving',
-      vi: 'Thủ tục đăng ký cư trú khi chuyển đến',
+      vi: 'Thủ tục đăng ký hộ khẩu (tenkyo-todoke) khi chuyển nhà tại Nhật',
       zh: '居民登记（迁入登记）手续',
       id: 'Prosedur Pendaftaran Penduduk',
       tl: 'Proseso ng Pagpaparehistro ng Tirahan',
@@ -128,7 +128,7 @@ export const articles: Article[] = [
     summary: {
       ja: '引越し後14日以内に役所で行う転入届の手続き方法。在留カードへの新住所記載も含む。',
       en: 'How to complete resident registration within 14 days of moving, including updating your residence card.',
-      vi: 'Cách đăng ký cư trú trong vòng 14 ngày sau khi chuyển đến, bao gồm cập nhật thẻ cư trú.',
+      vi: 'Bạn cần đến tòa thị chính (shiyakusho) để làm thủ tục đăng ký cư trú trong vòng 14 ngày sau khi chuyển nhà. Bài viết hướng dẫn từng bước, bao gồm cả việc cập nhật địa chỉ mới lên thẻ lưu trú (zairyu card).',
       zh: '搬家后14天内在市政厅办理转入登记的方法，包括在在留卡上登记新地址。',
       id: 'Cara mendaftar kependudukan dalam 14 hari setelah pindah, termasuk memperbarui kartu izin tinggal.',
       tl: 'Paano kumpletuhin ang pagpaparehistro ng tirahan sa loob ng 14 na araw matapos lumipat.',
@@ -162,7 +162,7 @@ export const articles: Article[] = [
     title: {
       ja: '日本の銀行口座の開き方',
       en: 'How to Open a Bank Account in Japan',
-      vi: 'Cách mở tài khoản ngân hàng tại Nhật Bản',
+      vi: 'Hướng dẫn mở tài khoản ngân hàng tại Nhật Bản cho người nước ngoài',
       zh: '如何在日本开设银行账户',
       id: 'Cara Membuka Rekening Bank di Jepang',
       tl: 'Paano Magbukas ng Bank Account sa Japan',
@@ -171,7 +171,7 @@ export const articles: Article[] = [
     summary: {
       ja: 'ゆうちょ銀行・三菱UFJ・住信SBIなど、外国人に開設しやすい銀行の比較と手続き方法。',
       en: 'Comparison of Japan Post Bank, MUFG, and SBI Sumishin Net Bank — the easiest options for foreign residents.',
-      vi: 'So sánh Ngân hàng Bưu điện, MUFG và SBI Sumishin — lựa chọn dễ nhất cho người nước ngoài.',
+      vi: 'So sánh Japan Post Bank (Yucho), MUFG và SBI Sumishin Net Bank — những ngân hàng dễ mở tài khoản nhất dành cho người nước ngoài sinh sống tại Nhật.',
       zh: '邮政银行、三菱UFJ、住信SBI网络银行的比较及开户方法。',
       id: 'Perbandingan Japan Post Bank, MUFG, dan SBI — opsi termudah untuk warga negara asing.',
       tl: 'Paghahambing ng Japan Post Bank, MUFG, at SBI — pinakamadaling pagpipilian para sa mga dayuhan.',
@@ -206,7 +206,7 @@ export const articles: Article[] = [
     title: {
       ja: '国民健康保険の加入手続き',
       en: 'Joining National Health Insurance (Kokumin Kenkou Hoken)',
-      vi: 'Thủ tục tham gia Bảo hiểm Y tế Quốc gia',
+      vi: 'Hướng dẫn tham gia Bảo hiểm Y tế Quốc dân (Kokumin Kenkou Hoken)',
       zh: '国民健康保险加入手续',
       id: 'Prosedur Bergabung Asuransi Kesehatan Nasional',
       tl: 'Pagsali sa Pambansang Seguro sa Kalusugan',
@@ -215,7 +215,7 @@ export const articles: Article[] = [
     summary: {
       ja: '会社の健康保険に加入していない外国人のための国民健康保険の加入方法と保険料の目安。',
       en: 'How to join Japan\'s National Health Insurance for foreign residents not covered by employer insurance.',
-      vi: 'Cách tham gia Bảo hiểm Y tế Quốc gia cho người nước ngoài không được hãng bảo hiểm.',
+      vi: 'Nếu bạn không được công ty đóng bảo hiểm y tế, bạn cần tự tham gia Bảo hiểm Y tế Quốc dân (bảo hiểm y tế). Bài viết hướng dẫn thủ tục đăng ký và mức phí hàng tháng tại tòa thị chính.',
       zh: '没有公司医疗保险的外国人如何加入国民健康保险。',
       id: 'Cara bergabung Asuransi Kesehatan Nasional bagi warga asing yang tidak ditanggung perusahaan.',
       tl: 'Paano sumali sa Pambansang Seguro sa Kalusugan para sa mga dayuhan.',
@@ -252,7 +252,7 @@ export const articles: Article[] = [
     title: {
       ja: 'ICカード（Suica・Pasmo）の使い方',
       en: 'How to Use IC Cards (Suica & Pasmo)',
-      vi: 'Cách sử dụng thẻ IC (Suica & Pasmo)',
+      vi: 'Hướng dẫn sử dụng thẻ IC (Suica và Pasmo) tại Nhật',
       zh: '如何使用IC卡（Suica・Pasmo）',
       id: 'Cara Menggunakan Kartu IC (Suica & Pasmo)',
       tl: 'Paano Gamitin ang IC Cards (Suica at Pasmo)',
@@ -261,7 +261,7 @@ export const articles: Article[] = [
     summary: {
       ja: '電車・バス・コンビニで使えるICカードの購入から使い方まで。Suica・Pasmoの違いも解説。',
       en: 'Everything you need to know about Japan\'s IC cards — how to buy, charge, and use them on trains, buses, and in shops.',
-      vi: 'Mọi thứ bạn cần biết về thẻ IC của Nhật — cách mua, nạp tiền và sử dụng.',
+      vi: 'Tất cả những gì bạn cần biết về thẻ IC tại Nhật — cách mua, nạp tiền và dùng trên tàu điện, xe buýt và tại các cửa hàng tiện lợi.',
       zh: '关于日本IC卡的一切——如何购买、充值和使用。',
       id: 'Semua yang perlu Anda ketahui tentang kartu IC Jepang.',
       tl: 'Lahat ng kailangan mong malaman tungkol sa IC cards ng Japan.',
@@ -299,7 +299,7 @@ export const articles: Article[] = [
     title: {
       ja: '電車の乗り方完全ガイド',
       en: 'Complete Guide to Riding Trains in Japan',
-      vi: 'Hướng dẫn hoàn chỉnh cách đi tàu điện tại Nhật',
+      vi: 'Hướng dẫn đầy đủ cách đi tàu điện tại Nhật Bản',
       zh: '完整的乘坐电车指南',
       id: 'Panduan Lengkap Naik Kereta di Jepang',
       tl: 'Kumpletong Gabay sa Pagsakay ng Tren sa Japan',
@@ -308,7 +308,7 @@ export const articles: Article[] = [
     summary: {
       ja: '路線図の読み方から乗り換えまで、電車の乗り方を初心者向けにわかりやすく説明します。',
       en: 'How to read train maps, buy tickets, transfer between lines, and navigate Japan\'s rail system.',
-      vi: 'Cách đọc bản đồ tàu điện, mua vé và chuyển tuyến tại Nhật.',
+      vi: 'Hướng dẫn đọc bản đồ tuyến tàu, mua vé, chuyển tuyến và các loại tàu (tàu thường, tàu nhanh, tàu đặc biệt) dành cho người mới bắt đầu.',
       zh: '如何读懂路线图、购票和换乘，初学者的完整指南。',
       id: 'Cara membaca peta kereta, membeli tiket, dan transfer antar jalur di Jepang.',
       tl: 'Paano bumasa ng mapa ng tren, bumili ng tiket, at mag-transfer sa Japan.',
@@ -346,7 +346,7 @@ export const articles: Article[] = [
     title: {
       ja: '住民税の仕組みと支払い方法',
       en: 'Understanding and Paying Residence Tax',
-      vi: 'Hiểu và nộp thuế cư trú',
+      vi: 'Tìm hiểu về thuế cư trú (Jumin-zei) và cách nộp thuế tại Nhật',
       zh: '住民税的机制与缴纳方式',
       id: 'Memahami dan Membayar Pajak Residensi',
       tl: 'Pag-unawa at Pagbabayad ng Residence Tax',
@@ -355,7 +355,7 @@ export const articles: Article[] = [
     summary: {
       ja: '日本に住む外国人も払う必要がある住民税。計算方法、支払い方法、減額制度を解説。',
       en: 'Foreign residents must pay residence tax too. Learn how it\'s calculated, when it\'s due, and how to pay it.',
-      vi: 'Người nước ngoài cư trú tại Nhật cũng phải nộp thuế cư trú. Tìm hiểu cách tính và cách nộp.',
+      vi: 'Người nước ngoài sinh sống tại Nhật cũng phải nộp thuế cư trú (jumin-zei). Bài viết giải thích cách tính thuế, các hình thức thanh toán và chính sách miễn giảm.',
       zh: '居住日本的外国人也需要缴纳住民税。了解计算方法、缴纳时间和减免制度。',
       id: 'Warga asing yang tinggal di Jepang juga wajib membayar pajak residensi.',
       tl: 'Ang mga dayuhang naninirahan sa Japan ay dapat ding magbayad ng residence tax.',
@@ -391,7 +391,7 @@ export const articles: Article[] = [
     title: {
       ja: '確定申告のやり方（外国人向け）',
       en: 'How to File Your Tax Return in Japan',
-      vi: 'Cách khai thuế thu nhập tại Nhật Bản',
+      vi: 'Hướng dẫn khai báo thuế thu nhập (kakutei shinkoku) tại Nhật Bản',
       zh: '如何在日本申报税（面向外国人）',
       id: 'Cara Mengajukan Pengembalian Pajak di Jepang',
       tl: 'Paano Mag-file ng Tax Return sa Japan',
@@ -400,7 +400,7 @@ export const articles: Article[] = [
     summary: {
       ja: '毎年2〜3月に行う確定申告。副業や転職をした人、フリーランスに必要な手続きを解説。',
       en: 'Annual tax return filing in Japan (Feb–Mar). Required for freelancers, those with side income, or job changers.',
-      vi: 'Khai thuế hàng năm tại Nhật (tháng 2-3). Cần thiết cho freelancer, người có thu nhập phụ.',
+      vi: 'Khai thuế hàng năm tại Nhật diễn ra vào tháng 2–3. Bắt buộc đối với người làm freelance, người có thu nhập phụ hoặc đã chuyển việc trong năm.',
       zh: '每年2-3月的确定申报。对自由职业者、有副业收入者或跳槽者的必要手续。',
       id: 'Pengajuan pajak tahunan di Jepang (Feb-Mar). Diperlukan untuk freelancer dan yang punya pendapatan sampingan.',
       tl: 'Taunang pagsasaayos ng buwis sa Japan (Feb-Mar). Kailangan ng mga freelancer at may karagdagang kita.',
@@ -436,7 +436,7 @@ export const articles: Article[] = [
     title: {
       ja: 'ゴミの分別ルール完全ガイド',
       en: 'Complete Guide to Garbage Sorting in Japan',
-      vi: 'Hướng dẫn hoàn chỉnh phân loại rác tại Nhật',
+      vi: 'Hướng dẫn đầy đủ cách phân loại rác tại Nhật Bản',
       zh: '垃圾分类完全指南',
       id: 'Panduan Lengkap Pemilahan Sampah di Jepang',
       tl: 'Kumpletong Gabay sa Pag-uuri ng Basura sa Japan',
@@ -445,7 +445,7 @@ export const articles: Article[] = [
     summary: {
       ja: '燃えるゴミ・燃えないゴミ・資源ゴミ・粗大ゴミの分け方と出し方のルール。市区町村によって異なる点も解説。',
       en: 'How to sort burnable, non-burnable, recyclable, and large-item garbage in Japan. Rules vary by city.',
-      vi: 'Cách phân loại rác đốt được, không đốt được, tái chế và rác cồng kềnh ở Nhật.',
+      vi: 'Hướng dẫn cách phân loại rác đốt được, không đốt được, tái chế và rác cồng kềnh tại Nhật. Lưu ý rằng quy định phân loại rác có thể khác nhau tùy theo từng thành phố.',
       zh: '如何分类可燃、不可燃、资源垃圾和大型垃圾。不同城市规则有所不同。',
       id: 'Cara memilah sampah bakar, tidak bakar, daur ulang, dan sampah besar di Jepang.',
       tl: 'Paano uriin ang nasusunog, hindi nasusunog, nare-recycle at malalaking basura sa Japan.',
@@ -481,7 +481,7 @@ export const articles: Article[] = [
     title: {
       ja: '緊急時の電話番号と対応方法',
       en: 'Emergency Numbers and How to Use Them',
-      vi: 'Số điện thoại khẩn cấp và cách sử dụng',
+      vi: 'Các số điện thoại khẩn cấp tại Nhật và cách gọi',
       zh: '紧急电话号码及使用方法',
       id: 'Nomor Darurat dan Cara Menggunakannya',
       tl: 'Mga Emergency na Numero at Paano Gamitin',
@@ -490,7 +490,7 @@ export const articles: Article[] = [
     summary: {
       ja: '火事・救急（119）、警察（110）などの緊急番号と、外国語対応の相談窓口を紹介。',
       en: 'Japan\'s emergency numbers — 119 for fire/ambulance, 110 for police — and multilingual support services.',
-      vi: 'Các số khẩn cấp tại Nhật — 119 cho cứu hỏa/cấp cứu, 110 cho cảnh sát — và hỗ trợ đa ngôn ngữ.',
+      vi: 'Các số khẩn cấp quan trọng tại Nhật: 119 (cứu hỏa/xe cứu thương), 110 (cảnh sát) và các dịch vụ hỗ trợ đa ngôn ngữ dành cho người nước ngoài.',
       zh: '日本的紧急电话号码——119（消防急救）、110（警察）——及多语言支持服务。',
       id: 'Nomor darurat Jepang — 119 untuk pemadam/ambulans, 110 untuk polisi — dan layanan dukungan multibahasa.',
       tl: 'Mga emergency na numero ng Japan — 119 para sa sunog/ambulansya, 110 para sa pulis.',
@@ -526,7 +526,7 @@ export const articles: Article[] = [
     title: {
       ja: '地震対策と避難方法',
       en: 'Earthquake Preparedness and Evacuation in Japan',
-      vi: 'Chuẩn bị và sơ tán khi động đất tại Nhật',
+      vi: 'Hướng dẫn phòng chống động đất và sơ tán khẩn cấp tại Nhật',
       zh: '地震对策与避难方法',
       id: 'Kesiapsiagaan Gempa dan Evakuasi di Jepang',
       tl: 'Paghahanda sa Lindol at Paglikas sa Japan',
@@ -535,7 +535,7 @@ export const articles: Article[] = [
     summary: {
       ja: '日本で地震が起きたときの行動手順と、非常用持ち出し袋の準備方法を解説。',
       en: 'What to do during an earthquake in Japan and how to prepare an emergency bag.',
-      vi: 'Những việc cần làm khi có động đất ở Nhật và cách chuẩn bị túi khẩn cấp.',
+      vi: 'Hướng dẫn những hành động cần làm ngay khi xảy ra động đất tại Nhật và cách chuẩn bị túi đồ khẩn cấp (hijouyou mochidashibukuro) để sẵn sàng cho tình huống bất ngờ.',
       zh: '在日本发生地震时的行动步骤和准备应急袋的方法。',
       id: 'Apa yang harus dilakukan saat gempa di Jepang dan cara menyiapkan tas darurat.',
       tl: 'Ano ang gagawin sa panahon ng lindol sa Japan at paano maghanda ng emergency bag.',
@@ -573,7 +573,7 @@ export const articles: Article[] = [
     title: {
       ja: '免税（タックスフリー）ショッピングの方法',
       en: 'How to Shop Tax-Free in Japan',
-      vi: 'Cách mua sắm miễn thuế tại Nhật',
+      vi: 'Hướng dẫn mua sắm miễn thuế (Tax Free) tại Nhật Bản',
       zh: '在日本免税购物的方法',
       id: 'Cara Belanja Bebas Pajak di Jepang',
       tl: 'Paano Mamili nang Walang Buwis sa Japan',
@@ -582,7 +582,7 @@ export const articles: Article[] = [
     summary: {
       ja: '外国人観光客・短期滞在者が利用できる消費税免除制度の対象商品と手続き方法。',
       en: 'Foreign visitors can get consumption tax refunded. Learn which items qualify and how to claim it.',
-      vi: 'Du khách nước ngoài có thể được hoàn thuế tiêu dùng. Tìm hiểu hàng hóa nào được miễn và cách yêu cầu.',
+      vi: 'Khách du lịch và người nước ngoài lưu trú ngắn hạn có thể được hoàn lại thuế tiêu dùng (10%). Hãy tìm hiểu mặt hàng nào được miễn thuế và thủ tục yêu cầu hoàn thuế.',
       zh: '外国游客可以申请消费税退税。了解哪些商品符合条件以及如何申请。',
       id: 'Wisatawan asing bisa mendapat pengembalian pajak konsumsi. Pelajari barang apa yang memenuhi syarat.',
       tl: 'Ang mga dayuhang bisita ay makakakuha ng refund ng consumption tax. Alamin kung anong produkto ang kwalipikado.',
@@ -620,7 +620,7 @@ export const articles: Article[] = [
     title: {
       ja: '格安SIM・スマホプランの選び方',
       en: 'Choosing a SIM Card and Phone Plan in Japan',
-      vi: 'Cách chọn SIM và gói điện thoại tại Nhật',
+      vi: 'Hướng dẫn chọn SIM và gói cước điện thoại tại Nhật Bản',
       zh: '如何选择廉价SIM和手机套餐',
       id: 'Cara Memilih SIM Card dan Paket Ponsel di Jepang',
       tl: 'Paano Pumili ng SIM Card at Phone Plan sa Japan',
@@ -629,7 +629,7 @@ export const articles: Article[] = [
     summary: {
       ja: 'ドコモ・au・ソフトバンクの大手キャリアと格安SIM（MVNO）の比較。外国人が申し込む方法。',
       en: 'Comparing major carriers (Docomo, au, SoftBank) vs budget SIMs (MVNOs). How to sign up as a foreigner.',
-      vi: 'So sánh nhà mạng lớn (Docomo, au, SoftBank) với SIM giá rẻ (MVNO) và cách đăng ký cho người nước ngoài.',
+      vi: 'So sánh các nhà mạng lớn (Docomo, au, SoftBank) với SIM giá rẻ (MVNO) tại Nhật. Bài viết hướng dẫn cách đăng ký dành riêng cho người nước ngoài.',
       zh: '大型运营商（Docomo、au、SoftBank）与廉价SIM（MVNO）的比较。外国人的申请方法。',
       id: 'Membandingkan operator besar (Docomo, au, SoftBank) vs SIM murah (MVNO) dan cara daftar sebagai orang asing.',
       tl: 'Paghahambing ng malalaking carrier (Docomo, au, SoftBank) vs budget SIM (MVNO) at paano mag-sign up bilang dayuhan.',
@@ -665,7 +665,7 @@ export const articles: Article[] = [
     title: {
       ja: '保育園（保育所）への入園手続き',
       en: 'How to Enroll Your Child in Daycare (Hoikuen)',
-      vi: 'Cách đăng ký nhà trẻ cho con tại Nhật',
+      vi: 'Hướng dẫn đăng ký nhà trẻ (hoikuen) cho con tại Nhật Bản',
       zh: '保育园（保育所）入园手续',
       id: 'Cara Mendaftarkan Anak ke Daycare (Hoikuen)',
       tl: 'Paano Mag-enroll ng Anak sa Daycare (Hoikuen)',
@@ -674,7 +674,7 @@ export const articles: Article[] = [
     summary: {
       ja: '認可保育園・認可外保育園の違いと入園申し込み方法。待機児童問題や多言語対応保育園の探し方も。',
       en: 'Difference between licensed and unlicensed daycare, enrollment process, and tips for finding multilingual options.',
-      vi: 'Sự khác biệt giữa nhà trẻ được cấp phép và không được cấp phép, quy trình đăng ký và cách tìm tùy chọn đa ngôn ngữ.',
+      vi: 'Tìm hiểu sự khác biệt giữa nhà trẻ được cấp phép (ninka hoikuen) và nhà trẻ tư thục (ninka-gai), quy trình đăng ký và cách tìm nhà trẻ có hỗ trợ đa ngôn ngữ.',
       zh: '认可保育园与非认可保育园的区别、入园申请方法以及寻找多语言对应保育园的技巧。',
       id: 'Perbedaan daycare berlisensi dan tidak berlisensi, proses pendaftaran, dan cara menemukan opsi multibahasa.',
       tl: 'Pagkakaiba ng lisensyado at hindi lisensyadong daycare, proseso ng enrollment, at mga tip sa paghanap ng multilingual na opsyon.',
@@ -710,7 +710,7 @@ export const articles: Article[] = [
     title: {
       ja: '日本の労働権利：最低賃金・残業・有給休暇',
       en: 'Your Labor Rights in Japan: Minimum Wage, Overtime & Paid Leave',
-      vi: 'Quyền lao động tại Nhật: Lương tối thiểu, làm thêm giờ và nghỉ phép',
+      vi: 'Quyền lao động tại Nhật Bản: Lương tối thiểu, làm thêm giờ và nghỉ phép có lương',
       zh: '日本劳动权利：最低工资、加班和带薪休假',
       id: 'Hak Ketenagakerjaan di Jepang: Upah Minimum, Lembur & Cuti Berbayar',
       tl: 'Mga Karapatan sa Trabaho sa Japan: Minimum Wage, Overtime at Bayad na Leave',
@@ -719,7 +719,7 @@ export const articles: Article[] = [
     summary: {
       ja: '外国人労働者も同じ権利を持つ。最低賃金の確認方法、残業代の計算、有給休暇の取り方を解説。',
       en: 'Foreign workers have equal labor rights in Japan. Learn about minimum wage, overtime pay, and paid leave.',
-      vi: 'Người lao động nước ngoài có quyền lao động bình đẳng ở Nhật. Tìm hiểu về lương tối thiểu, lương làm thêm giờ và nghỉ phép.',
+      vi: 'Người lao động nước ngoài có quyền lao động hoàn toàn bình đẳng tại Nhật. Bài viết giải thích mức lương tối thiểu theo từng tỉnh, cách tính lương làm thêm giờ và quyền nghỉ phép có lương.',
       zh: '外国劳动者在日本享有同等权利。了解最低工资、加班费和带薪休假的规定。',
       id: 'Pekerja asing memiliki hak ketenagakerjaan yang sama di Jepang. Pelajari upah minimum, lembur, dan cuti berbayar.',
       tl: 'Ang mga dayuhang manggagawa ay may pantay na karapatan sa trabaho sa Japan.',
@@ -757,7 +757,7 @@ export const articles: Article[] = [
     title: {
       ja: '在留カードの住所変更・更新手続き',
       en: 'Updating and Renewing Your Residence Card',
-      vi: 'Thủ tục thay đổi địa chỉ và gia hạn thẻ cư trú',
+      vi: 'Hướng dẫn thay đổi địa chỉ và gia hạn thẻ lưu trú (zairyu card) tại Nhật',
       zh: '在留卡的地址变更和更新手续',
       id: 'Prosedur Perubahan Alamat dan Perpanjangan Kartu Izin Tinggal',
       tl: 'Pag-update at Pag-renew ng Residence Card',
@@ -766,7 +766,7 @@ export const articles: Article[] = [
     summary: {
       ja: '引越し後の住所変更、在留期間更新の手順と期限。手続きを怠ると罰則があるので注意。',
       en: 'How to update your address after moving and renew your residence card before it expires.',
-      vi: 'Cách cập nhật địa chỉ sau khi chuyển nhà và gia hạn thẻ cư trú trước khi hết hạn.',
+      vi: 'Hướng dẫn cách cập nhật địa chỉ mới trên thẻ lưu trú (zairyu card) sau khi chuyển nhà, và thủ tục gia hạn tư cách lưu trú trước khi hết hạn. Chú ý: quá hạn lưu trú là vi phạm pháp luật nghiêm trọng.',
       zh: '搬家后如何变更地址以及在到期前更新在留卡。',
       id: 'Cara memperbarui alamat setelah pindah dan memperpanjang kartu izin tinggal sebelum kadaluarsa.',
       tl: 'Paano i-update ang address pagkatapos lumipat at i-renew ang residence card bago mag-expire.',
@@ -802,7 +802,7 @@ export const articles: Article[] = [
     title: {
       ja: '日本のマナーと礼儀の基本',
       en: 'Basic Japanese Manners and Etiquette',
-      vi: 'Phép lịch sự và lễ nghi cơ bản tại Nhật',
+      vi: 'Những phép lịch sự và lễ nghi cơ bản cần biết khi sống ở Nhật',
       zh: '日本礼仪和规矩的基础',
       id: 'Dasar Sopan Santun dan Etiket Jepang',
       tl: 'Mga Pangunahing Japanese Manner at Etiketa',
@@ -811,7 +811,7 @@ export const articles: Article[] = [
     summary: {
       ja: '日本生活で知っておくべき基本マナー。食事・公共交通・訪問時の礼儀など。',
       en: 'Essential Japanese manners for daily life — dining, public transport, visiting homes, and more.',
-      vi: 'Những phép lịch sự thiết yếu của Nhật trong cuộc sống hàng ngày.',
+      vi: 'Những quy tắc ứng xử thiết yếu trong cuộc sống hàng ngày tại Nhật — từ cách ăn uống, đi phương tiện công cộng đến cách cư xử khi đến thăm nhà người khác.',
       zh: '日本日常生活中必须知道的基本礼仪——用餐、公共交通、拜访等。',
       id: 'Sopan santun Jepang yang penting untuk kehidupan sehari-hari.',
       tl: 'Mahahalagang Japanese manner para sa pang-araw-araw na buhay.',
@@ -848,7 +848,7 @@ export const articles: Article[] = [
     title: {
       ja: '日本のレストランでの注文方法',
       en: 'How to Order Food at Japanese Restaurants',
-      vi: 'Cách gọi món tại nhà hàng Nhật',
+      vi: 'Hướng dẫn cách gọi món tại nhà hàng Nhật Bản',
       zh: '在日本餐厅点餐的方法',
       id: 'Cara Memesan Makanan di Restoran Jepang',
       tl: 'Paano Mag-order sa mga Japanese na Restaurant',
@@ -857,7 +857,7 @@ export const articles: Article[] = [
     summary: {
       ja: '食券機・タッチパネル注文・店員を呼ぶ方法まで。日本のレストランの注文システムをわかりやすく解説。',
       en: 'Ticket vending machines, tablet menus, and calling staff — how Japan\'s restaurant ordering systems work.',
-      vi: 'Máy bán vé, menu cảm ứng và gọi nhân viên — cách thức đặt món tại nhà hàng Nhật hoạt động.',
+      vi: 'Tìm hiểu các hệ thống gọi món tại nhà hàng Nhật: máy bán phiếu ăn (shokken-ki), menu màn hình cảm ứng, gọi nhân viên và đặt món bằng mã QR.',
       zh: '食券机、触摸屏点餐、叫服务员的方法——日本餐厅的点餐系统详解。',
       id: 'Mesin tiket, menu tablet, dan memanggil staf — cara sistem pemesanan restoran Jepang bekerja.',
       tl: 'Ticket machines, tablet menus, at pagtawag ng staff — kung paano gumagana ang sistema ng pag-order sa Japan.',
@@ -893,7 +893,7 @@ export const articles: Article[] = [
     title: {
       ja: '食物アレルギー・宗教上の食事制限への対処法',
       en: 'Managing Dietary Restrictions and Food Allergies in Japan',
-      vi: 'Cách xử lý dị ứng thực phẩm và hạn chế ăn uống theo tôn giáo tại Nhật',
+      vi: 'Hướng dẫn ứng phó với dị ứng thực phẩm và hạn chế ăn uống theo tôn giáo (halal, vegetarian…) tại Nhật',
       zh: '在日本应对食物过敏和宗教饮食限制',
       id: 'Mengelola Alergi Makanan dan Pembatasan Diet Agama di Jepang',
       tl: 'Pamamahala ng Food Allergies at Relihiyosong Paghihigpit sa Pagkain sa Japan',
@@ -902,7 +902,7 @@ export const articles: Article[] = [
     summary: {
       ja: 'ベジタリアン・ヴィーガン・ハラール・コーシャなど特別な食事制限がある場合の対処法と使えるフレーズ。',
       en: 'How to navigate Japan\'s food scene with vegetarian, vegan, halal, kosher, or allergy requirements.',
-      vi: 'Cách ăn uống ở Nhật khi có yêu cầu ăn chay, vegan, halal, kosher hoặc dị ứng.',
+      vi: 'Hướng dẫn cách ăn uống an toàn tại Nhật khi bạn ăn chay, vegan, ăn halal, kosher hoặc có dị ứng thực phẩm — kèm các câu tiếng Nhật hữu ích.',
       zh: '素食、纯素食、清真、犹太洁食或过敏等特殊饮食要求的应对方法。',
       id: 'Cara menjalani kuliner Jepang dengan kebutuhan vegetarian, vegan, halal, kosher, atau alergi.',
       tl: 'Paano mag-navigate sa pagkain ng Japan na may vegetarian, vegan, halal, kosher, o allergy na pangangailangan.',
@@ -942,7 +942,7 @@ export const articles: Article[] = [
     title: {
       ja: '児童手当と子育て支援サービス',
       en: 'Child Allowance and Parenting Support Services',
-      vi: 'Trợ cấp trẻ em và dịch vụ hỗ trợ nuôi con',
+      vi: 'Trợ cấp nuôi con (Jidou Teate) và các dịch vụ hỗ trợ gia đình tại Nhật',
       zh: '儿童津贴与育儿支援服务',
       id: 'Tunjangan Anak dan Layanan Dukungan Pengasuhan',
       tl: 'Child Allowance at Serbisyong Suporta sa Pagpapalaki ng Bata',
@@ -951,7 +951,7 @@ export const articles: Article[] = [
     summary: {
       ja: '日本で子どもを育てる外国人が受けられる児童手当・医療費助成・育児支援サービスの申請方法。',
       en: 'Child allowance, medical subsidies, and parenting support available to foreign families in Japan — how to apply.',
-      vi: 'Trợ cấp trẻ em, hỗ trợ y tế và dịch vụ nuôi con dành cho gia đình nước ngoài tại Nhật.',
+      vi: 'Gia đình nước ngoài sinh sống tại Nhật có thể nhận trợ cấp nuôi con (jidou teate), hỗ trợ chi phí y tế cho trẻ em và nhiều dịch vụ hỗ trợ khác. Bài viết hướng dẫn thủ tục đăng ký.',
       zh: '外国家庭在日本可以享受的儿童津贴、医疗补贴和育儿支援服务的申请方法。',
       id: 'Tunjangan anak, subsidi medis, dan dukungan pengasuhan yang tersedia bagi keluarga asing di Jepang.',
       tl: 'Child allowance, subsidyo sa medikal, at suporta sa pagpapalaki ng bata para sa mga dayuhang pamilya sa Japan.',
@@ -989,7 +989,7 @@ export const articles: Article[] = [
     title: {
       ja: '小学校・中学校への就学手続き',
       en: 'Enrolling Your Child in Japanese Elementary or Middle School',
-      vi: 'Thủ tục nhập học tiểu học và trung học cơ sở tại Nhật',
+      vi: 'Hướng dẫn thủ tục nhập học tiểu học và trung học cơ sở tại Nhật Bản',
       zh: '小学・初中就学手续',
       id: 'Prosedur Pendaftaran ke SD dan SMP di Jepang',
       tl: 'Pag-enroll ng Anak sa Elementarya o Hayskul sa Japan',
@@ -998,7 +998,7 @@ export const articles: Article[] = [
     summary: {
       ja: '外国籍の子どもも日本の公立小中学校に無償で入学できます。就学通知から入学までの流れと必要書類。',
       en: 'Foreign children can enroll in Japanese public schools for free. From enrollment notice to starting school.',
-      vi: 'Trẻ em nước ngoài có thể đi học trường công lập Nhật Bản miễn phí. Từ thông báo nhập học đến bắt đầu học.',
+      vi: 'Trẻ em nước ngoài có thể theo học trường công lập Nhật Bản hoàn toàn miễn phí. Bài viết hướng dẫn từng bước từ khi nhận thông báo nhập học đến ngày bắt đầu đi học, kèm thông tin về hỗ trợ tiếng Nhật.',
       zh: '外国籍儿童也可以免费就读日本公立小学和初中。从就学通知到入学的流程和所需材料。',
       id: 'Anak asing bisa bersekolah di sekolah negeri Jepang secara gratis.',
       tl: 'Ang mga dayuhang bata ay maaaring mag-enroll sa mga pampublikong paaralan ng Japan nang libre.',
@@ -1036,7 +1036,7 @@ export const articles: Article[] = [
     title: {
       ja: '郵便局の使い方と郵便サービス',
       en: 'How to Use the Post Office in Japan',
-      vi: 'Cách sử dụng bưu điện tại Nhật Bản',
+      vi: 'Hướng dẫn sử dụng bưu điện (yuubinkyoku) tại Nhật Bản',
       zh: '邮局使用方法与邮政服务',
       id: 'Cara Menggunakan Kantor Pos di Jepang',
       tl: 'Paano Gamitin ang Post Office sa Japan',
@@ -1045,7 +1045,7 @@ export const articles: Article[] = [
     summary: {
       ja: '荷物の送り方、国際郵便、レターパック、ゆうちょ銀行ATMまで。日本の郵便局でできることを全解説。',
       en: 'Sending packages, international mail, Letter Pack, and Japan Post Bank ATMs — everything you can do at a Japanese post office.',
-      vi: 'Gửi bưu kiện, thư quốc tế, Letter Pack và ATM của Japan Post Bank — mọi thứ bạn có thể làm tại bưu điện Nhật.',
+      vi: 'Bưu điện Nhật (yuubinkyoku) không chỉ là nơi gửi bưu kiện và thư quốc tế — bạn còn có thể dùng Letter Pack, sử dụng ATM của Japan Post Bank và thanh toán các hóa đơn tại đây.',
       zh: '寄包裹、国际邮件、信件包、邮政银行ATM——日本邮局能做的一切。',
       id: 'Mengirim paket, surat internasional, Letter Pack, dan ATM Japan Post Bank.',
       tl: 'Pagpapadala ng pakete, internasyonal na mail, Letter Pack, at Japan Post Bank ATMs.',
@@ -1082,7 +1082,7 @@ export const articles: Article[] = [
     title: {
       ja: '自宅インターネットの契約・開通方法',
       en: 'Setting Up Home Internet in Japan',
-      vi: 'Cách đăng ký và kết nối internet tại nhà ở Nhật',
+      vi: 'Hướng dẫn đăng ký và lắp đặt internet tại nhà ở Nhật Bản',
       zh: '在日本如何申请家庭网络',
       id: 'Cara Mendaftar Internet Rumahan di Jepang',
       tl: 'Paano Mag-set up ng Home Internet sa Japan',
@@ -1091,7 +1091,7 @@ export const articles: Article[] = [
     summary: {
       ja: '光回線・ホームルーター・ポケットWiFiの比較と申し込み方法。外国人でも申し込めるプランを紹介。',
       en: 'Comparing fiber optic, home routers, and pocket WiFi in Japan — which is best for foreign residents.',
-      vi: 'So sánh cáp quang, router gia đình và pocket WiFi tại Nhật — loại nào phù hợp nhất cho người nước ngoài.',
+      vi: 'So sánh cáp quang (hikari), home router (WiMAX, Home 5G) và pocket WiFi tại Nhật — giúp bạn chọn loại internet phù hợp nhất với tình trạng lưu trú của mình.',
       zh: '光纤、家用路由器和口袋WiFi的比较——哪种最适合外国居民。',
       id: 'Perbandingan fiber optik, router rumahan, dan pocket WiFi di Jepang.',
       tl: 'Paghahambing ng fiber optic, home router, at pocket WiFi sa Japan.',
@@ -1126,7 +1126,7 @@ export const articles: Article[] = [
     title: {
       ja: '温泉・銭湯のマナーと入り方',
       en: 'Onsen & Sento Etiquette: How to Use a Japanese Bath',
-      vi: 'Phép lịch sự và cách sử dụng onsen và sento',
+      vi: 'Quy tắc ứng xử và cách sử dụng onsen (suối nước nóng) và sento (nhà tắm công cộng) tại Nhật',
       zh: '温泉・钱汤礼仪与使用方法',
       id: 'Etiket dan Cara Menggunakan Onsen & Sento',
       tl: 'Etiketa at Paano Gumamit ng Onsen at Sento',
@@ -1135,7 +1135,7 @@ export const articles: Article[] = [
     summary: {
       ja: '日本の温泉・銭湯の入り方、タブーとマナー。入れ墨がある場合の注意点や外国人向け施設の探し方も。',
       en: 'How to use Japanese onsen and sento, rules and taboos, tattoo policies, and finding foreigner-friendly facilities.',
-      vi: 'Cách sử dụng onsen và sento Nhật Bản, quy tắc và điều cấm kỵ, chính sách hình xăm.',
+      vi: 'Hướng dẫn cách sử dụng onsen và sento của Nhật Bản, các quy tắc bắt buộc, điều kiêng kỵ, và chính sách đối với người có hình xăm (tattoo). Kèm cách tìm cơ sở thân thiện với người nước ngoài.',
       zh: '如何使用日本温泉和钱汤、规则和禁忌、纹身政策以及寻找对外国人友好的设施。',
       id: 'Cara menggunakan onsen dan sento Jepang, aturan dan tabu, kebijakan tato.',
       tl: 'Paano gamitin ang Japanese onsen at sento, mga patakaran at bawal, patakaran sa tattoo.',
@@ -1171,7 +1171,7 @@ export const articles: Article[] = [
     title: {
       ja: '日本の祝日と季節行事',
       en: 'Japanese Public Holidays and Seasonal Events',
-      vi: 'Ngày lễ quốc gia và sự kiện theo mùa ở Nhật',
+      vi: 'Các ngày lễ quốc gia và sự kiện theo mùa tại Nhật Bản',
       zh: '日本的公共假日和季节活动',
       id: 'Hari Libur Nasional dan Acara Musiman Jepang',
       tl: 'Japanese Public Holidays at Seasonal Events',
@@ -1180,7 +1180,7 @@ export const articles: Article[] = [
     summary: {
       ja: '日本の祝日一覧と、花見・お盆・大晦日など季節ごとのイベントを解説。職場での過ごし方のヒントも。',
       en: 'Japan\'s 16 public holidays and seasonal events like hanami, Obon, and New Year\'s — plus workplace tips.',
-      vi: '16 ngày lễ quốc gia của Nhật và các sự kiện theo mùa như ngắm hoa anh đào, Obon và Năm mới.',
+      vi: '16 ngày lễ quốc gia của Nhật và các sự kiện đặc sắc theo mùa: ngắm hoa anh đào (hanami), lễ Obon, Năm mới (oshougatsu) — cùng gợi ý cách ứng xử tại nơi làm việc trong các dịp này.',
       zh: '日本的16个公共假日和季节性活动，如赏花、盂兰盆节和新年——加上职场提示。',
       id: '16 hari libur nasional Jepang dan acara musiman seperti hanami, Obon, dan Tahun Baru.',
       tl: '16 na pampublikong bakasyon ng Japan at mga seasonal na kaganapan tulad ng hanami, Obon, at Bagong Taon.',
@@ -1216,7 +1216,7 @@ export const articles: Article[] = [
     title: {
       ja: '粗大ゴミの正しい捨て方',
       en: 'How to Dispose of Large Items (Sodai-gomi)',
-      vi: 'Cách vứt rác cồng kềnh đúng cách',
+      vi: 'Hướng dẫn cách xử lý rác cồng kềnh (sodai-gomi) đúng quy định tại Nhật',
       zh: '大型垃圾的正确处理方法',
       id: 'Cara Membuang Sampah Besar (Sodai-gomi)',
       tl: 'Paano Itapon ang Malalaking Basura (Sodai-gomi)',
@@ -1225,7 +1225,7 @@ export const articles: Article[] = [
     summary: {
       ja: 'ソファ・冷蔵庫・洗濯機などの大型ゴミは通常のゴミ出し不可。粗大ゴミシールの購入から収集申込みまで。',
       en: 'Sofas, fridges, and washing machines can\'t go in regular garbage. How to schedule large item pickup in Japan.',
-      vi: 'Ghế sofa, tủ lạnh và máy giặt không thể đặt trong rác thông thường. Cách đặt thu gom rác cồng kềnh ở Nhật.',
+      vi: 'Ghế sofa, tủ lạnh, máy giặt không thể bỏ vào rác thông thường — bạn cần đặt lịch thu gom rác cồng kềnh (sodai-gomi) riêng. Bài viết hướng dẫn từ mua tem xử lý rác đến lịch thu gom.',
       zh: '沙发、冰箱、洗衣机等大型垃圾不能普通处理。购买粗大垃圾贴纸并预约收集的方法。',
       id: 'Sofa, kulkas, dan mesin cuci tidak bisa dibuang sebagai sampah biasa. Cara menjadwalkan pengambilan di Jepang.',
       tl: 'Mga sofa, ref, at washing machine ay hindi maaaring itapon sa regular na basura. Paano mag-schedule ng pickup.',
@@ -1263,7 +1263,7 @@ export const articles: Article[] = [
     title: {
       ja: '100円ショップを最大限に活用する',
       en: 'Making the Most of Japan\'s 100-Yen Shops',
-      vi: 'Tận dụng tối đa cửa hàng 100 yên tại Nhật',
+      vi: 'Bí quyết tận dụng tối đa cửa hàng đồng giá 100 yên tại Nhật',
       zh: '充分利用日本100日元店',
       id: 'Memanfaatkan Toko 100 Yen di Jepang Semaksimal Mungkin',
       tl: 'Paano Mapakinabangan ang 100-Yen Shops ng Japan',
@@ -1272,7 +1272,7 @@ export const articles: Article[] = [
     summary: {
       ja: 'ダイソー・セリア・キャンドゥなど100円ショップで買えるお得なアイテムと使い方のコツ。引越し初期費用の節約に。',
       en: 'Daiso, Seria, Cando — what to buy at Japanese 100-yen shops to save money, especially when first moving in.',
-      vi: 'Daiso, Seria, Cando — những gì nên mua tại cửa hàng 100 yên để tiết kiệm, đặc biệt khi mới chuyển đến.',
+      vi: 'Daiso, Seria, Can Do — những cửa hàng đồng giá 100 yên tại Nhật có hàng nghìn sản phẩm hữu ích. Đây là những gì bạn nên mua để tiết kiệm chi phí, đặc biệt khi mới dọn vào nhà.',
       zh: 'Daiso、Seria、Cando——在日本100日元店买什么来省钱，尤其是搬家初期。',
       id: 'Daiso, Seria, Cando — apa yang dibeli di toko 100 yen untuk menghemat uang.',
       tl: 'Daiso, Seria, Cando — ano ang bibilhin sa 100-yen shops para makatipid.',
@@ -1306,7 +1306,7 @@ export const articles: Article[] = [
     title: {
       ja: 'ネット通販・フリマアプリの使い方',
       en: 'Online Shopping and Flea Market Apps in Japan',
-      vi: 'Mua sắm online và ứng dụng chợ trời tại Nhật',
+      vi: 'Hướng dẫn mua sắm trực tuyến và sử dụng ứng dụng chợ đồ cũ tại Nhật',
       zh: '网络购物和二手市场APP的使用方法',
       id: 'Belanja Online dan Aplikasi Pasar Loak di Jepang',
       tl: 'Online Shopping at Flea Market Apps sa Japan',
@@ -1315,7 +1315,7 @@ export const articles: Article[] = [
     summary: {
       ja: 'Amazon・楽天・メルカリ・ヤフオクの使い方と注意点。外国人でも安全に利用するためのポイント。',
       en: 'How to use Amazon Japan, Rakuten, Mercari, and Yahoo Auctions safely as a foreign resident.',
-      vi: 'Cách sử dụng Amazon Japan, Rakuten, Mercari và Yahoo Auctions an toàn như người nước ngoài.',
+      vi: 'Hướng dẫn cách sử dụng an toàn các nền tảng mua sắm trực tuyến Amazon Japan, Rakuten, Mercari và Yahoo Auctions dành cho người nước ngoài sinh sống tại Nhật.',
       zh: '如何安全使用Amazon日本、乐天市场、Mercari和Yahoo拍卖。',
       id: 'Cara menggunakan Amazon Japan, Rakuten, Mercari, dan Yahoo Auctions dengan aman sebagai orang asing.',
       tl: 'Paano gamitin nang ligtas ang Amazon Japan, Rakuten, Mercari, at Yahoo Auctions bilang dayuhan.',
@@ -1353,7 +1353,7 @@ export const articles: Article[] = [
     title: {
       ja: '賃貸契約の更新手続きと注意点',
       en: 'Lease Renewal: What to Know and How to Proceed',
-      vi: 'Gia hạn hợp đồng thuê nhà: Những điều cần biết và cách thực hiện',
+      vi: 'Hướng dẫn gia hạn hợp đồng thuê nhà tại Nhật: Những điều cần biết và thủ tục thực hiện',
       zh: '租约续签手续与注意事项',
       id: 'Perpanjangan Kontrak Sewa: Yang Perlu Diketahui dan Cara Melakukannya',
       tl: 'Pag-renew ng Lease Contract: Ano ang Dapat Malaman at Paano Gawin',
@@ -1362,7 +1362,7 @@ export const articles: Article[] = [
     summary: {
       ja: '一般的に2年ごとに行う賃貸契約更新の流れ、更新料の相場、更新拒否の条件を解説。',
       en: 'Lease contracts in Japan typically renew every 2 years. Learn the process, renewal fees, and your rights if the landlord refuses.',
-      vi: 'Hợp đồng thuê nhà tại Nhật thường gia hạn 2 năm một lần. Tìm hiểu quy trình, phí gia hạn và quyền của bạn.',
+      vi: 'Hợp đồng thuê nhà tại Nhật thường được gia hạn 2 năm một lần. Bài viết hướng dẫn quy trình gia hạn, mức phí gia hạn (koushinnryou) theo từng khu vực và quyền lợi của người thuê nhà.',
       zh: '日本租约通常每2年更新一次。了解流程、更新费用及房东拒绝续签时的权利。',
       id: 'Kontrak sewa di Jepang biasanya diperbarui setiap 2 tahun. Pelajari prosesnya, biaya perpanjangan, dan hak Anda.',
       tl: 'Ang mga lease contract sa Japan ay karaniwang nire-renew tuwing 2 taon. Alamin ang proseso at mga karapatan mo.',
@@ -1398,7 +1398,7 @@ export const articles: Article[] = [
     title: {
       ja: '引っ越しの手順と業者の選び方',
       en: 'Moving in Japan: Step-by-Step Guide and Choosing a Moving Company',
-      vi: 'Chuyển nhà tại Nhật: Hướng dẫn từng bước và cách chọn công ty chuyển nhà',
+      vi: 'Hướng dẫn chuyển nhà tại Nhật: Từng bước thực hiện và cách chọn công ty vận chuyển',
       zh: '搬家步骤与搬家公司选择指南',
       id: 'Panduan Pindahan di Jepang: Langkah-langkah dan Memilih Perusahaan Pindahan',
       tl: 'Paglipat ng Bahay sa Japan: Gabay at Pagpili ng Kumpanya',
@@ -1407,7 +1407,7 @@ export const articles: Article[] = [
     summary: {
       ja: '引っ越し会社の比較から退去手続き、荷造りのコツまで。スムーズに引っ越しを完了させるための完全ガイド。',
       en: 'From comparing moving companies to checkout procedures — a complete guide to moving smoothly in Japan.',
-      vi: 'Từ so sánh công ty chuyển nhà đến thủ tục trả phòng — hướng dẫn đầy đủ để chuyển nhà suôn sẻ tại Nhật.',
+      vi: 'Hướng dẫn đầy đủ để chuyển nhà suôn sẻ tại Nhật — từ cách so sánh và đặt dịch vụ vận chuyển, mẹo đóng gói đồ đạc, đến thủ tục trả phòng và tránh tranh chấp về chi phí hoàn trả.',
       zh: '从比较搬家公司到退租手续，顺利完成搬家的完整指南。',
       id: 'Dari membandingkan perusahaan pindahan hingga prosedur keluar — panduan lengkap untuk pindah lancar di Jepang.',
       tl: 'Mula sa paghahambing ng moving companies hanggang sa checkout — kumpletong gabay sa maayos na paglipat sa Japan.',
@@ -1443,7 +1443,7 @@ export const articles: Article[] = [
     title: {
       ja: '隣人・近所トラブルの対処法',
       en: 'How to Handle Neighbor Disputes in Japan',
-      vi: 'Cách xử lý tranh chấp với hàng xóm tại Nhật',
+      vi: 'Hướng dẫn xử lý tranh chấp với hàng xóm tại Nhật Bản',
       zh: '邻里纠纷的处理方法',
       id: 'Cara Menangani Perselisihan dengan Tetangga di Jepang',
       tl: 'Paano Harapin ang mga Alitan sa Kapitbahay sa Japan',
@@ -1452,7 +1452,7 @@ export const articles: Article[] = [
     summary: {
       ja: '騒音・ゴミ出し・駐車問題など、よくある隣人トラブルの相談先と解決手順を解説。',
       en: 'Common neighbor disputes in Japan — noise, garbage, parking — and how to resolve them step by step.',
-      vi: 'Các tranh chấp hàng xóm thường gặp tại Nhật — tiếng ồn, rác, đỗ xe — và cách giải quyết từng bước.',
+      vi: 'Hướng dẫn xử lý các vấn đề tranh chấp hàng xóm phổ biến tại Nhật — tiếng ồn, vi phạm quy định rác thải, đỗ xe trái phép — kèm các bước giải quyết từng trường hợp.',
       zh: '日本常见邻里纠纷——噪音、垃圾、停车——以及逐步解决方法。',
       id: 'Perselisihan tetangga yang umum di Jepang — kebisingan, sampah, parkir — dan cara menyelesaikannya.',
       tl: 'Mga karaniwang alitan sa kapitbahay sa Japan — ingay, basura, parking — at paano resolbahin.',
@@ -1488,7 +1488,7 @@ export const articles: Article[] = [
     title: {
       ja: 'タクシーの乗り方と料金ガイド',
       en: 'How to Take a Taxi in Japan',
-      vi: 'Cách đi taxi tại Nhật Bản',
+      vi: 'Hướng dẫn đi taxi tại Nhật Bản và bảng giá tham khảo',
       zh: '出租车乘坐方法与费用指南',
       id: 'Cara Naik Taksi di Jepang',
       tl: 'Paano Sumakay ng Taxi sa Japan',
@@ -1497,7 +1497,7 @@ export const articles: Article[] = [
     summary: {
       ja: '日本のタクシーの料金システム、乗り方のマナー、アプリ配車サービスの使い方を解説。',
       en: 'Japan\'s taxi fare system, etiquette, and how to use app-based taxi services like GO and DiDi.',
-      vi: 'Hệ thống giá taxi, phép lịch sự và cách sử dụng dịch vụ taxi qua ứng dụng như GO và DiDi tại Nhật.',
+      vi: 'Tìm hiểu cách vẫy taxi trên đường, bảng giá taxi theo khu vực, phụ phí đêm khuya và cách đặt taxi qua ứng dụng GO, DiDi dành riêng cho người không nói được tiếng Nhật.',
       zh: '日本出租车的计费系统、乘车礼仪以及GO和DiDi等打车软件的使用方法。',
       id: 'Sistem tarif taksi, etiket, dan cara menggunakan layanan taksi berbasis aplikasi seperti GO dan DiDi di Jepang.',
       tl: 'Sistema ng singil ng taxi, etiketa, at paano gamitin ang mga app-based taxi service tulad ng GO at DiDi.',
@@ -1533,7 +1533,7 @@ export const articles: Article[] = [
     title: {
       ja: '自転車の交通ルールと安全な乗り方',
       en: 'Bicycle Traffic Rules and Safe Cycling in Japan',
-      vi: 'Quy tắc giao thông xe đạp và cách đi xe đạp an toàn tại Nhật',
+      vi: 'Luật giao thông xe đạp và cách đi xe đạp an toàn tại Nhật Bản',
       zh: '自行车交通规则与安全骑行方法',
       id: 'Aturan Lalu Lintas Sepeda dan Bersepeda Aman di Jepang',
       tl: 'Mga Panuntunan sa Trapiko ng Bisikleta at Ligtas na Pagbibisikleta sa Japan',
@@ -1542,7 +1542,7 @@ export const articles: Article[] = [
     summary: {
       ja: '日本での自転車の乗り方のルール、登録制度、駐輪ルールなど。違反すると罰則があるので要注意。',
       en: 'Rules for cycling in Japan — road laws, registration, parking, and fines for violations.',
-      vi: 'Quy tắc đi xe đạp ở Nhật — luật giao thông, đăng ký xe, đậu xe và tiền phạt vi phạm.',
+      vi: 'Hướng dẫn các quy tắc đi xe đạp tại Nhật — luật giao thông đường bộ, thủ tục đăng ký xe (bouhantorouku), quy định đỗ xe và mức phạt khi vi phạm. Lưu ý rằng các quy định này áp dụng cho cả người nước ngoài.',
       zh: '日本骑自行车的规则——交通法规、注册制度、停车规定及违规罚款。',
       id: 'Aturan bersepeda di Jepang — hukum lalu lintas, pendaftaran, parkir, dan denda pelanggaran.',
       tl: 'Mga patakaran sa pagbibisikleta sa Japan — batas sa trapiko, pagpaparehistro, parking, at multa sa paglabag.',
@@ -1579,7 +1579,7 @@ export const articles: Article[] = [
     title: {
       ja: '路線バスの乗り方ガイド',
       en: 'How to Ride Local Buses in Japan',
-      vi: 'Hướng dẫn cách đi xe buýt tại Nhật Bản',
+      vi: 'Hướng dẫn đầy đủ cách đi xe buýt nội thị tại Nhật Bản',
       zh: '路线公交乘坐指南',
       id: 'Panduan Naik Bus Lokal di Jepang',
       tl: 'Gabay sa Pagsakay ng Local Bus sa Japan',
@@ -1588,7 +1588,7 @@ export const articles: Article[] = [
     summary: {
       ja: '路線バスの乗り方、料金の払い方（前払い・後払い）、ICカードの使い方を詳しく解説。',
       en: 'How to board, pay, and exit local buses in Japan — front-pay vs rear-entry systems, and using IC cards.',
-      vi: 'Cách lên, trả tiền và xuống xe buýt địa phương ở Nhật — hệ thống trả trước và trả sau, và sử dụng thẻ IC.',
+      vi: 'Hướng dẫn cách lên xe, thanh toán và xuống xe buýt tại Nhật — bao gồm hệ thống trả trước (lên trước) và trả sau (lên sau lấy phiếu), cùng cách dùng thẻ IC để tự động tính tiền.',
       zh: '如何乘坐日本路线公交，包括前门上车付费和后门上车两种方式以及IC卡的使用方法。',
       id: 'Cara naik, bayar, dan turun dari bus lokal di Jepang — sistem bayar di depan vs belakang, dan menggunakan kartu IC.',
       tl: 'Paano sumakay, magbayad, at bumaba ng local bus sa Japan — front-pay at rear-entry systems, at paggamit ng IC cards.',
@@ -1628,7 +1628,7 @@ export const articles: Article[] = [
     title: {
       ja: '救急病院・夜間診療の探し方',
       en: 'How to Find Emergency and After-Hours Medical Care in Japan',
-      vi: 'Cách tìm bệnh viện cấp cứu và phòng khám ngoài giờ tại Nhật',
+      vi: 'Hướng dẫn tìm bệnh viện cấp cứu và phòng khám ngoài giờ hành chính tại Nhật',
       zh: '如何寻找急诊医院和夜间诊疗',
       id: 'Cara Menemukan Rumah Sakit Darurat dan Perawatan di Luar Jam Kerja di Jepang',
       tl: 'Paano Makahanap ng Emergency Hospital at After-Hours na Pag-aalaga sa Japan',
@@ -1637,7 +1637,7 @@ export const articles: Article[] = [
     summary: {
       ja: '夜間・休日に急病になったとき、どこに行けばいいかを解説。救急安心センター（#7119）の使い方も。',
       en: 'What to do when you get sick at night or on holidays in Japan — finding emergency care and using the #7119 consultation line.',
-      vi: 'Phải làm gì khi bị ốm vào ban đêm hoặc ngày nghỉ tại Nhật — tìm cơ sở cấp cứu và sử dụng đường dây tư vấn #7119.',
+      vi: 'Bạn cần làm gì khi bị ốm vào ban đêm hoặc ngày nghỉ tại Nhật? Bài viết hướng dẫn cách tìm bệnh viện cấp cứu gần nhất và cách sử dụng đường dây tư vấn y tế #7119 (hỗ trợ đa ngôn ngữ).',
       zh: '在日本夜间或节假日突发疾病时该怎么做——寻找急诊及使用#7119咨询热线。',
       id: 'Apa yang harus dilakukan saat sakit malam hari atau hari libur di Jepang — mencari perawatan darurat dan menggunakan hotline konsultasi #7119.',
       tl: 'Ano ang gagawin kapag nagkasakit sa gabi o holiday sa Japan — paghahanap ng emergency care at paggamit ng #7119 consultation line.',
@@ -1675,7 +1675,7 @@ export const articles: Article[] = [
     title: {
       ja: '処方箋の受け取り方と薬局の使い方',
       en: 'How to Fill a Prescription at a Japanese Pharmacy',
-      vi: 'Cách lấy thuốc theo đơn tại nhà thuốc Nhật Bản',
+      vi: 'Hướng dẫn lấy thuốc theo đơn tại nhà thuốc (yakkyoku) Nhật Bản',
       zh: '如何取处方药及药店使用指南',
       id: 'Cara Mengambil Obat Resep di Apotek Jepang',
       tl: 'Paano Kumuha ng Gamot sa Reseta sa Japanese Pharmacy',
@@ -1684,7 +1684,7 @@ export const articles: Article[] = [
     summary: {
       ja: '病院で処方箋をもらった後の調剤薬局での手続き、OTC医薬品の購入方法、薬局でできることを解説。',
       en: 'What to do with a prescription after leaving the hospital — dispensing pharmacies, over-the-counter drugs, and more.',
-      vi: 'Phải làm gì với đơn thuốc sau khi rời bệnh viện — nhà thuốc điều chế, thuốc không kê đơn và nhiều hơn nữa.',
+      vi: 'Tại Nhật, bệnh viện chỉ cấp đơn thuốc — bạn cần đến nhà thuốc riêng (chouza-yakkyoku) để lấy thuốc. Bài viết giải thích quy trình, vai trò của sổ thuốc (okusuri techo) và cách mua thuốc không kê đơn.',
       zh: '离开医院后如何处理处方——调剂药局、非处方药购买及更多服务。',
       id: 'Apa yang harus dilakukan dengan resep setelah meninggalkan rumah sakit — apotek racikan, obat bebas, dan lainnya.',
       tl: 'Ano ang gagawin sa reseta pagkatapos umalis sa ospital — mga dispensing pharmacy, over-the-counter drugs, at iba pa.',
@@ -1721,7 +1721,7 @@ export const articles: Article[] = [
     title: {
       ja: '歯科受診ガイド：予約から治療まで',
       en: 'Visiting a Dentist in Japan: From Booking to Treatment',
-      vi: 'Hướng dẫn đến nha sĩ tại Nhật: Từ đặt lịch đến điều trị',
+      vi: 'Hướng dẫn khám nha khoa tại Nhật: Từ đặt lịch đến quá trình điều trị',
       zh: '牙科就诊指南：从预约到治疗',
       id: 'Panduan Kunjungan ke Dokter Gigi di Jepang: Dari Pemesanan hingga Perawatan',
       tl: 'Pagbisita sa Dentist sa Japan: Mula sa Booking Hanggang Paggamot',
@@ -1730,7 +1730,7 @@ export const articles: Article[] = [
     summary: {
       ja: '歯医者の選び方、保険が使えるかどうか、受診時に役立つフレーズ、治療費の目安を解説。',
       en: 'Choosing a dentist in Japan, insurance coverage, useful phrases, and expected treatment costs.',
-      vi: 'Chọn nha sĩ ở Nhật, bảo hiểm có áp dụng không, cụm từ hữu ích khi khám và chi phí điều trị ước tính.',
+      vi: 'Hướng dẫn tìm nha sĩ tại Nhật, giải thích về bảo hiểm y tế có áp dụng hay không, các câu tiếng Nhật hữu ích khi khám, và chi phí điều trị ước tính theo từng dịch vụ.',
       zh: '如何选择牙医、保险是否适用、就诊有用的句子以及治疗费用的参考。',
       id: 'Memilih dokter gigi di Jepang, cakupan asuransi, frasa berguna, dan perkiraan biaya perawatan.',
       tl: 'Pagpili ng dentist sa Japan, saklaw ng insurance, mga kapaki-pakinabang na parirala, at inaasahang gastos sa paggamot.',
@@ -1770,7 +1770,7 @@ export const articles: Article[] = [
     title: {
       ja: '地震への備え：日頃からできる対策',
       en: 'Preparing for Earthquakes: What You Can Do Before One Strikes',
-      vi: 'Chuẩn bị cho động đất: Những gì bạn có thể làm trước khi xảy ra',
+      vi: 'Phòng chống động đất tại Nhật: Những điều cần chuẩn bị trước khi thảm họa xảy ra',
       zh: '地震备灾：平时可以做的防灾准备',
       id: 'Mempersiapkan Diri untuk Gempa Bumi: Yang Bisa Dilakukan Sebelum Terjadi',
       tl: 'Paghahanda para sa Lindol: Ano ang Magagawa Bago Mangyari',
@@ -1779,7 +1779,7 @@ export const articles: Article[] = [
     summary: {
       ja: '地震大国・日本での生活に欠かせない日頃の備え。家具の固定から非常用持ち出し袋の作り方まで。',
       en: 'Essential earthquake preparedness for living in Japan — furniture anchoring, emergency kits, and planning ahead.',
-      vi: 'Chuẩn bị thiết yếu cho động đất khi sống tại Nhật — cố định nội thất, bộ dụng cụ khẩn cấp và lập kế hoạch trước.',
+      vi: 'Hướng dẫn các biện pháp phòng ngừa thiết yếu khi sống tại quốc gia hay xảy ra động đất như Nhật Bản — cách cố định đồ nội thất, chuẩn bị bộ đồ khẩn cấp và lên kế hoạch sơ tán từ trước.',
       zh: '居住地震多发国日本的必要备灾准备——固定家具、准备应急包及事前规划。',
       id: 'Kesiapsiagaan gempa yang penting untuk tinggal di Jepang — mengencangkan furnitur, perlengkapan darurat, dan perencanaan.',
       tl: 'Mahalagang paghahanda sa lindol para sa pamumuhay sa Japan — anchoring ng furniture, emergency kits, at pag-plano.',
@@ -1817,7 +1817,7 @@ export const articles: Article[] = [
     title: {
       ja: '避難場所の確認と防災マップの読み方',
       en: 'How to Find Evacuation Sites and Read Hazard Maps',
-      vi: 'Cách tìm nơi sơ tán và đọc bản đồ nguy hiểm',
+      vi: 'Hướng dẫn tìm địa điểm sơ tán và cách đọc bản đồ rủi ro thiên tai (hazard map) tại Nhật',
       zh: '如何确认避难场所及阅读防灾地图',
       id: 'Cara Menemukan Tempat Evakuasi dan Membaca Peta Bahaya',
       tl: 'Paano Makahanap ng Evacuation Sites at Basahin ang Hazard Maps',
@@ -1826,7 +1826,7 @@ export const articles: Article[] = [
     summary: {
       ja: 'ハザードマップの見方と避難場所の種類、避難判断のポイントをわかりやすく解説。',
       en: 'Understanding hazard maps, types of evacuation sites, and how to decide when to evacuate.',
-      vi: 'Hiểu về bản đồ nguy hiểm, các loại nơi sơ tán và cách quyết định khi nào cần sơ tán.',
+      vi: 'Bài viết giúp bạn hiểu cách đọc bản đồ rủi ro thiên tai (hazard map), phân biệt các loại địa điểm sơ tán và biết khi nào cần rời khỏi nhà theo 5 cấp độ cảnh báo của Nhật.',
       zh: '如何理解防灾地图、避难场所的种类及避难判断要点。',
       id: 'Memahami peta bahaya, jenis tempat evakuasi, dan cara memutuskan kapan harus mengungsi.',
       tl: 'Pag-unawa sa hazard maps, mga uri ng evacuation sites, at paano magpasya kung kailan mag-evacuate.',
@@ -1865,7 +1865,7 @@ export const articles: Article[] = [
     title: {
       ja: '防災グッズ・緊急用品チェックリスト',
       en: 'Emergency Supplies Checklist for Disaster Preparedness',
-      vi: 'Danh sách kiểm tra đồ dùng khẩn cấp để phòng chống thiên tai',
+      vi: 'Danh sách kiểm tra vật dụng khẩn cấp cần chuẩn bị để phòng chống thiên tai tại Nhật',
       zh: '防灾用品与紧急物资清单',
       id: 'Daftar Periksa Perlengkapan Darurat untuk Kesiapsiagaan Bencana',
       tl: 'Checklist ng Emergency Supplies para sa Disaster Preparedness',
@@ -1874,7 +1874,7 @@ export const articles: Article[] = [
     summary: {
       ja: '日本の防災専門家が推奨する非常用持ち出し袋の中身リストと、自宅に備蓄すべき物資の一覧。',
       en: 'Japan disaster experts\' recommended list of go-bag contents and home stockpile essentials.',
-      vi: 'Danh sách nội dung túi khẩn cấp và vật dụng dự trữ tại nhà được khuyến nghị bởi chuyên gia phòng chống thiên tai Nhật Bản.',
+      vi: 'Danh sách chi tiết những vật dụng cần có trong túi sơ tán khẩn cấp và đồ dự trữ tại nhà, được khuyến nghị bởi các chuyên gia phòng chống thiên tai Nhật Bản — bao gồm cả các mục đặc biệt dành cho người nước ngoài.',
       zh: '日本防灾专家推荐的应急袋内容物清单及家庭备灾物资一览。',
       id: 'Daftar isi tas siaga bencana dan kebutuhan stok rumah yang direkomendasikan oleh para ahli bencana Jepang.',
       tl: 'Listahan ng mga nilalaman ng go-bag at home stockpile essentials na inirerekomenda ng mga eksperto sa sakuna sa Japan.',
@@ -1914,7 +1914,7 @@ export const articles: Article[] = [
     title: {
       ja: '有給休暇の申請方法と権利',
       en: 'How to Request Paid Leave in Japan — Your Rights Explained',
-      vi: 'Cách xin nghỉ phép có lương tại Nhật — Quyền của bạn được giải thích',
+      vi: 'Hướng dẫn xin nghỉ phép có lương tại Nhật Bản — Quyền lợi của người lao động',
       zh: '带薪休假的申请方法与权利',
       id: 'Cara Mengajukan Cuti Berbayar di Jepang — Hak Anda Dijelaskan',
       tl: 'Paano Humiling ng Paid Leave sa Japan — Ang Iyong mga Karapatan',
@@ -1923,7 +1923,7 @@ export const articles: Article[] = [
     summary: {
       ja: '有給休暇の発生タイミング、申請の仕方、断られた場合の対処法を外国人労働者向けに解説。',
       en: 'When paid leave accrues, how to apply, and what to do if your employer refuses — guidance for foreign workers.',
-      vi: 'Khi nào phép nghỉ có lương tích lũy, cách đăng ký và phải làm gì nếu chủ lao động từ chối — hướng dẫn cho người lao động nước ngoài.',
+      vi: 'Tìm hiểu khi nào bạn bắt đầu tích lũy ngày phép có lương, cách nộp đơn xin nghỉ và phải làm gì khi bị công ty từ chối — hướng dẫn dành riêng cho người lao động nước ngoài tại Nhật.',
       zh: '带薪休假何时产生、如何申请，以及雇主拒绝时的应对方法——面向外国劳动者的指南。',
       id: 'Kapan cuti berbayar terakumulasi, cara mengajukan, dan apa yang harus dilakukan jika pengusaha menolak — panduan untuk pekerja asing.',
       tl: 'Kailan nag-iipon ng paid leave, paano mag-apply, at ano ang gagawin kung tatanggi ang employer — gabay para sa mga dayuhang manggagawa.',
@@ -1962,7 +1962,7 @@ export const articles: Article[] = [
     title: {
       ja: '給与明細の見方：各項目を徹底解説',
       en: 'How to Read Your Payslip in Japan',
-      vi: 'Cách đọc phiếu lương tại Nhật Bản',
+      vi: 'Hướng dẫn cách đọc bảng lương (kyuuyo meisai) tại Nhật Bản',
       zh: '工资单解读：各项目详细说明',
       id: 'Cara Membaca Slip Gaji di Jepang',
       tl: 'Paano Basahin ang Iyong Payslip sa Japan',
@@ -1971,7 +1971,7 @@ export const articles: Article[] = [
     summary: {
       ja: '給与明細の支給・控除・差引支給額の意味と、控除される税金・社会保険料の内訳を外国人向けに解説。',
       en: 'Gross pay, deductions, and net pay explained — plus what each tax and social insurance charge means on your Japanese payslip.',
-      vi: 'Giải thích tổng lương, các khoản khấu trừ và lương ròng — cùng ý nghĩa của từng loại thuế và phí bảo hiểm xã hội trên phiếu lương.',
+      vi: 'Bài viết giải thích chi tiết các mục trong bảng lương Nhật: tổng thu nhập (shikyuu), các khoản khấu trừ (koujo) và lương thực nhận (tebadori) — kèm ý nghĩa của từng khoản thuế và phí bảo hiểm xã hội.',
       zh: '详解总收入、扣除项和实付金额——以及工资单上各税种和社会保险费的含义。',
       id: 'Penjelasan gaji kotor, potongan, dan gaji bersih — plus arti setiap pajak dan iuran jaminan sosial di slip gaji Jepang.',
       tl: 'Kabuuang sahod, mga deduction, at net pay na ipinaliwanag — kasama ang bawat buwis at social insurance charge sa payslip.',
@@ -2009,7 +2009,7 @@ export const articles: Article[] = [
     title: {
       ja: '社会保険（健康保険・厚生年金）への加入',
       en: 'Joining Social Insurance (Employer Health Insurance & Welfare Pension)',
-      vi: 'Tham gia bảo hiểm xã hội (Bảo hiểm y tế và lương hưu phúc lợi của chủ sử dụng lao động)',
+      vi: 'Hướng dẫn tham gia bảo hiểm xã hội (bảo hiểm y tế và lương hưu hưu trí) qua công ty tại Nhật',
       zh: '加入社会保险（健康保险・厚生年金）',
       id: 'Bergabung dengan Asuransi Sosial (Asuransi Kesehatan & Pensiun Kesejahteraan dari Pengusaha)',
       tl: 'Pagsali sa Social Insurance (Employer Health Insurance at Welfare Pension)',
@@ -2018,7 +2018,7 @@ export const articles: Article[] = [
     summary: {
       ja: '会社員が加入する社会保険制度の仕組み、パート・アルバイトの加入条件、転職時の手続きを解説。',
       en: 'How employer-based social insurance works in Japan, eligibility for part-timers, and what to do when changing jobs.',
-      vi: 'Cách hoạt động của bảo hiểm xã hội dựa trên chủ sử dụng lao động tại Nhật, điều kiện cho nhân viên bán thời gian và phải làm gì khi đổi việc.',
+      vi: 'Tìm hiểu cách hoạt động của hệ thống bảo hiểm xã hội qua công ty tại Nhật, điều kiện tham gia đối với nhân viên bán thời gian (part-time) và các thủ tục cần thực hiện khi chuyển sang công ty mới.',
       zh: '日本基于雇主的社会保险制度如何运作，兼职人员的加入条件及跳槽时的手续。',
       id: 'Cara kerja asuransi sosial berbasis pengusaha di Jepang, kelayakan untuk pekerja paruh waktu, dan apa yang harus dilakukan saat ganti pekerjaan.',
       tl: 'Paano gumagana ang employer-based social insurance sa Japan, eligibility para sa part-timers, at ano ang gagawin kapag nagpalit ng trabaho.',
@@ -2058,7 +2058,7 @@ export const articles: Article[] = [
     title: {
       ja: '海外送金サービスの比較・使い方',
       en: 'Comparing and Using International Money Transfer Services',
-      vi: 'So sánh và cách sử dụng dịch vụ chuyển tiền quốc tế',
+      vi: 'So sánh các dịch vụ chuyển tiền quốc tế và hướng dẫn sử dụng',
       zh: '海外汇款服务比较与使用方法',
       id: 'Perbandingan dan Cara Menggunakan Layanan Transfer Uang Internasional',
       tl: 'Paghahambing at Paggamit ng International Money Transfer Services',
@@ -2067,7 +2067,7 @@ export const articles: Article[] = [
     summary: {
       ja: 'Wise・Western Union・銀行送金・コンビニ送金の手数料と速度を比較。家族への仕送りを安く早く送る方法。',
       en: 'Wise, Western Union, bank transfer, convenience store remittance — compare fees and speed to send money home cheaply.',
-      vi: 'Wise, Western Union, chuyển khoản ngân hàng, gửi tiền tại cửa hàng tiện lợi — so sánh phí và tốc độ.',
+      vi: 'So sánh Wise, Western Union, chuyển khoản ngân hàng và dịch vụ gửi tiền qua cửa hàng tiện lợi — giúp bạn chọn cách gửi tiền về nhà với chi phí thấp nhất và nhanh nhất.',
       zh: 'Wise、Western Union、银行转账、便利店汇款的手续费和速度比较。',
       id: 'Wise, Western Union, transfer bank, remitansi minimarket — bandingkan biaya dan kecepatan.',
       tl: 'Wise, Western Union, bank transfer, convenience store remittance — ihambing ang bayad at bilis.',

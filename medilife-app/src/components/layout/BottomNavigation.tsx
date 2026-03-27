@@ -2,7 +2,7 @@
 
 import Link from 'next/link';
 import { usePathname } from 'next/navigation';
-import { Home, BookOpen, MapPin, Briefcase, User } from 'lucide-react';
+import { Home, BookOpen, MapPin, Briefcase, MessageCircleQuestion } from 'lucide-react';
 import { cn } from '@/lib/utils';
 
 interface NavItem {
@@ -41,10 +41,10 @@ export function BottomNavigation({ locale }: { locale: string }) {
       label: getNavLabel(locale, 'jobs'),
     },
     {
-      href: `/${locale}/profile`,
-      icon: <User className="h-6 w-6" />,
-      activeIcon: <User className="h-6 w-6" fill="currentColor" />,
-      label: getNavLabel(locale, 'profile'),
+      href: `/${locale}/ask`,
+      icon: <MessageCircleQuestion className="h-6 w-6" />,
+      activeIcon: <MessageCircleQuestion className="h-6 w-6" fill="currentColor" />,
+      label: getNavLabel(locale, 'ask'),
     },
   ];
 
@@ -78,7 +78,7 @@ function getNavLabel(locale: string, key: string): string {
     learn: { ja: '学習', vi: 'Học tập', en: 'Learn', zh: '学习', id: 'Belajar', tl: 'Aral', my: 'သင်ယူ' },
     guide: { ja: 'ガイド', vi: 'Hướng dẫn', en: 'Guide', zh: '指南', id: 'Panduan', tl: 'Gabay', my: 'လမ်းညွှန်' },
     jobs: { ja: '求人', vi: 'Việc làm', en: 'Jobs', zh: '求职', id: 'Kerja', tl: 'Trabaho', my: 'အလုပ်' },
-    profile: { ja: 'マイページ', vi: 'Cá nhân', en: 'Profile', zh: '我的', id: 'Profil', tl: 'Profile', my: 'ကိုယ်ရေး' },
+    ask: { ja: '相談', vi: 'Hỏi đáp', en: 'Q&A', zh: '咨询', id: 'Tanya', tl: 'Tanong', my: 'မေးမြန်း' },
   };
   return labels[key]?.[locale] || labels[key]?.['en'] || key;
 }

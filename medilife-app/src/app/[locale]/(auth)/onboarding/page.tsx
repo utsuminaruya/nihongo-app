@@ -4,6 +4,8 @@ import { useState } from 'react';
 import { useParams, useRouter } from 'next/navigation';
 import { motion, AnimatePresence } from 'framer-motion';
 import { Globe, User, FileText, MapPin, GraduationCap, ArrowRight, ArrowLeft, Check } from 'lucide-react';
+import { createClient } from '@/lib/supabase/client';
+import { useUserStore } from '@/stores/userStore';
 
 const LOCALES = [
   { code: 'ja', name: '日本語', flag: '🇯🇵' },
@@ -81,12 +83,47 @@ export default function OnboardingPage() {
     setInterests(prev => prev.includes(id) ? prev.filter(x => x !== id) : [...prev, id]);
   };
 
+  const saveProfile = async () => {
+    const supabase = createClient();
+    const { data: { user } } = await supabase.auth.getUser();
+
+    if (user) {
+      await supabase.from('profiles').upsert({
+        id: user.id,
+        name,
+        date_of_birth: dob,
+        gender,
+        visa_type: visaType,
+        prefecture,
+        city,
+        japanese_level: jpLevel,
+        native_language: selectedLang,
+        interests,
+        onboarding_done: true,
+        updated_at: new Date().toISOString(),
+      });
+
+      const { setUser } = useUserStore.getState();
+      setUser({
+        name,
+        nativeLanguage: selectedLang,
+        residenceStatus: visaType,
+        prefecture,
+        city,
+        japaneseLevel: jpLevel,
+        onboardingDone: true,
+      });
+    }
+
+    router.push(`/${locale}/home`);
+  };
+
   const handleNext = () => {
     if (step === 0) {
       setLocale(selectedLang);
     }
     if (step < 4) setStep(step + 1);
-    else router.push(`/${locale}/home`);
+    else saveProfile();
   };
 
   return (

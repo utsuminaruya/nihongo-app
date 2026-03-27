@@ -2,16 +2,18 @@
 
 import { useParams } from 'next/navigation';
 import Link from 'next/link';
+import { useVisaStore } from '@/stores/visaStore';
+import { useUserStore } from '@/stores/userStore';
 import {
   MessageCircle,
-  Stethoscope,
-  ArrowRightLeft,
   Briefcase,
   Shield,
   Phone,
   AlertTriangle,
   BookOpen,
   ChevronRight,
+  GraduationCap,
+  Map,
 } from 'lucide-react';
 import { Card, CardTitle } from '@/components/ui';
 import { EMERGENCY_CONTACTS } from '@/lib/constants';
@@ -64,23 +66,23 @@ function t(locale: string, key: string): string {
       tl: 'AI Konsulta',
       my: 'AI တိုင်ပင်',
     },
-    hospitalSearch: {
-      ja: '病院検索',
-      vi: 'Tìm bệnh viện',
-      en: 'Hospital Search',
-      zh: '医院搜索',
-      id: 'Cari Rumah Sakit',
-      tl: 'Maghanap ng Ospital',
-      my: 'ဆေးရုံရှာ',
+    learn: {
+      ja: '学習',
+      vi: 'Học tập',
+      en: 'Learning',
+      zh: '学习',
+      id: 'Belajar',
+      tl: 'Pag-aaral',
+      my: 'သင်ယူမှု',
     },
-    remittance: {
-      ja: '送金比較',
-      vi: 'So sánh chuyển tiền',
-      en: 'Remittance',
-      zh: '汇款比较',
-      id: 'Perbandingan Remitansi',
-      tl: 'Paghahambing ng Padala',
-      my: 'ငွေလွှဲနှိုင်းယှဉ်',
+    guide: {
+      ja: 'ガイド',
+      vi: 'Hướng dẫn',
+      en: 'Guide',
+      zh: '指南',
+      id: 'Panduan',
+      tl: 'Gabay',
+      my: 'လမ်းညွှန်',
     },
     jobSearch: {
       ja: '求人検索',
@@ -120,15 +122,15 @@ export default function HomePage() {
   const params = useParams();
   const locale = params.locale as string;
 
-  // デモデータ（将来はSupabaseから取得）
-  const daysRemaining = 245;
+  const { daysRemaining, residenceStatus, expiryDate } = useVisaStore();
+  const { name } = useUserStore();
 
   return (
     <div className="space-y-6">
       {/* ウェルカムメッセージ */}
       <div>
         <h2 className="text-2xl font-bold text-slate-800">
-          {t(locale, 'welcome')} 👋
+          {name ? `${name}さん、` : ''}{t(locale, 'welcome')} 👋
         </h2>
         <p className="text-text-light text-sm mt-1">MediLife</p>
       </div>
@@ -148,14 +150,22 @@ export default function HomePage() {
             <ChevronRight className="h-3 w-3" />
           </Link>
         </div>
+        {residenceStatus && (
+          <p className="text-blue-100 text-sm mb-2">{residenceStatus}</p>
+        )}
         <div className="flex items-end gap-3">
-          <span className="text-4xl font-extrabold">{daysRemaining}</span>
+          <span className="text-4xl font-extrabold">{daysRemaining ?? '--'}</span>
           <span className="text-blue-200 mb-1">{t(locale, 'daysRemaining')}</span>
         </div>
+        {expiryDate && (
+          <p className="text-blue-100 text-xs mt-1">
+            {new Date(expiryDate).toLocaleDateString('ja-JP', { year: 'numeric', month: 'long', day: 'numeric' })}まで
+          </p>
+        )}
         <div className="mt-3 h-2 w-full rounded-full bg-blue-800/50">
           <div
             className="h-2 rounded-full bg-white/80 transition-all"
-            style={{ width: `${Math.min((daysRemaining / 365) * 100, 100)}%` }}
+            style={{ width: daysRemaining != null ? `${Math.min((daysRemaining / 365) * 100, 100)}%` : '0%' }}
           />
         </div>
       </Card>
@@ -173,15 +183,15 @@ export default function HomePage() {
             color="bg-blue-100 text-blue-600"
           />
           <QuickActionButton
-            href={`/${locale}/health/hospitals`}
-            icon={<Stethoscope className="h-6 w-6" />}
-            label={t(locale, 'hospitalSearch')}
+            href={`/${locale}/learn`}
+            icon={<GraduationCap className="h-6 w-6" />}
+            label={t(locale, 'learn')}
             color="bg-emerald-100 text-emerald-600"
           />
           <QuickActionButton
-            href={`/${locale}/money`}
-            icon={<ArrowRightLeft className="h-6 w-6" />}
-            label={t(locale, 'remittance')}
+            href={`/${locale}/life`}
+            icon={<Map className="h-6 w-6" />}
+            label={t(locale, 'guide')}
             color="bg-amber-100 text-amber-600"
           />
           <QuickActionButton
@@ -209,19 +219,22 @@ export default function HomePage() {
         </div>
         <div className="space-y-3">
           <ArticleCard
+            href={`/${locale}/life/banking/open-bank-account`}
             icon={<BookOpen className="h-5 w-5 text-blue-600" />}
             titleKey="日本の銀行口座の開き方"
             category="BANKING"
           />
           <ArticleCard
+            href={`/${locale}/life/garbage/garbage-sorting-rules`}
             icon={<BookOpen className="h-5 w-5 text-emerald-600" />}
             titleKey="ゴミの分別ルール"
             category="GARBAGE"
           />
           <ArticleCard
+            href={`/${locale}/life/legal_rights/residence-card-update`}
             icon={<BookOpen className="h-5 w-5 text-amber-600" />}
             titleKey="在留カードの更新手続き"
-            category="VISA"
+            category="LEGAL_RIGHTS"
           />
         </div>
       </div>
@@ -278,25 +291,29 @@ function QuickActionButton({
 }
 
 function ArticleCard({
+  href,
   icon,
   titleKey,
   category,
 }: {
+  href: string;
   icon: React.ReactNode;
   titleKey: string;
   category: string;
 }) {
   return (
-    <Card hoverable padding="sm">
-      <div className="flex items-center gap-3">
-        <div className="flex-shrink-0 rounded-lg bg-slate-50 p-2">{icon}</div>
-        <div className="flex-1 min-w-0">
-          <p className="text-sm font-medium text-slate-800 truncate">{titleKey}</p>
-          <p className="text-xs text-text-light">{category}</p>
+    <Link href={href}>
+      <Card hoverable padding="sm">
+        <div className="flex items-center gap-3">
+          <div className="flex-shrink-0 rounded-lg bg-slate-50 p-2">{icon}</div>
+          <div className="flex-1 min-w-0">
+            <p className="text-sm font-medium text-slate-800 truncate">{titleKey}</p>
+            <p className="text-xs text-text-light">{category}</p>
+          </div>
+          <ChevronRight className="h-4 w-4 text-slate-400 flex-shrink-0" />
         </div>
-        <ChevronRight className="h-4 w-4 text-slate-400 flex-shrink-0" />
-      </div>
-    </Card>
+      </Card>
+    </Link>
   );
 }
 

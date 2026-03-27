@@ -78,36 +78,36 @@ export const courses: Course[] = [
           {
             type: 'intro',
             title: { ja: 'ひらがなとは？', en: 'What is Hiragana?' },
-            text: { ja: 'ひらがなは日本語の基本文字です。全部で46文字あります。', en: 'Hiragana is the foundational script of Japanese. There are 46 basic characters.' },
+            text: { ja: 'ひらがなは日本語の基本文字です。全部で46文字あります。', en: 'Hiragana is the foundational script of Japanese. There are 46 basic characters.', vi: 'Hiragana là bảng chữ cơ bản nhất của tiếng Nhật. Có tất cả 46 ký tự cơ bản. Hãy học từng ký tự một nhé!' },
           },
           {
             type: 'vocab',
             title: { ja: 'あ行の文字', en: 'A-row characters' },
             items: [
-              { japanese: 'あ', reading: 'a', meaning: { ja: 'あ（a）', en: 'a', vi: 'a', zh: 'a' } },
-              { japanese: 'い', reading: 'i', meaning: { ja: 'い（i）', en: 'i', vi: 'i', zh: 'i' } },
-              { japanese: 'う', reading: 'u', meaning: { ja: 'う（u）', en: 'u', vi: 'u', zh: 'u' } },
-              { japanese: 'え', reading: 'e', meaning: { ja: 'え（e）', en: 'e', vi: 'e', zh: 'e' } },
-              { japanese: 'お', reading: 'o', meaning: { ja: 'お（o）', en: 'o', vi: 'o', zh: 'o' } },
+              { japanese: 'あ', reading: 'a', meaning: { ja: 'あ（a）', en: 'a', vi: 'Đọc là "a" (giống chữ "a" trong tiếng Việt)', zh: 'a' } },
+              { japanese: 'い', reading: 'i', meaning: { ja: 'い（i）', en: 'i', vi: 'Đọc là "i" (giống chữ "i" trong tiếng Việt)', zh: 'i' } },
+              { japanese: 'う', reading: 'u', meaning: { ja: 'う（u）', en: 'u', vi: 'Đọc là "u" (giống chữ "u" trong tiếng Việt)', zh: 'u' } },
+              { japanese: 'え', reading: 'e', meaning: { ja: 'え（e）', en: 'e', vi: 'Đọc là "e" (giống chữ "e" trong tiếng Việt)', zh: 'e' } },
+              { japanese: 'お', reading: 'o', meaning: { ja: 'お（o）', en: 'o', vi: 'Đọc là "o" (giống chữ "o" trong tiếng Việt)', zh: 'o' } },
             ],
           },
           {
             type: 'vocab',
             title: { ja: 'か行の文字', en: 'Ka-row characters' },
             items: [
-              { japanese: 'か', reading: 'ka', meaning: { ja: 'か（ka）', en: 'ka', vi: 'ka', zh: 'ka' }, example: 'かさ', exampleReading: 'kasa', exampleMeaning: { ja: '傘', en: 'umbrella', vi: 'ô', zh: '雨伞' } },
-              { japanese: 'き', reading: 'ki', meaning: { ja: 'き（ki）', en: 'ki', vi: 'ki', zh: 'ki' }, example: 'きって', exampleReading: 'kitte', exampleMeaning: { ja: '切手', en: 'stamp', vi: 'tem', zh: '邮票' } },
-              { japanese: 'く', reading: 'ku', meaning: { ja: 'く（ku）', en: 'ku', vi: 'ku', zh: 'ku' }, example: 'くつ', exampleReading: 'kutsu', exampleMeaning: { ja: '靴', en: 'shoes', vi: 'giày', zh: '鞋子' } },
-              { japanese: 'け', reading: 'ke', meaning: { ja: 'け（ke）', en: 'ke', vi: 'ke', zh: 'ke' }, example: 'けいたい', exampleReading: 'keitai', exampleMeaning: { ja: '携帯', en: 'mobile phone', vi: 'điện thoại', zh: '手机' } },
-              { japanese: 'こ', reading: 'ko', meaning: { ja: 'こ（ko）', en: 'ko', vi: 'ko', zh: 'ko' }, example: 'こども', exampleReading: 'kodomo', exampleMeaning: { ja: '子供', en: 'child', vi: 'trẻ em', zh: '孩子' } },
+              { japanese: 'か', reading: 'ka', meaning: { ja: 'か（ka）', en: 'ka', vi: 'Đọc là "ka" — ví dụ: かさ (kasa) = cái ô', zh: 'ka' }, example: 'かさ', exampleReading: 'kasa', exampleMeaning: { ja: '傘', en: 'umbrella', vi: 'cái ô / dù che mưa', zh: '雨伞' } },
+              { japanese: 'き', reading: 'ki', meaning: { ja: 'き（ki）', en: 'ki', vi: 'Đọc là "ki" — ví dụ: きって (kitte) = tem thư', zh: 'ki' }, example: 'きって', exampleReading: 'kitte', exampleMeaning: { ja: '切手', en: 'stamp', vi: 'tem thư', zh: '邮票' } },
+              { japanese: 'く', reading: 'ku', meaning: { ja: 'く（ku）', en: 'ku', vi: 'Đọc là "ku" — ví dụ: くつ (kutsu) = giày', zh: 'ku' }, example: 'くつ', exampleReading: 'kutsu', exampleMeaning: { ja: '靴', en: 'shoes', vi: 'đôi giày', zh: '鞋子' } },
+              { japanese: 'け', reading: 'ke', meaning: { ja: 'け（ke）', en: 'ke', vi: 'Đọc là "ke" — ví dụ: けいたい (keitai) = điện thoại di động', zh: 'ke' }, example: 'けいたい', exampleReading: 'keitai', exampleMeaning: { ja: '携帯', en: 'mobile phone', vi: 'điện thoại di động', zh: '手机' } },
+              { japanese: 'こ', reading: 'ko', meaning: { ja: 'こ（ko）', en: 'ko', vi: 'Đọc là "ko" — ví dụ: こども (kodomo) = trẻ em', zh: 'ko' }, example: 'こども', exampleReading: 'kodomo', exampleMeaning: { ja: '子供', en: 'child', vi: 'trẻ em / đứa trẻ', zh: '孩子' } },
             ],
           },
           {
             type: 'quiz',
             quiz: [
-              { question: { ja: '「か」の読み方は？', en: 'How do you read 「か」?' }, options: ['ka', 'ki', 'ku', 'ko'], correct: 0, explanation: { ja: '「か」は「ka」と読みます。', en: '「か」 is read as "ka".' } },
-              { question: { ja: '「い」の読み方は？', en: 'How do you read 「い」?' }, options: ['a', 'i', 'u', 'e'], correct: 1, explanation: { ja: '「い」は「i」と読みます。', en: '「い」 is read as "i".' } },
-              { question: { ja: '「くつ」は英語で何ですか？', en: 'What does 「くつ」 mean in English?' }, options: ['hat', 'shoes', 'bag', 'shirt'], correct: 1, explanation: { ja: '「くつ」は靴、英語でshoesです。', en: '「くつ」(kutsu) means shoes.' } },
+              { question: { ja: '「か」の読み方は？', en: 'How do you read 「か」?', vi: 'Chữ 「か」 đọc như thế nào?' }, options: ['ka', 'ki', 'ku', 'ko'], correct: 0, explanation: { ja: '「か」は「ka」と読みます。', en: '「か」 is read as "ka".', vi: 'Đúng rồi! 「か」 đọc là "ka". Hãy nhớ ký tự này nhé!' } },
+              { question: { ja: '「い」の読み方は？', en: 'How do you read 「い」?', vi: 'Chữ 「い」 đọc như thế nào?' }, options: ['a', 'i', 'u', 'e'], correct: 1, explanation: { ja: '「い」は「i」と読みます。', en: '「い」 is read as "i".', vi: 'Đúng rồi! 「い」 đọc là "i" — giống chữ "i" trong tiếng Việt.' } },
+              { question: { ja: '「くつ」は英語で何ですか？', en: 'What does 「くつ」 mean in English?', vi: '「くつ」 có nghĩa là gì?' }, options: ['hat', 'shoes', 'bag', 'shirt'], correct: 1, explanation: { ja: '「くつ」は靴、英語でshoesです。', en: '「くつ」(kutsu) means shoes.', vi: 'Đúng rồi! 「くつ」(kutsu) có nghĩa là đôi giày. Hãy ghi nhớ từ này nhé!' } },
             ],
           },
         ],
@@ -121,11 +121,11 @@ export const courses: Course[] = [
             type: 'vocab',
             title: { ja: 'さ行の文字', en: 'Sa-row characters' },
             items: [
-              { japanese: 'さ', reading: 'sa', meaning: { ja: 'sa', en: 'sa', vi: 'sa', zh: 'sa' }, example: 'さくら', exampleReading: 'sakura', exampleMeaning: { ja: '桜', en: 'cherry blossom', vi: 'hoa anh đào', zh: '樱花' } },
-              { japanese: 'し', reading: 'shi', meaning: { ja: 'shi', en: 'shi', vi: 'shi', zh: 'shi' }, example: 'しごと', exampleReading: 'shigoto', exampleMeaning: { ja: '仕事', en: 'work', vi: 'công việc', zh: '工作' } },
-              { japanese: 'す', reading: 'su', meaning: { ja: 'su', en: 'su', vi: 'su', zh: 'su' }, example: 'すし', exampleReading: 'sushi', exampleMeaning: { ja: '寿司', en: 'sushi', vi: 'sushi', zh: '寿司' } },
-              { japanese: 'せ', reading: 'se', meaning: { ja: 'se', en: 'se', vi: 'se', zh: 'se' }, example: 'せんせい', exampleReading: 'sensei', exampleMeaning: { ja: '先生', en: 'teacher', vi: 'giáo viên', zh: '老师' } },
-              { japanese: 'そ', reading: 'so', meaning: { ja: 'so', en: 'so', vi: 'so', zh: 'so' }, example: 'そら', exampleReading: 'sora', exampleMeaning: { ja: '空', en: 'sky', vi: 'bầu trời', zh: '天空' } },
+              { japanese: 'さ', reading: 'sa', meaning: { ja: 'sa', en: 'sa', vi: 'Đọc là "sa" — ví dụ: さくら (sakura) = hoa anh đào', zh: 'sa' }, example: 'さくら', exampleReading: 'sakura', exampleMeaning: { ja: '桜', en: 'cherry blossom', vi: 'hoa anh đào (biểu tượng của Nhật Bản)', zh: '樱花' } },
+              { japanese: 'し', reading: 'shi', meaning: { ja: 'shi', en: 'shi', vi: 'Đọc là "shi" — ví dụ: しごと (shigoto) = công việc', zh: 'shi' }, example: 'しごと', exampleReading: 'shigoto', exampleMeaning: { ja: '仕事', en: 'work', vi: 'công việc / việc làm', zh: '工作' } },
+              { japanese: 'す', reading: 'su', meaning: { ja: 'su', en: 'su', vi: 'Đọc là "su" — ví dụ: すし (sushi) = món sushi', zh: 'su' }, example: 'すし', exampleReading: 'sushi', exampleMeaning: { ja: '寿司', en: 'sushi', vi: 'món sushi (món ăn nổi tiếng của Nhật)', zh: '寿司' } },
+              { japanese: 'せ', reading: 'se', meaning: { ja: 'se', en: 'se', vi: 'Đọc là "se" — ví dụ: せんせい (sensei) = giáo viên', zh: 'se' }, example: 'せんせい', exampleReading: 'sensei', exampleMeaning: { ja: '先生', en: 'teacher', vi: 'giáo viên / thầy cô', zh: '老师' } },
+              { japanese: 'そ', reading: 'so', meaning: { ja: 'so', en: 'so', vi: 'Đọc là "so" — ví dụ: そら (sora) = bầu trời', zh: 'so' }, example: 'そら', exampleReading: 'sora', exampleMeaning: { ja: '空', en: 'sky', vi: 'bầu trời', zh: '天空' } },
             ],
           },
         ],
@@ -177,8 +177,8 @@ export const courses: Course[] = [
           {
             type: 'quiz',
             quiz: [
-              { question: { ja: '朝のあいさつは何ですか？', en: 'What is the morning greeting?' }, options: ['こんにちは', 'おはようございます', 'こんばんは', 'おやすみなさい'], correct: 1, explanation: { ja: '朝は「おはようございます」です。', en: '"Ohayou gozaimasu" is the morning greeting.' } },
-              { question: { ja: '「ありがとうございます」の意味は？', en: 'What does "Arigatou gozaimasu" mean?' }, options: ['Hello', 'Sorry', 'Thank you', 'Goodbye'], correct: 2, explanation: { ja: '「ありがとうございます」は「Thank you」です。', en: '"Arigatou gozaimasu" means "Thank you".' } },
+              { question: { ja: '朝のあいさつは何ですか？', en: 'What is the morning greeting?', vi: 'Câu chào buổi sáng là gì?' }, options: ['こんにちは', 'おはようございます', 'こんばんは', 'おやすみなさい'], correct: 1, explanation: { ja: '朝は「おはようございます」です。', en: '"Ohayou gozaimasu" is the morning greeting.', vi: 'Đúng rồi! Buổi sáng dùng「おはようございます」(Ohayou gozaimasu). Đây là câu chào bắt buộc mỗi sáng đi làm!' } },
+              { question: { ja: '「ありがとうございます」の意味は？', en: 'What does "Arigatou gozaimasu" mean?', vi: '「ありがとうございます」có nghĩa là gì?' }, options: ['Hello', 'Sorry', 'Thank you', 'Goodbye'], correct: 2, explanation: { ja: '「ありがとうございます」は「Thank you」です。', en: '"Arigatou gozaimasu" means "Thank you".', vi: 'Đúng rồi! 「ありがとうございます」(Arigatou gozaimasu) có nghĩa là "Cảm ơn" (dạng lịch sự). Dùng hàng ngày rất nhiều!' } },
             ],
           },
         ],
@@ -204,7 +204,7 @@ export const courses: Course[] = [
             grammar: [
               {
                 pattern: '〜です',
-                explanation: { ja: '「〜です」は「〜です」を使って自分の情報を伝えます。', en: '"〜desu" is used to state facts about yourself or things. It is polite.', vi: '"〜desu" dùng để nói về bản thân hoặc sự việc một cách lịch sự.' },
+                explanation: { ja: '「〜です」は「〜です」を使って自分の情報を伝えます。', en: '"〜desu" is used to state facts about yourself or things. It is polite.', vi: 'Điểm quan trọng: 「〜です」(desu) là trợ động từ lịch sự cuối câu, tương đương "là" trong tiếng Việt. Ví dụ: マリアです = Tôi là Maria. Luôn dùng 「です」 khi nói chuyện lịch sự.' },
                 examples: [
                   { japanese: 'マリアです。', reading: 'Maria desu.', meaning: { ja: 'マリアです。', en: 'I am Maria.', vi: 'Tôi là Maria.' } },
                   { japanese: 'フィリピン人です。', reading: 'Firipin-jin desu.', meaning: { ja: 'フィリピン人です。', en: 'I am Filipino.', vi: 'Tôi là người Philippines.' } },
@@ -213,7 +213,7 @@ export const courses: Course[] = [
               },
               {
                 pattern: '〜から来ました',
-                explanation: { ja: '「〜から来ました」は出身地を伝えます。', en: '"〜kara kimashita" means "I came from 〜" (nationality/origin).', vi: '"〜kara kimashita" có nghĩa là "Tôi đến từ 〜".' },
+                explanation: { ja: '「〜から来ました」は出身地を伝えます。', en: '"〜kara kimashita" means "I came from 〜" (nationality/origin).', vi: 'Điểm quan trọng: 「〜から来ました」(kara kimashita) có nghĩa là "Tôi đến từ 〜". Ở đây 「から」 nghĩa là "từ" và 「来ました」 nghĩa là "đã đến". Cấu trúc: [tên nước] + から来ました.' },
                 examples: [
                   { japanese: 'ベトナムから来ました。', reading: 'Betonamu kara kimashita.', meaning: { en: 'I came from Vietnam.', vi: 'Tôi đến từ Việt Nam.' } },
                   { japanese: 'フィリピンから来ました。', reading: 'Firipin kara kimashita.', meaning: { en: 'I came from the Philippines.' } },
@@ -225,8 +225,8 @@ export const courses: Course[] = [
           {
             type: 'quiz',
             quiz: [
-              { question: { ja: '「私はベトナムから来ました」を正しく訳すと？', en: 'What does "Watashi wa Betonamu kara kimashita" mean?' }, options: ['I live in Vietnam', 'I came from Vietnam', 'I like Vietnam', 'I go to Vietnam'], correct: 1, explanation: { en: '"Kara kimashita" means "came from".' } },
-              { question: { ja: '「何歳ですか？」に対して25歳の場合の答えは？', en: 'If asked your age and you are 25, what do you say?' }, options: ['25です', '25人です', '25歳です', '25年です'], correct: 2, explanation: { ja: '年齢には「〜歳（さい）です」を使います。', en: 'Use "〜sai desu" for age.' } },
+              { question: { ja: '「私はベトナムから来ました」を正しく訳すと？', en: 'What does "Watashi wa Betonamu kara kimashita" mean?', vi: '「私はベトナムから来ました」có nghĩa là gì?' }, options: ['I live in Vietnam', 'I came from Vietnam', 'I like Vietnam', 'I go to Vietnam'], correct: 1, explanation: { en: '"Kara kimashita" means "came from".', vi: 'Đúng rồi! 「から来ました」(kara kimashita) có nghĩa là "đã đến từ". Vậy câu này có nghĩa là "Tôi đến từ Việt Nam".' } },
+              { question: { ja: '「何歳ですか？」に対して25歳の場合の答えは？', en: 'If asked your age and you are 25, what do you say?', vi: 'Khi được hỏi tuổi và bạn 25 tuổi, bạn trả lời thế nào?' }, options: ['25です', '25人です', '25歳です', '25年です'], correct: 2, explanation: { ja: '年齢には「〜歳（さい）です」を使います。', en: 'Use "〜sai desu" for age.', vi: 'Đúng rồi! Khi nói tuổi, dùng 「〜歳（さい）です」. 歳 (sai) là "tuổi" trong tiếng Nhật. Vậy 25 tuổi nói là「25歳です」.' } },
             ],
           },
         ],
@@ -334,7 +334,7 @@ export const courses: Course[] = [
             grammar: [
               {
                 pattern: '〜が完了しました（かんりょうしました）',
-                explanation: { ja: '仕事が終わったことを報告する', en: 'Use this to report that a task is complete.', vi: 'Dùng để báo cáo công việc đã hoàn thành.' },
+                explanation: { ja: '仕事が終わったことを報告する', en: 'Use this to report that a task is complete.', vi: 'Điểm quan trọng: 「〜が完了しました」(ga kanryou shimashita) dùng để báo cáo với cấp trên rằng công việc đã hoàn thành. Đây là mẫu câu rất quan trọng trong môi trường làm việc Nhật Bản.' },
                 examples: [
                   { japanese: '報告書の作成が完了しました。', reading: 'Houkokusho no sakusei ga kanryou shimashita.', meaning: { en: 'I\'ve completed the report.', vi: 'Tôi đã hoàn thành báo cáo.' } },
                   { japanese: '作業が完了しました。確認をお願いします。', reading: 'Sagyou ga kanryou shimashita. Kakunin wo onegaishimasu.', meaning: { en: 'The work is done. Please check it.', vi: 'Công việc đã xong. Nhờ bạn kiểm tra giúp.' } },
@@ -342,7 +342,7 @@ export const courses: Course[] = [
               },
               {
                 pattern: '〜について確認してもよいですか',
-                explanation: { ja: '何かを確認したいときの丁寧な聞き方', en: 'Politely asking to confirm something.', vi: 'Hỏi lịch sự để xác nhận điều gì đó.' },
+                explanation: { ja: '何かを確認したいときの丁寧な聞き方', en: 'Politely asking to confirm something.', vi: 'Điểm quan trọng: 「〜について確認してもよいですか」là cách hỏi lịch sự để xác nhận thông tin với cấp trên hoặc đồng nghiệp. Dùng khi bạn chưa rõ nội dung công việc và cần hỏi thêm.' },
                 examples: [
                   { japanese: 'この書類について確認してもよいですか？', reading: 'Kono shorui ni tsuite kakunin shite mo yoi desu ka?', meaning: { en: 'May I check with you about this document?', vi: 'Tôi có thể hỏi về tài liệu này không?' } },
                   { japanese: '今日の作業内容について確認してもよいですか？', reading: 'Kyou no sagyou naiyou ni tsuite kakunin shite mo yoi desu ka?', meaning: { en: 'May I confirm today\'s tasks with you?', vi: 'Tôi có thể xác nhận nội dung công việc hôm nay không?' } },
@@ -353,8 +353,8 @@ export const courses: Course[] = [
           {
             type: 'quiz',
             quiz: [
-              { question: { ja: '退勤するとき何と言いますか？', en: 'What do you say when leaving work before colleagues?' }, options: ['おはようございます', 'いただきます', 'お先に失礼します', 'いらっしゃいませ'], correct: 2, explanation: { en: '"Osaki ni shitsurei shimasu" is said when you leave before your colleagues.' } },
-              { question: { ja: '上司から指示を受けたとき、最も丁寧な返答は？', en: 'What is the most polite response when receiving instructions from your boss?' }, options: ['わかった', 'はい', 'かしこまりました', 'そうですね'], correct: 2, explanation: { en: '"Kashikomarimashita" is the most formal and polite way to say "understood" to a superior.' } },
+              { question: { ja: '退勤するとき何と言いますか？', en: 'What do you say when leaving work before colleagues?', vi: 'Khi bạn về trước đồng nghiệp, bạn nói gì?' }, options: ['おはようございます', 'いただきます', 'お先に失礼します', 'いらっしゃいませ'], correct: 2, explanation: { en: '"Osaki ni shitsurei shimasu" is said when you leave before your colleagues.', vi: 'Đúng rồi! 「お先に失礼します」(Osaki ni shitsurei shimasu) có nghĩa là "Xin phép về trước". Đây là câu bắt buộc khi về trước đồng nghiệp, thể hiện sự lịch sự trong văn hóa Nhật!' } },
+              { question: { ja: '上司から指示を受けたとき、最も丁寧な返答は？', en: 'What is the most polite response when receiving instructions from your boss?', vi: 'Khi nhận chỉ thị từ cấp trên, câu trả lời lịch sự nhất là gì?' }, options: ['わかった', 'はい', 'かしこまりました', 'そうですね'], correct: 2, explanation: { en: '"Kashikomarimashita" is the most formal and polite way to say "understood" to a superior.', vi: 'Đúng rồi! 「かしこまりました」(Kashikomarimashita) là cách nói "Tôi đã hiểu" trang trọng nhất, dùng với cấp trên hoặc khách hàng. Chú ý: 「わかった」là cách nói thông thường, không phù hợp với cấp trên.' } },
             ],
           },
         ],
@@ -435,7 +435,7 @@ export const courses: Course[] = [
             type: 'dialogue',
             title: { ja: '会話例：病院の受付で', en: 'Dialogue: At the Hospital Reception' },
             dialogue: [
-              { speaker: '受付', japanese: 'どうされましたか？', reading: 'Dou saremashita ka?', meaning: { en: 'What\'s the matter?', vi: 'Bạn bị làm sao vậy?' } },
+              { speaker: '受付', japanese: 'どうされましたか？', reading: 'Dou saremashita ka?', meaning: { en: 'What\'s the matter?', vi: 'Bạn có vấn đề gì vậy? / Bạn bị làm sao?' } },
               { speaker: 'あなた', japanese: '昨日から頭が痛くて、熱もあります。', reading: 'Kinou kara atama ga itakute, netsu mo arimasu.', meaning: { en: 'Since yesterday, I\'ve had a headache and also a fever.', vi: 'Từ hôm qua tôi bị đau đầu và cũng bị sốt.' } },
               { speaker: '受付', japanese: '保険証はお持ちですか？', reading: 'Hoken-shou wa omochi desu ka?', meaning: { en: 'Do you have your insurance card?', vi: 'Bạn có mang theo thẻ bảo hiểm không?' } },
               { speaker: 'あなた', japanese: 'はい、これです。', reading: 'Hai, kore desu.', meaning: { en: 'Yes, here it is.', vi: 'Vâng, đây ạ.' } },
@@ -470,7 +470,7 @@ export const courses: Course[] = [
             grammar: [
               {
                 pattern: '動詞のます形',
-                explanation: { ja: '動詞に「ます」をつけると丁寧な表現になります。', en: 'Adding 「ます」 to verbs makes them polite.', vi: 'Thêm 「ます」 vào động từ để tạo ra dạng lịch sự.' },
+                explanation: { ja: '動詞に「ます」をつけると丁寧な表現になります。', en: 'Adding 「ます」 to verbs makes them polite.', vi: 'Điểm quan trọng: Thêm 「ます」 vào cuối động từ để tạo dạng lịch sự (丁寧語 - Teineigo). Đây là dạng cơ bản nhất cần học trước. Ví dụ: 食べる → 食べます (ăn), 行く → 行きます (đi).' },
                 examples: [
                   { japanese: '食べます / 食べました / 食べません', reading: 'Tabemasu / Tabemashita / Tabemasen', meaning: { en: 'eat / ate / don\'t eat', vi: 'ăn / đã ăn / không ăn' } },
                   { japanese: '行きます / 行きました / 行きません', reading: 'Ikimasu / Ikimashita / Ikimasen', meaning: { en: 'go / went / don\'t go', vi: 'đi / đã đi / không đi' } },
@@ -478,7 +478,7 @@ export const courses: Course[] = [
               },
               {
                 pattern: '尊敬語：〜ていらっしゃいます',
-                explanation: { ja: '相手の行動を高める表現。上司・客・先輩に使う。', en: 'Honorific form to elevate the listener\'s actions. Used for superiors, customers, and seniors.', vi: 'Dạng tôn kính để nâng cao hành động của người nghe. Dùng cho cấp trên, khách hàng.' },
+                explanation: { ja: '相手の行動を高める表現。上司・客・先輩に使う。', en: 'Honorific form to elevate the listener\'s actions. Used for superiors, customers, and seniors.', vi: 'Điểm quan trọng: Đây là 尊敬語 (Sonkeigo) — dạng kính ngữ dùng để nâng cao hành động của người khác (cấp trên, khách hàng, tiền bối). Khi nói về hành động của cấp trên, KHÔNG dùng dạng ます thông thường mà phải dùng dạng tôn kính này.' },
                 examples: [
                   { japanese: '社長はいらっしゃいますか？', reading: 'Shachou wa irasshaimasu ka?', meaning: { en: 'Is the president available?', vi: 'Tổng giám đốc có ở đây không?' } },
                   { japanese: '田中部長がお呼びです。', reading: 'Tanaka buchou ga oyobi desu.', meaning: { en: 'Manager Tanaka is calling for you.', vi: 'Trưởng phòng Tanaka đang gọi bạn.' } },
@@ -539,8 +539,8 @@ export const courses: Course[] = [
           {
             type: 'quiz',
             quiz: [
-              { question: { ja: '「3時15分」はどう読みますか？', en: 'How do you read "3時15分"?' }, options: ['さんじじゅうごふん', 'さんじいちごふん', 'さんじじゅうごぷん', 'みっつじかん'], correct: 0, explanation: { en: '「3時15分」 is "san-ji juu-go-fun".' } },
-              { question: { ja: '「10,000」は日本語で？', en: 'What is "10,000" in Japanese?' }, options: ['せん', 'じゅうせん', 'まん', 'じゅうまん'], correct: 2, explanation: { en: '10,000 is 「まん」 (man) in Japanese.' } },
+              { question: { ja: '「3時15分」はどう読みますか？', en: 'How do you read "3時15分"?', vi: '「3時15分」đọc như thế nào?' }, options: ['さんじじゅうごふん', 'さんじいちごふん', 'さんじじゅうごぷん', 'みっつじかん'], correct: 0, explanation: { en: '「3時15分」 is "san-ji juu-go-fun".', vi: 'Đúng rồi! 「3時15分」đọc là "san-ji juu-go-fun" = 3 giờ 15 phút. Nhớ: 時 (ji) = giờ, 分 (fun/pun) = phút.' } },
+              { question: { ja: '「10,000」は日本語で？', en: 'What is "10,000" in Japanese?', vi: '「10,000」trong tiếng Nhật là gì?' }, options: ['せん', 'じゅうせん', 'まん', 'じゅうまん'], correct: 2, explanation: { en: '10,000 is 「まん」 (man) in Japanese.', vi: 'Đúng rồi! Điểm đặc biệt: tiếng Nhật dùng đơn vị 万 (man = 10.000) thay vì 1.000 như tiếng Việt. Vì vậy 10.000 = 1万 (ichi-man).' } },
             ],
           },
         ],
@@ -569,7 +569,7 @@ export const courses: Course[] = [
           {
             type: 'intro',
             title: { ja: 'この授業について', en: 'About this lesson' },
-            text: { ja: 'コンビニやスーパーで使える基本フレーズを学びます。「いくらですか？」「これをください」など、毎日使える表現です。', en: 'Learn essential phrases for convenience stores and supermarkets. Expressions like "How much?" and "I\'ll take this" that you can use every day.' },
+            text: { ja: 'コンビニやスーパーで使える基本フレーズを学びます。「いくらですか？」「これをください」など、毎日使える表現です。', en: 'Learn essential phrases for convenience stores and supermarkets. Expressions like "How much?" and "I\'ll take this" that you can use every day.', vi: 'Chúng ta sẽ học các cụm từ cơ bản dùng tại cửa hàng tiện lợi và siêu thị. Những câu như「いくらですか」(bao nhiêu tiền?) và「これをください」(cho tôi cái này) là những câu bạn sẽ dùng hàng ngày tại Nhật!' },
           },
           {
             type: 'vocab',
@@ -638,7 +638,7 @@ export const courses: Course[] = [
               },
               {
                 pattern: '〜を2つください',
-                explanation: { ja: '数量を指定して商品を頼む表現。「ひとつ・ふたつ・みっつ」など和語で数えます。', en: 'Use this to request a specific quantity. Count using hitotsu, futatsu, mittsu...', vi: 'Dùng để yêu cầu số lượng cụ thể. Đếm bằng hitotsu, futatsu, mittsu...', zh: '用于指定数量购买。使用一个、两个、三个等日本数词。', id: 'Gunakan ini untuk meminta jumlah tertentu.', tl: 'Gamitin ito para humiling ng partikular na dami.', my: 'အရေအတွက် သတ်မှတ်၍ ထုတ်ကုန် တောင်းရန်' },
+                explanation: { ja: '数量を指定して商品を頼む表現。「ひとつ・ふたつ・みっつ」など和語で数えます。', en: 'Use this to request a specific quantity. Count using hitotsu, futatsu, mittsu...', vi: 'Điểm quan trọng: Dùng để yêu cầu số lượng cụ thể. Trong tiếng Nhật có 2 hệ đếm: hệ Nhật thuần (ひとつ・ふたつ・みっつ) dùng cho đồ vật thông thường, và hệ Hán-Nhật (一・二・三ichi・ni・san) dùng với đơn vị đếm. Ví dụ: りんごを3つ (3 quả táo) vs. ジュースを3本 (3 chai nước).', zh: '用于指定数量购买。使用一个、两个、三个等日本数词。', id: 'Gunakan ini untuk meminta jumlah tertentu.', tl: 'Gamitin ito para humiling ng partikular na dami.', my: 'အရေအတွက် သတ်မှတ်၍ ထုတ်ကုန် တောင်းရန်' },
                 examples: [
                   { japanese: 'りんごを3つください。', reading: 'Ringo wo mittsu kudasai.', meaning: { ja: 'リンゴを3個', en: 'Three apples please.', vi: 'Cho tôi 3 quả táo.', zh: '请给我3个苹果。', id: 'Tolong tiga apel.', tl: 'Tatlong mansanas po.', my: 'ပန်းသီး ၃ လုံးပေးပါ' } },
                   { japanese: 'このジュースを2本ください。', reading: 'Kono juusu wo nihon kudasai.', meaning: { ja: 'ジュース2本', en: 'Two bottles of this juice please.', vi: 'Cho tôi 2 chai nước này.', zh: '请给我两瓶这个果汁。', id: 'Dua botol jus ini.', tl: 'Dalawang bote ng juice na ito.', my: 'ဒီရေသီးရည် ၂ ဘူးပေးပါ' } },
@@ -685,7 +685,7 @@ export const courses: Course[] = [
           {
             type: 'quiz',
             quiz: [
-              { question: { ja: '「タイムセール」とはどういう意味ですか？', en: 'What does "taimu seeru" mean?' }, options: ['時間通りの営業', '時間限定の特売', '時間の節約', '営業時間'], correct: 1, explanation: { ja: '「タイムセール」は時間限定の特売のことです。閉店前などに行われることが多いです。', en: '"Taimu seeru" is a time-limited sale, often done before closing time.', vi: '"Taimu seeru" là đợt sale có thời hạn, thường diễn ra trước giờ đóng cửa.', zh: '「タイムセール」是限时特卖，经常在关店前进行。', id: '"Taimu seeru" adalah penjualan terbatas waktu, sering dilakukan sebelum toko tutup.', tl: '"Taimu seeru" ay time-limited sale, kadalasan bago magsara ang tindahan.', my: '"Taimu seeru" ဆိုသည်မှာ အချိန်ကန့်သတ် ဈေးလျော့ရောင်းချမှု ဖြစ်သည်' } },
+              { question: { ja: '「タイムセール」とはどういう意味ですか？', en: 'What does "taimu seeru" mean?', vi: '「タイムセール」có nghĩa là gì?' }, options: ['時間通りの営業', '時間限定の特売', '時間の節約', '営業時間'], correct: 1, explanation: { ja: '「タイムセール」は時間限定の特売のことです。閉店前などに行われることが多いです。', en: '"Taimu seeru" is a time-limited sale, often done before closing time.', vi: 'Đúng rồi! 「タイムセール」(taimu seeru) là đợt giảm giá có thời hạn, thường diễn ra trước giờ đóng cửa. Đặc biệt ở siêu thị Nhật, khoảng 18-20 giờ tối thường có タイムセール cho thực phẩm tươi sống — rất tiết kiệm!', zh: '「タイムセール」是限时特卖，经常在关店前进行。', id: '"Taimu seeru" adalah penjualan terbatas waktu, sering dilakukan sebelum toko tutup.', tl: '"Taimu seeru" ay time-limited sale, kadalasan bago magsara ang tindahan.', my: '"Taimu seeru" ဆိုသည်မှာ အချိန်ကန့်သတ် ဈေးလျော့ရောင်းချမှု ဖြစ်သည်' } },
               { question: { ja: '「30%オフ」の元値5000円の商品はいくらですか？', en: 'With 30% off, how much is a product originally priced at 5000 yen?' }, options: ['1500円', '3000円', '3500円', '4000円'], correct: 2, explanation: { ja: '5000円 × 70% = 3500円です。30%オフは70%の値段になります。', en: '5000 yen × 70% = 3500 yen. 30% off means you pay 70%.', vi: '5000 yên × 70% = 3500 yên. Giảm 30% tức là trả 70%.', zh: '5000日元×70%=3500日元。打七折即原价的70%。', id: '5000 yen × 70% = 3500 yen.', tl: '5000 yen × 70% = 3500 yen.', my: '5000 ယန်း × 70% = 3500 ယန်း ဖြစ်သည်' } },
             ],
           },
@@ -720,7 +720,7 @@ export const courses: Course[] = [
           {
             type: 'quiz',
             quiz: [
-              { question: { ja: '「領収書」と「レシート」の違いは？', en: 'What is the difference between "ryoushuusho" and "reshiito"?' }, options: ['同じ意味', '領収書は税務用の正式書類', 'レシートは海外用', '領収書はスーパーのみ'], correct: 1, explanation: { ja: '「レシート」はレジで発行する簡易書類。「領収書」は宛名と印鑑が入った税務用の正式な書類です。', en: '"Reshiito" is a simple cash register receipt. "Ryoushuusho" is an official receipt with the recipient\'s name and stamp, used for tax purposes.', vi: '"Reshiito" là biên lai đơn giản từ máy tính tiền. "Ryoushuusho" là biên lai chính thức có tên người nhận và con dấu.', zh: '「レシート」是简单的收银机凭据。「領収書」是含有收件人和印章的正式税务收据。', id: '"Reshiito" adalah struk kasir sederhana. "Ryoushuusho" adalah kuitansi resmi untuk keperluan pajak.', tl: '"Reshiito" ay simpleng resibo mula sa cash register. "Ryoushuusho" ay opisyal na resibo para sa buwis.', my: '"Reshiito" သည် ကက်ရှ်ရာ ပြေစာ ဖြစ်ပြီး "Ryoushuusho" သည် အခွန်ရည်ရွယ်ချက်အတွက် တရားဝင် ပြေစာ ဖြစ်သည်' } },
+              { question: { ja: '「領収書」と「レシート」の違いは？', en: 'What is the difference between "ryoushuusho" and "reshiito"?', vi: '「領収書」và「レシート」khác nhau như thế nào?' }, options: ['同じ意味', '領収書は税務用の正式書類', 'レシートは海外用', '領収書はスーパーのみ'], correct: 1, explanation: { ja: '「レシート」はレジで発行する簡易書類。「領収書」は宛名と印鑑が入った税務用の正式な書類です。', en: '"Reshiito" is a simple cash register receipt. "Ryoushuusho" is an official receipt with the recipient\'s name and stamp, used for tax purposes.', vi: 'Đúng rồi! 「レシート」là biên lai đơn giản từ máy tính tiền. 「領収書」là hóa đơn chính thức ghi tên người nhận và có con dấu, dùng cho mục đích thuế hoặc xin hoàn tiền từ công ty. Khi cần 領収書, hãy nói:「領収書をお願いします」(Cho tôi hóa đơn chính thức).', zh: '「レシート」是简单的收银机凭据。「領収書」是含有收件人和印章的正式税务收据。', id: '"Reshiito" adalah struk kasir sederhana. "Ryoushuusho" adalah kuitansi resmi untuk keperluan pajak.', tl: '"Reshiito" ay simpleng resibo mula sa cash register. "Ryoushuusho" ay opisyal na resibo para sa buwis.', my: '"Reshiito" သည် ကက်ရှ်ရာ ပြေစာ ဖြစ်ပြီး "Ryoushuusho" သည် အခွန်ရည်ရွယ်ချက်အတွက် တရားဝင် ပြေစာ ဖြစ်သည်' } },
             ],
           },
         ],
@@ -749,7 +749,7 @@ export const courses: Course[] = [
           {
             type: 'intro',
             title: { ja: '和語数詞とは？', en: 'What are Native Japanese Numbers?' },
-            text: { ja: '日本語には2種類の数え方があります。「いち・に・さん」（漢語数詞）と「ひとつ・ふたつ・みっつ」（和語数詞）です。和語数詞は1〜10のものを数えるときに使います。', en: 'Japanese has two counting systems: "ichi, ni, san..." (Sino-Japanese) and "hitotsu, futatsu, mittsu..." (native Japanese). Native numbers are used for counting 1-10 objects.' },
+            text: { ja: '日本語には2種類の数え方があります。「いち・に・さん」（漢語数詞）と「ひとつ・ふたつ・みっつ」（和語数詞）です。和語数詞は1〜10のものを数えるときに使います。', en: 'Japanese has two counting systems: "ichi, ni, san..." (Sino-Japanese) and "hitotsu, futatsu, mittsu..." (native Japanese). Native numbers are used for counting 1-10 objects.', vi: 'Điểm thú vị: Tiếng Nhật có 2 hệ đếm! Hệ Hán-Nhật (một, hai, ba → いち・に・さん) và hệ Nhật thuần (ひとつ・ふたつ・みっつ). Hệ Nhật thuần dùng để đếm đồ vật từ 1 đến 10 khi không có đơn vị đếm cụ thể. Hãy luyện tập cả hai nhé!' },
           },
           {
             type: 'vocab',
@@ -773,7 +773,7 @@ export const courses: Course[] = [
             grammar: [
               {
                 pattern: '〜枚（まい）— 薄いもの',
-                explanation: { ja: '紙・シャツなど薄くて平らなものを数えます。', en: 'Used for counting flat, thin objects like paper and shirts.', vi: 'Dùng để đếm đồ mỏng, phẳng như giấy, áo.', zh: '用于计数薄而平的物品，如纸张、衬衫。', id: 'Digunakan untuk benda tipis dan datar.', tl: 'Ginagamit para sa manipis at patag na bagay.', my: 'စာရွက်၊ အင်္ကျီကဲ့သို့ ပါးသော၊ ပြားသော ပစ္စည်းများ ရေတွက်ရာတွင် သုံးသည်' },
+                explanation: { ja: '紙・シャツなど薄くて平らなものを数えます。', en: 'Used for counting flat, thin objects like paper and shirts.', vi: 'Điểm quan trọng: 〜枚 (mai) dùng để đếm những thứ mỏng và phẳng như giấy, áo, đĩa, tấm ảnh. Đây là một trong những đơn vị đếm phổ biến nhất cần nhớ!', zh: '用于计数薄而平的物品，如纸张、衬衫。', id: 'Digunakan untuk benda tipis dan datar.', tl: 'Ginagamit para sa manipis at patag na bagay.', my: 'စာရွက်၊ အင်္ကျီကဲ့သို့ ပါးသော၊ ပြားသော ပစ္စည်းများ ရေတွက်ရာတွင် သုံးသည်' },
                 examples: [
                   { japanese: '紙を3枚ください。', reading: 'Kami wo san-mai kudasai.', meaning: { en: 'Three sheets of paper please.', vi: 'Cho tôi 3 tờ giấy.' } },
                   { japanese: 'シャツを2枚買いました。', reading: 'Shatsu wo ni-mai kaimashita.', meaning: { en: 'I bought 2 shirts.', vi: 'Tôi mua 2 cái áo.' } },
@@ -781,7 +781,7 @@ export const courses: Course[] = [
               },
               {
                 pattern: '〜本（ほん）— 細長いもの',
-                explanation: { ja: 'ペン・ペットボトルなど細長いものを数えます。', en: 'Used for counting long, thin objects like pens and bottles.', vi: 'Dùng để đếm đồ dài, mỏng như bút, chai.', zh: '用于计数细长物品，如钢笔、瓶子。', id: 'Digunakan untuk benda panjang dan tipis.', tl: 'Ginagamit para sa mahaba at manipis na bagay.', my: 'ဘောပင်၊ ဘူးကဲ့သို့ ရှည်သော ပစ္စည်းများ ရေတွက်ရာတွင် သုံးသည်' },
+                explanation: { ja: 'ペン・ペットボトルなど細長いものを数えます。', en: 'Used for counting long, thin objects like pens and bottles.', vi: 'Điểm quan trọng: 〜本 (hon/bon/pon) dùng để đếm những thứ dài và mỏng như bút, chai nước, ô dù, cây cối. Chú ý cách đọc thay đổi: 1本 (ippon), 2本 (nihon), 3本 (sanbon), 6本 (roppon)...', zh: '用于计数细长物品，如钢笔、瓶子。', id: 'Digunakan untuk benda panjang dan tipis.', tl: 'Ginagamit para sa mahaba at manipis na bagay.', my: 'ဘောပင်၊ ဘူးကဲ့သို့ ရှည်သော ပစ္စည်းများ ရေတွက်ရာတွင် သုံးသည်' },
                 examples: [
                   { japanese: 'ジュースを1本ください。', reading: 'Juusu wo ip-pon kudasai.', meaning: { en: 'One juice please.', vi: 'Cho tôi một chai nước.' } },
                   { japanese: 'ペンを2本持っています。', reading: 'Pen wo ni-hon motte imasu.', meaning: { en: 'I have 2 pens.', vi: 'Tôi có 2 cái bút.' } },
@@ -792,7 +792,7 @@ export const courses: Course[] = [
           {
             type: 'quiz',
             quiz: [
-              { question: { ja: '「ふたつ」はいくつですか？', en: 'How many is "futatsu"?' }, options: ['1', '2', '3', '4'], correct: 1, explanation: { ja: '「ふたつ」は「二つ」で2個を意味します。', en: '"Futatsu" means two items.', vi: '"Futatsu" có nghĩa là hai.', zh: '「ふたつ」即"二つ"，表示两个。', id: '"Futatsu" berarti dua.', tl: '"Futatsu" ay ibig sabihin dalawa.', my: '"Futatsu" ဆိုသည်မှာ နှစ်ခု ဟု အဓိပ္ပာယ်ရသည်' } },
+              { question: { ja: '「ふたつ」はいくつですか？', en: 'How many is "futatsu"?', vi: '「ふたつ」là bao nhiêu?' }, options: ['1', '2', '3', '4'], correct: 1, explanation: { ja: '「ふたつ」は「二つ」で2個を意味します。', en: '"Futatsu" means two items.', vi: 'Đúng rồi! 「ふたつ」= hai. Hãy nhớ cả dãy: ひとつ(1)、ふたつ(2)、みっつ(3)、よっつ(4)、いつつ(5)... Hệ đếm này rất hữu ích khi mua sắm!', zh: '「ふたつ」即"二つ"，表示两个。', id: '"Futatsu" berarti dua.', tl: '"Futatsu" ay ibig sabihin dalawa.', my: '"Futatsu" ဆိုသည်မှာ နှစ်ခု ဟု အဓိပ္ပာယ်ရသည်' } },
               { question: { ja: 'シャツ3枚は何と言いますか？', en: 'How do you say "3 shirts"?' }, options: ['シャツ3本', 'シャツ3枚', 'シャツ3個', 'シャツ3冊'], correct: 1, explanation: { ja: 'シャツなど薄くて平らなものは「〜枚（まい）」を使います。', en: 'Use 〜mai (枚) for flat, thin objects like shirts.', vi: 'Dùng 〜mai (枚) cho đồ mỏng như áo.', zh: '薄而平的物品如衬衫使用「〜枚（まい）」。', id: 'Gunakan 〜mai untuk benda tipis seperti baju.', tl: 'Gamitin ang 〜mai para sa manipis na bagay tulad ng damit.', my: 'အင်္ကျီကဲ့သို့ ပါးသောပစ္စည်းများတွင် 〜mai ကိုသုံးသည်' } },
             ],
           },
@@ -822,7 +822,7 @@ export const courses: Course[] = [
             grammar: [
               {
                 pattern: '〜時から〜時まで',
-                explanation: { ja: '「から」は開始時刻、「まで」は終了時刻を表します。', en: '"Kara" marks the start time and "made" marks the end time.', vi: '"Kara" đánh dấu thời gian bắt đầu và "made" đánh dấu thời gian kết thúc.', zh: '「から」表示开始时间，「まで」表示结束时间。', id: '"Kara" menandai waktu mulai, "made" menandai waktu selesai.', tl: '"Kara" ang simula ng oras, "made" ang katapusan.', my: '"Kara" သည် စတင်သောအချိန် ဖြစ်ပြီး "made" သည် ပြီးဆုံးသောအချိန် ဖြစ်သည်' },
+                explanation: { ja: '「から」は開始時刻、「まで」は終了時刻を表します。', en: '"Kara" marks the start time and "made" marks the end time.', vi: 'Điểm quan trọng: 「〜から〜まで」dùng để nói khoảng thời gian. 「から」(kara) = từ (bắt đầu), 「まで」(made) = đến (kết thúc). Cấu trúc này cũng dùng cho địa điểm: 「〜から〜まで」= từ 〜 đến 〜. Rất hữu ích khi nói về giờ làm việc hoặc lịch trình!', zh: '「から」表示开始时间，「まで」表示结束时间。', id: '"Kara" menandai waktu mulai, "made" menandai waktu selesai.', tl: '"Kara" ang simula ng oras, "made" ang katapusan.', my: '"Kara" သည် စတင်သောအချိန် ဖြစ်ပြီး "made" သည် ပြီးဆုံးသောအချိန် ဖြစ်သည်' },
                 examples: [
                   { japanese: '9時から5時まで働きます。', reading: 'Ku-ji kara go-ji made hatarakimasu.', meaning: { en: 'I work from 9 to 5.', vi: 'Tôi làm việc từ 9 đến 5 giờ.', zh: '我从9点工作到5点。' } },
                   { japanese: '店は10時から20時まで営業しています。', reading: 'Mise wa juu-ji kara ni-juu-ji made eigyou shite imasu.', meaning: { en: 'The store is open from 10am to 8pm.', vi: 'Cửa hàng mở cửa từ 10 giờ đến 20 giờ.' } },
@@ -833,7 +833,7 @@ export const courses: Course[] = [
           {
             type: 'quiz',
             quiz: [
-              { question: { ja: '「午後3時30分」を正しく読むと？', en: 'How do you read "午後3時30分"?' }, options: ['ごごさんじさんじゅっぷん', 'ごぜんさんじさんじっぷん', 'ごごみっつさんじゅう', 'ごごさんじはんじかん'], correct: 0, explanation: { ja: '午後3時30分は「ごごさんじさんじゅっぷん」です。「半（はん）」を使って「さんじはん」とも言います。', en: '"Gogo san-ji sanjuppun" = 3:30 PM. You can also say "san-ji han" (half past 3).', vi: '"Gogo san-ji sanjuppun" = 3:30 chiều. Cũng có thể nói "san-ji han".', zh: '下午3时30分读作"ごごさんじさんじゅっぷん"，也可说"さんじはん"。' } },
+              { question: { ja: '「午後3時30分」を正しく読むと？', en: 'How do you read "午後3時30分"?', vi: '「午後3時30分」đọc như thế nào?' }, options: ['ごごさんじさんじゅっぷん', 'ごぜんさんじさんじっぷん', 'ごごみっつさんじゅう', 'ごごさんじはんじかん'], correct: 0, explanation: { ja: '午後3時30分は「ごごさんじさんじゅっぷん」です。「半（はん）」を使って「さんじはん」とも言います。', en: '"Gogo san-ji sanjuppun" = 3:30 PM. You can also say "san-ji han" (half past 3).', vi: 'Đúng rồi! 「午後3時30分」đọc là "gogo san-ji sanjuppun" = 3 giờ 30 phút chiều. Mẹo: 30 phút còn có thể nói là 「半」(han) → 「さんじはん」(3 giờ rưỡi). Rất tiện phải không?', zh: '下午3时30分读作"ごごさんじさんじゅっぷん"，也可说"さんじはん"。' } },
             ],
           },
         ],
@@ -879,8 +879,8 @@ export const courses: Course[] = [
           {
             type: 'quiz',
             quiz: [
-              { question: { ja: '「水曜日」は何曜日ですか？', en: 'What day is 「水曜日」?' }, options: ['Monday', 'Tuesday', 'Wednesday', 'Thursday'], correct: 2, explanation: { ja: '水曜日（すいようび）はWednesdayです。水→水（みず）→Water（水の記号）で覚えましょう。', en: '"Suiyoubi" is Wednesday. The kanji 水 means water.', vi: '"Suiyoubi" là thứ Tư. Kanji 水 có nghĩa là nước.', zh: '水曜日（すいようび）是星期三，汉字"水"表示水。' } },
-              { question: { ja: '令和8年は西暦何年ですか？', en: 'What year in the Western calendar is Reiwa 8?' }, options: ['2025', '2026', '2027', '2028'], correct: 1, explanation: { ja: '令和1年 = 2019年です。令和8年 = 2019 + 7 = 2026年。', en: 'Reiwa 1 = 2019. Reiwa 8 = 2019 + 7 = 2026.', vi: 'Reiwa 1 = 2019. Reiwa 8 = 2019 + 7 = 2026.', zh: '令和1年=2019年，令和8年=2026年。' } },
+              { question: { ja: '「水曜日」は何曜日ですか？', en: 'What day is 「水曜日」?', vi: '「水曜日」là thứ mấy?' }, options: ['Monday', 'Tuesday', 'Wednesday', 'Thursday'], correct: 2, explanation: { ja: '水曜日（すいようび）はWednesdayです。水→水（みず）→Water（水の記号）で覚えましょう。', en: '"Suiyoubi" is Wednesday. The kanji 水 means water.', vi: 'Đúng rồi! 「水曜日」(Suiyoubi) là thứ Tư. Mẹo nhớ: 水 (mizu) = nước, và thứ Tư (Water Day). Hãy nhớ theo chủ đề: 月=Mặt trăng=Thứ Hai, 火=Lửa=Thứ Ba, 水=Nước=Thứ Tư, 木=Gỗ=Thứ Năm, 金=Vàng=Thứ Sáu, 土=Đất=Thứ Bảy, 日=Mặt trời=Chủ nhật.', zh: '水曜日（すいようび）是星期三，汉字"水"表示水。' } },
+              { question: { ja: '令和8年は西暦何年ですか？', en: 'What year in the Western calendar is Reiwa 8?', vi: 'Năm Reiwa 8 tương đương năm dương lịch nào?' }, options: ['2025', '2026', '2027', '2028'], correct: 1, explanation: { ja: '令和1年 = 2019年です。令和8年 = 2019 + 7 = 2026年。', en: 'Reiwa 1 = 2019. Reiwa 8 = 2019 + 7 = 2026.', vi: 'Đúng rồi! Công thức: Năm Reiwa + 2018 = Năm dương lịch. Vậy Reiwa 8 = 2018 + 8 = 2026. Hiện tại (2026) là năm Reiwa 8 — hãy nhớ để điền vào các giấy tờ nhé!', zh: '令和1年=2019年，令和8年=2026年。' } },
             ],
           },
         ],
@@ -913,7 +913,7 @@ export const courses: Course[] = [
           {
             type: 'quiz',
             quiz: [
-              { question: { ja: '「ついたち」は何日ですか？', en: 'What date is "tsuitachi"?' }, options: ['10日', '20日', '1日', '30日'], correct: 2, explanation: { ja: '「ついたち」は「1日」で、月の最初の日です。', en: '"Tsuitachi" is the 1st day of the month.', vi: '"Tsuitachi" là ngày 1 của tháng.', zh: '「ついたち」是「1日」，即每月第一天。' } },
+              { question: { ja: '「ついたち」は何日ですか？', en: 'What date is "tsuitachi"?', vi: '「ついたち」là ngày mấy?' }, options: ['10日', '20日', '1日', '30日'], correct: 2, explanation: { ja: '「ついたち」は「1日」で、月の最初の日です。', en: '"Tsuitachi" is the 1st day of the month.', vi: 'Đúng rồi! 「ついたち」= ngày 1 của tháng. Tiếng Nhật có nhiều cách đọc ngày đặc biệt: 1日=ついたち, 2日=ふつか, 14日=じゅうよっか, 20日=はつか. Hãy nhớ những ngày đặc biệt này để không bị nhầm lẫn khi đọc lịch!', zh: '「ついたち」是「1日」，即每月第一天。' } },
             ],
           },
         ],
@@ -942,7 +942,7 @@ export const courses: Course[] = [
           {
             type: 'intro',
             title: { ja: 'なぜ大切か', en: 'Why this matters' },
-            text: { ja: '体調が悪いとき、日本語で正確に伝えることが、早く適切な治療を受けるための鍵です。「〜が痛いです」「〜から〜が続いています」などの表現を覚えましょう。', en: 'When you are unwell, being able to accurately describe your condition in Japanese is key to receiving proper treatment quickly. Learn expressions like "〜ga itai desu" (My 〜 hurts).' },
+            text: { ja: '体調が悪いとき、日本語で正確に伝えることが、早く適切な治療を受けるための鍵です。「〜が痛いです」「〜から〜が続いています」などの表現を覚えましょう。', en: 'When you are unwell, being able to accurately describe your condition in Japanese is key to receiving proper treatment quickly. Learn expressions like "〜ga itai desu" (My 〜 hurts).', vi: 'Khi bạn bị ốm hay gặp sự cố, khả năng truyền đạt chính xác bằng tiếng Nhật là điều thiết yếu để được điều trị kịp thời. Hãy luyện tập kỹ những câu như 「〜が痛いです」(bộ phận 〜 đau) và 「〜から続いています」(triệu chứng liên tục từ 〜). Đây có thể là những câu quan trọng nhất bạn học được!' },
           },
           {
             type: 'vocab',
@@ -999,7 +999,7 @@ export const courses: Course[] = [
             grammar: [
               {
                 pattern: '場所 + 住所の伝え方',
-                explanation: { ja: '119番や110番では、まず現在地を伝えることが最重要です。「〜にいます」「〜の前です」などの表現を使います。', en: 'When calling 119 or 110, giving your location is the most important first step. Use "〜ni imasu" (I am at 〜) or "〜no mae desu" (I am in front of 〜).', vi: 'Khi gọi 119 hoặc 110, cho biết vị trí là bước quan trọng nhất. Dùng "〜ni imasu" (Tôi đang ở 〜) hoặc "〜no mae desu" (Tôi đứng trước 〜).', zh: '打119或110时，首先告知所在位置最为重要。使用"〜にいます"（我在〜）或"〜の前です"（我在〜前面）。' },
+                explanation: { ja: '119番や110番では、まず現在地を伝えることが最重要です。「〜にいます」「〜の前です」などの表現を使います。', en: 'When calling 119 or 110, giving your location is the most important first step. Use "〜ni imasu" (I am at 〜) or "〜no mae desu" (I am in front of 〜).', vi: 'Điểm cực kỳ quan trọng: Khi gọi 119 hoặc 110, việc đầu tiên phải làm là nói địa điểm của bạn! Dùng 「〜にいます」(tôi đang ở 〜) hoặc 「〜の前にいます」(tôi đang đứng trước 〜). Nếu không biết địa chỉ chính xác, hãy tìm dấu hiệu gần đó (cửa hàng, biển số nhà) và mô tả.', zh: '打119或110时，首先告知所在位置最为重要。使用"〜にいます"（我在〜）或"〜の前です"（我在〜前面）。' },
                 examples: [
                   { japanese: '東京都新宿区〇〇1-2-3にいます。', reading: 'Toukyou-to Shinjuku-ku ××× ichi-ni-san ni imasu.', meaning: { en: 'I am at 1-2-3 XXX, Shinjuku-ku, Tokyo.', vi: 'Tôi đang ở 1-2-3 XXX, Shinjuku, Tokyo.' } },
                   { japanese: 'コンビニの前で人が倒れています。', reading: 'Konbini no mae de hito ga taorete imasu.', meaning: { en: 'A person has collapsed in front of the convenience store.', vi: 'Có người ngã trước cửa hàng tiện lợi.' } },
@@ -1010,8 +1010,8 @@ export const courses: Course[] = [
           {
             type: 'quiz',
             quiz: [
-              { question: { ja: '日本で救急車を呼ぶ番号は？', en: 'What number do you call for an ambulance in Japan?' }, options: ['110', '119', '118', '117'], correct: 1, explanation: { ja: '日本の救急・消防は「119番」です。警察は「110番」、海上保安庁は「118番」です。', en: 'In Japan, ambulance and fire are 119. Police is 110. Coast guard is 118.', vi: 'Cứu thương và cứu hỏa Nhật là 119. Cảnh sát là 110.', zh: '日本救护车和消防是119，警察是110，海上保安厅是118。' } },
-              { question: { ja: '「助けてください」の意味は？', en: 'What does "tasukete kudasai" mean?' }, options: ['I need water', 'Help me please', 'I am lost', 'Call a doctor'], correct: 1, explanation: { ja: '「助けてください」は緊急時に使う「Help me please」です。', en: '"Tasukete kudasai" means "Help me please" used in emergencies.', vi: '"Tasukete kudasai" có nghĩa là "Cứu tôi với".', zh: '「助けてください」是紧急时使用的"救救我/帮帮我"。' } },
+              { question: { ja: '日本で救急車を呼ぶ番号は？', en: 'What number do you call for an ambulance in Japan?', vi: 'Số gọi xe cứu thương ở Nhật là gì?' }, options: ['110', '119', '118', '117'], correct: 1, explanation: { ja: '日本の救急・消防は「119番」です。警察は「110番」、海上保安庁は「118番」です。', en: 'In Japan, ambulance and fire are 119. Police is 110. Coast guard is 118.', vi: 'Đúng rồi! Hãy nhớ kỹ các số này: 119 = cứu thương và cứu hỏa, 110 = cảnh sát, 118 = cảnh sát biển. Đây là thông tin quan trọng nhất để bảo vệ bản thân khi sống tại Nhật!', zh: '日本救护车和消防是119，警察是110，海上保安厅是118。' } },
+              { question: { ja: '「助けてください」の意味は？', en: 'What does "tasukete kudasai" mean?', vi: '「助けてください」có nghĩa là gì?' }, options: ['I need water', 'Help me please', 'I am lost', 'Call a doctor'], correct: 1, explanation: { ja: '「助けてください」は緊急時に使う「Help me please」です。', en: '"Tasukete kudasai" means "Help me please" used in emergencies.', vi: 'Đúng rồi! 「助けてください」(Tasukete kudasai) nghĩa là "Cứu tôi với! / Giúp tôi với!" — câu này cực kỳ quan trọng khi gặp nguy hiểm. Hãy ghi nhớ ngay bây giờ!', zh: '「助けてください」是紧急时使用的"救救我/帮帮我"。' } },
             ],
           },
         ],
@@ -1046,7 +1046,7 @@ export const courses: Course[] = [
           {
             type: 'quiz',
             quiz: [
-              { question: { ja: '「1日3回、食後に飲んでください」の「食後」の意味は？', en: 'What does "shokugo" mean in "ichinichi san-kai, shokugo ni nonde kudasai"?' }, options: ['before meals', 'after meals', 'between meals', 'with meals'], correct: 1, explanation: { ja: '「食後（しょくご）」は「食べた後」、つまり「after meals」です。食前（しょくぜん）は「before meals」です。', en: '"Shokugo" (食後) means after meals. "Shokuzen" (食前) means before meals.', vi: '"Shokugo" (食後) nghĩa là sau bữa ăn. "Shokuzen" (食前) nghĩa là trước bữa ăn.', zh: '「食後（しょくご）」是饭后的意思。「食前（しょくぜん）」是饭前。' } },
+              { question: { ja: '「1日3回、食後に飲んでください」の「食後」の意味は？', en: 'What does "shokugo" mean in "ichinichi san-kai, shokugo ni nonde kudasai"?', vi: 'Trong câu「1日3回、食後に飲んでください」, 「食後」có nghĩa là gì?' }, options: ['before meals', 'after meals', 'between meals', 'with meals'], correct: 1, explanation: { ja: '「食後（しょくご）」は「食べた後」、つまり「after meals」です。食前（しょくぜん）は「before meals」です。', en: '"Shokugo" (食後) means after meals. "Shokuzen" (食前) means before meals.', vi: 'Đúng rồi! 「食後」(shokugo) = sau bữa ăn. Hãy nhớ thêm: 「食前」(shokuzen) = trước bữa ăn, 「食間」(shokukan) = giữa các bữa ăn. Khi nhận thuốc, hãy xác nhận cách uống để đảm bảo hiệu quả điều trị!', zh: '「食後（しょくご）」是饭后的意思。「食前（しょくぜん）」是饭前。' } },
             ],
           },
         ],
@@ -1082,7 +1082,7 @@ export const courses: Course[] = [
           {
             type: 'quiz',
             quiz: [
-              { question: { ja: '「初診」の意味は？', en: 'What does "shoshin" mean?' }, options: ['second visit', 'first visit / new patient', 'check-up', 'surgery'], correct: 1, explanation: { ja: '「初診（しょしん）」は「初めての受診」、つまり「first visit」です。2回目以降は「再診（さいしん）」と言います。', en: '"Shoshin" means first visit or new patient. Subsequent visits are called "saishin".', vi: '"Shoshin" nghĩa là lần khám đầu tiên. Các lần tiếp theo gọi là "saishin".', zh: '「初診（しょしん）」是初次就诊的意思。第二次之后称"再診（さいしん）"。' } },
+              { question: { ja: '「初診」の意味は？', en: 'What does "shoshin" mean?', vi: '「初診」có nghĩa là gì?' }, options: ['second visit', 'first visit / new patient', 'check-up', 'surgery'], correct: 1, explanation: { ja: '「初診（しょしん）」は「初めての受診」、つまり「first visit」です。2回目以降は「再診（さいしん）」と言います。', en: '"Shoshin" means first visit or new patient. Subsequent visits are called "saishin".', vi: 'Đúng rồi! 「初診」(shoshin) = lần khám đầu tiên (bệnh nhân mới). Từ lần thứ hai trở đi gọi là 「再診」(saishin). Khi đến bệnh viện lần đầu, hãy nói: 「初診なのですが...」(Tôi đến khám lần đầu...)' , zh: '「初診（しょしん）」是初次就诊的意思。第二次之后称"再診（さいしん）"。' } },
             ],
           },
         ],
@@ -1111,7 +1111,7 @@ export const courses: Course[] = [
           {
             type: 'intro',
             title: { ja: '日本の電車について', en: 'About Japanese Trains' },
-            text: { ja: '日本の電車は複雑ですが、いくつかのキーワードを覚えれば安心です。「〜番線」「乗り換え」「終点」などの表現を学びましょう。', en: 'Japanese trains can seem complex, but learning key words makes it manageable. Learn expressions like "〜bansen" (platform number), "norikae" (transfer), and "shuuten" (terminus).' },
+            text: { ja: '日本の電車は複雑ですが、いくつかのキーワードを覚えれば安心です。「〜番線」「乗り換え」「終点」などの表現を学びましょう。', en: 'Japanese trains can seem complex, but learning key words makes it manageable. Learn expressions like "〜bansen" (platform number), "norikae" (transfer), and "shuuten" (terminus).', vi: 'Hệ thống tàu điện Nhật Bản có vẻ phức tạp, nhưng chỉ cần nhớ một số từ khóa là đủ! Chúng ta sẽ học những từ như 「〜番線」(số sân ga), 「乗り換え」(chuyển tàu), và 「終点」(điểm cuối). Hãy luyện tập nhé, đây là kỹ năng cực kỳ hữu ích khi di chuyển tại Nhật!' },
           },
           {
             type: 'vocab',
@@ -1132,7 +1132,7 @@ export const courses: Course[] = [
             grammar: [
               {
                 pattern: '〜行き（ゆき）',
-                explanation: { ja: '「〜行き」は電車やバスの終着駅・行き先を示します。乗る前に必ず確認しましょう。', en: '"〜yuki" indicates the train or bus destination. Always check before boarding.', vi: '"〜yuki" chỉ điểm đến của tàu hoặc xe buýt. Hãy kiểm tra trước khi lên.', zh: '「〜行き」表示列车或公交的终点站/目的地。上车前一定要确认。', id: '"〜yuki" menunjukkan tujuan kereta atau bus.', tl: '"〜yuki" ay nagpapakita ng destinasyon ng tren o bus.', my: '"〜yuki" သည် ရထား သို့မဟုတ် ဘတ်စ်ကားသွားသောနေရာ ပြသည်' },
+                explanation: { ja: '「〜行き」は電車やバスの終着駅・行き先を示します。乗る前に必ず確認しましょう。', en: '"〜yuki" indicates the train or bus destination. Always check before boarding.', vi: 'Điểm quan trọng: 「〜行き」(〜yuki) chỉ điểm đến cuối cùng của tàu hoặc xe buýt. Ví dụ: 「新宿行き」= đi Shinjuku. Luôn kiểm tra bảng chỉ dẫn trước khi lên tàu để tránh đi nhầm hướng!', zh: '「〜行き」表示列车或公交的终点站/目的地。上车前一定要确认。', id: '"〜yuki" menunjukkan tujuan kereta atau bus.', tl: '"〜yuki" ay nagpapakita ng destinasyon ng tren o bus.', my: '"〜yuki" သည် ရထား သို့မဟုတ် ဘတ်စ်ကားသွားသောနေရာ ပြသည်' },
                 examples: [
                   { japanese: '新宿行きの電車はどれですか？', reading: 'Shinjuku-yuki no densha wa dore desu ka?', meaning: { en: 'Which is the train going to Shinjuku?', vi: 'Tàu đến Shinjuku là cái nào?' } },
                   { japanese: 'この電車は渋谷行きですか？', reading: 'Kono densha wa Shibuya-yuki desu ka?', meaning: { en: 'Is this train going to Shibuya?', vi: 'Tàu này đến Shibuya không?' } },
@@ -1153,7 +1153,7 @@ export const courses: Course[] = [
           {
             type: 'quiz',
             quiz: [
-              { question: { ja: '「乗り換え」の意味は？', en: 'What does "norikae" mean?' }, options: ['final destination', 'platform number', 'transfer (change trains)', 'ticket machine'], correct: 2, explanation: { ja: '「乗り換え（のりかえ）」は他の路線・電車に乗り換えることです。', en: '"Norikae" means to transfer from one train line to another.', vi: '"Norikae" nghĩa là chuyển tàu sang tuyến khác.', zh: '「乗り換え（のりかえ）」是换乘其他路线/电车的意思。' } },
+              { question: { ja: '「乗り換え」の意味は？', en: 'What does "norikae" mean?', vi: '「乗り換え」có nghĩa là gì?' }, options: ['final destination', 'platform number', 'transfer (change trains)', 'ticket machine'], correct: 2, explanation: { ja: '「乗り換え（のりかえ）」は他の路線・電車に乗り換えることです。', en: '"Norikae" means to transfer from one train line to another.', vi: 'Đúng rồi! 「乗り換え」(norikae) = chuyển tàu sang tuyến khác. Khi nhân viên ga nói 「〜で乗り換えてください」, hãy xuống tàu ở ga đó và tìm tàu tiếp theo. Ứng dụng Google Maps hoặc Yahoo! Transit rất hữu ích để tìm đường!', zh: '「乗り換え（のりかえ）」是换乘其他路线/电车的意思。' } },
             ],
           },
         ],
@@ -1188,7 +1188,7 @@ export const courses: Course[] = [
           {
             type: 'quiz',
             quiz: [
-              { question: { ja: 'タクシーで目的地を伝えるとき何と言いますか？', en: 'How do you tell a taxi driver your destination?' }, options: ['〜に行きたい', '〜はどこですか', '〜までお願いします', '〜で降ります'], correct: 2, explanation: { ja: 'タクシーで「〜までお願いします」が最も自然な表現です。', en: '"〜made onegaishimasu" is the most natural way to tell a taxi your destination.', vi: '"〜made onegaishimasu" là cách tự nhiên nhất để nói điểm đến cho tài xế taxi.', zh: '在出租车中，「〜までお願いします」是最自然的表达方式。' } },
+              { question: { ja: 'タクシーで目的地を伝えるとき何と言いますか？', en: 'How do you tell a taxi driver your destination?', vi: 'Khi nói điểm đến cho tài xế taxi, bạn dùng câu nào?' }, options: ['〜に行きたい', '〜はどこですか', '〜までお願いします', '〜で降ります'], correct: 2, explanation: { ja: 'タクシーで「〜までお願いします」が最も自然な表現です。', en: '"〜made onegaishimasu" is the most natural way to tell a taxi your destination.', vi: 'Đúng rồi! 「〜までお願いします」(〜made onegaishimasu) là cách nói tự nhiên nhất khi lên taxi: "Cho tôi đến 〜". Ví dụ: 「新宿駅までお願いします」= Cho tôi đến ga Shinjuku. Nếu không biết tên địa điểm, bạn cũng có thể đưa điện thoại cho tài xế xem bản đồ!', zh: '在出租车中，「〜までお願いします」是最自然的表达方式。' } },
             ],
           },
         ],
@@ -1216,7 +1216,7 @@ export const courses: Course[] = [
             grammar: [
               {
                 pattern: '〜たら（条件）+ 方向',
-                explanation: { ja: '「〜たら」は「〜した後に」の意味で、道案内でよく使います。「信号を越えたら右に曲がってください」のように使います。', en: '"〜tara" means "after you do 〜" and is commonly used in directions. Example: "After you pass the traffic light, turn right."', vi: '"〜tara" có nghĩa là "sau khi làm 〜" và hay dùng khi chỉ đường.', zh: '「〜たら」表示"做了〜之后"，常用于道路指引。例如"过了信号灯右转"。' },
+                explanation: { ja: '「〜たら」は「〜した後に」の意味で、道案内でよく使います。「信号を越えたら右に曲がってください」のように使います。', en: '"〜tara" means "after you do 〜" and is commonly used in directions. Example: "After you pass the traffic light, turn right."', vi: 'Điểm quan trọng: 「〜たら」có nghĩa là "sau khi 〜" và rất hay được dùng khi chỉ đường. Cấu trúc: [mốc tham chiếu] + たら + [hướng đi]. Ví dụ: 「信号を越えたら右に曲がってください」= Sau khi qua đèn giao thông, hãy rẽ phải.', zh: '「〜たら」表示"做了〜之后"，常用于道路指引。例如"过了信号灯右转"。' },
                 examples: [
                   { japanese: 'この道をまっすぐ行ったら、左手にコンビニが見えます。', reading: 'Kono michi wo massugu ittara, hidarite ni konbini ga miemasu.', meaning: { en: 'If you go straight down this road, you\'ll see a convenience store on the left.', vi: 'Đi thẳng con đường này, bạn sẽ thấy một cửa hàng tiện lợi ở bên trái.' } },
                   { japanese: '橋を渡ったら、すぐそこです。', reading: 'Hashi wo watattara, sugu soko desu.', meaning: { en: 'Once you cross the bridge, it\'s right there.', vi: 'Qua cầu rồi là ngay đó.' } },
@@ -1237,7 +1237,7 @@ export const courses: Course[] = [
           {
             type: 'quiz',
             quiz: [
-              { question: { ja: '「まっすぐ行ってください」の意味は？', en: 'What does "massugu itte kudasai" mean?' }, options: ['Please turn right', 'Please turn left', 'Please go straight', 'Please stop here'], correct: 2, explanation: { ja: '「まっすぐ」は「straight」、「行ってください」は「please go」なので、「Please go straight」です。', en: '"Massugu" means straight, "itte kudasai" means please go, so it means "Please go straight".', vi: '"Massugu" là thẳng, "itte kudasai" là hãy đi, tức là "Hãy đi thẳng".', zh: '「まっすぐ」是"直走"，「行ってください」是"请走"，合起来就是"请直走"。' } },
+              { question: { ja: '「まっすぐ行ってください」の意味は？', en: 'What does "massugu itte kudasai" mean?', vi: '「まっすぐ行ってください」có nghĩa là gì?' }, options: ['Please turn right', 'Please turn left', 'Please go straight', 'Please stop here'], correct: 2, explanation: { ja: '「まっすぐ」は「straight」、「行ってください」は「please go」なので、「Please go straight」です。', en: '"Massugu" means straight, "itte kudasai" means please go, so it means "Please go straight".', vi: 'Đúng rồi! 「まっすぐ」= thẳng, 「行ってください」= hãy đi. Vậy câu này có nghĩa là "Hãy đi thẳng". Cùng với 「右に曲がって」(rẽ phải) và 「左に曲がって」(rẽ trái), bạn đã có đủ từ vựng cơ bản để hiểu chỉ đường!', zh: '「まっすぐ」是"直走"，「行ってください」是"请走"，合起来就是"请直走"。' } },
             ],
           },
         ],
@@ -1271,7 +1271,7 @@ export const courses: Course[] = [
           {
             type: 'quiz',
             quiz: [
-              { question: { ja: '「往復」と「片道」の違いは？', en: 'What is the difference between "oufuku" and "katamichi"?' }, options: ['oufuku=one-way, katamichi=round trip', 'oufuku=round trip, katamichi=one-way', 'both mean one-way', 'both mean round trip'], correct: 1, explanation: { ja: '「往復（おうふく）」は行きと帰りのセット（round trip）。「片道（かたみち）」は行きだけまたは帰りだけ（one-way）です。', en: '"Oufuku" is round trip (there and back). "Katamichi" is one-way (only one direction).', vi: '"Oufuku" là khứ hồi (đi và về). "Katamichi" là một chiều.', zh: '「往復（おうふく）」是往返（round trip）；「片道（かたみち）」是单程（one-way）。' } },
+              { question: { ja: '「往復」と「片道」の違いは？', en: 'What is the difference between "oufuku" and "katamichi"?', vi: '「往復」và「片道」khác nhau như thế nào?' }, options: ['oufuku=one-way, katamichi=round trip', 'oufuku=round trip, katamichi=one-way', 'both mean one-way', 'both mean round trip'], correct: 1, explanation: { ja: '「往復（おうふく）」は行きと帰りのセット（round trip）。「片道（かたみち）」は行きだけまたは帰りだけ（one-way）です。', en: '"Oufuku" is round trip (there and back). "Katamichi" is one-way (only one direction).', vi: 'Đúng rồi! 「往復」(oufuku) = khứ hồi (đi và về). 「片道」(katamichi) = một chiều. Khi mua vé Shinkansen, hãy hỏi「往復で買うと安くなりますか？」(Mua vé khứ hồi có rẻ hơn không?)', zh: '「往復（おうふく）」是往返（round trip）；「片道（かたみち）」是单程（one-way）。' } },
             ],
           },
         ],
