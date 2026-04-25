@@ -2,11 +2,30 @@
 @tailwind components;
 @tailwind utilities;
 
-@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=Noto+Sans+JP:wght@400;500;600;700;800&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@300;400;500;600;700;900&family=Montserrat:wght@400;500;600;700;800&display=swap');
 
 :root {
-  --background: #F8FAFC;
-  --foreground: #1E293B;
+  --background: #F5F5F7;
+  --foreground: #1D1D1F;
+  --c-blue: #0A5FFF;
+  --c-blue-dark: #003FCC;
+  --c-blue-deep: #001A6E;
+  --c-blue-light: #4D8FFF;
+  --c-blue-faint: #EEF4FF;
+  --c-blue-tint: #D6E6FF;
+  --c-green: #30D158;
+  --c-green-dark: #1A9E3F;
+  --c-amber: #FF9F0A;
+  --c-red: #FF3B30;
+  --c-purple: #BF5AF2;
+  --c-ink: #1D1D1F;
+  --c-ink2: #3A3A3C;
+  --c-ink3: #636366;
+  --c-ink4: #8E8E93;
+  --c-ink5: #AEAEB2;
+  --c-line: #E5E5EA;
+  --c-line-faint: #F2F2F7;
+  --c-surface: #FFFFFF;
 }
 
 * {
@@ -21,7 +40,7 @@ html {
 body {
   color: var(--foreground);
   background: var(--background);
-  font-family: 'Inter', 'Noto Sans JP', sans-serif;
+  font-family: 'Noto Sans JP', -apple-system, sans-serif;
   min-height: 100vh;
   min-height: 100dvh;
   overscroll-behavior-y: none;

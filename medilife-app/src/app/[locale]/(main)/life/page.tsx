@@ -1,166 +1,318 @@
 'use client';
 
+import { useState } from 'react';
 import { useParams } from 'next/navigation';
 import Link from 'next/link';
-import {
-  Home,
-  Landmark,
-  Train,
-  Calculator,
-  Trash2,
-  AlertTriangle,
-  ShoppingCart,
-  Smartphone,
-  Baby,
-  Scale,
-  Heart,
-  UtensilsCrossed,
-  ChevronRight,
-  Search,
-  Stethoscope,
-  ShieldAlert,
-  Briefcase,
-} from 'lucide-react';
-import { Card } from '@/components/ui';
-import { useState } from 'react';
-import { motion } from 'framer-motion';
 
-const categories = [
-  { key: 'HOUSING', icon: Home, color: 'bg-blue-100 text-blue-600' },
-  { key: 'BANKING', icon: Landmark, color: 'bg-emerald-100 text-emerald-600' },
-  { key: 'TRANSPORT', icon: Train, color: 'bg-purple-100 text-purple-600' },
-  { key: 'TAX_PENSION', icon: Calculator, color: 'bg-amber-100 text-amber-600' },
-  { key: 'GARBAGE', icon: Trash2, color: 'bg-green-100 text-green-600' },
-  { key: 'EMERGENCY', icon: AlertTriangle, color: 'bg-red-100 text-red-600' },
-  { key: 'SHOPPING', icon: ShoppingCart, color: 'bg-pink-100 text-pink-600' },
-  { key: 'COMMUNICATION', icon: Smartphone, color: 'bg-indigo-100 text-indigo-600' },
-  { key: 'CHILDCARE', icon: Baby, color: 'bg-rose-100 text-rose-600' },
-  { key: 'LEGAL_RIGHTS', icon: Scale, color: 'bg-slate-100 text-slate-600' },
-  { key: 'CULTURE', icon: Heart, color: 'bg-orange-100 text-orange-600' },
-  { key: 'FOOD', icon: UtensilsCrossed, color: 'bg-yellow-100 text-yellow-600' },
-  { key: 'HEALTHCARE', icon: Stethoscope, color: 'bg-teal-100 text-teal-600' },
-  { key: 'DISASTER', icon: ShieldAlert, color: 'bg-red-100 text-red-700' },
-  { key: 'WORK', icon: Briefcase, color: 'bg-cyan-100 text-cyan-600' },
-];
+const C = {
+  blue: '#0A5FFF', blueFaint: '#EEF4FF',
+  ink: '#1D1D1F', ink2: '#3A3A3C', ink3: '#636366', ink4: '#8E8E93', ink5: '#AEAEB2',
+  line: '#E5E5EA', lineFaint: '#F2F2F7', surface: '#FFFFFF', bg: '#F5F5F7',
+};
 
-function t(locale: string, key: string): string {
-  const texts: Record<string, Record<string, string>> = {
-    title: { ja: '生活ガイド', vi: 'Hướng dẫn cuộc sống', en: 'Life Guide', zh: '生活指南', id: 'Panduan Hidup', tl: 'Gabay sa Buhay', my: 'ဘဝလမ်းညွှန်' },
-    subtitle: { ja: '日本での生活に役立つ情報', vi: 'Thông tin hữu ích cho cuộc sống tại Nhật', en: 'Useful info for life in Japan', zh: '在日生活实用信息', id: 'Info berguna untuk hidup di Jepang', tl: 'Kapaki-pakinabang na impormasyon', my: 'ဂျပန်တွင်နေထိုင်ရန် အသုံးဝင်သော အချက်အလက်' },
-    search: { ja: '記事を検索...', vi: 'Tìm kiếm bài viết...', en: 'Search articles...', zh: '搜索文章...', id: 'Cari artikel...', tl: 'Maghanap ng artikulo...', my: 'ဆောင်းပါးရှာ...' },
-    HOUSING: { ja: '住居', vi: 'Nhà ở', en: 'Housing', zh: '住房', id: 'Perumahan', tl: 'Pabahay', my: 'အိမ်ရာ' },
-    BANKING: { ja: '銀行', vi: 'Ngân hàng', en: 'Banking', zh: '银行', id: 'Perbankan', tl: 'Bangko', my: 'ဘဏ်' },
-    TRANSPORT: { ja: '交通', vi: 'Giao thông', en: 'Transport', zh: '交通', id: 'Transportasi', tl: 'Transportasyon', my: 'သယ်ယူပို့ဆောင်ရေး' },
-    TAX_PENSION: { ja: '税金・年金', vi: 'Thuế & Lương hưu', en: 'Tax & Pension', zh: '税金·年金', id: 'Pajak & Pensiun', tl: 'Buwis at Pensyon', my: 'အခွန်နှင့်ပင်စင်' },
-    GARBAGE: { ja: 'ゴミ出し', vi: 'Phân loại rác', en: 'Garbage', zh: '垃圾分类', id: 'Sampah', tl: 'Basura', my: 'အမှိုက်' },
-    EMERGENCY: { ja: '緊急時', vi: 'Khẩn cấp', en: 'Emergency', zh: '紧急情况', id: 'Darurat', tl: 'Emergency', my: 'အရေးပေါ်' },
-    SHOPPING: { ja: '買い物', vi: 'Mua sắm', en: 'Shopping', zh: '购物', id: 'Belanja', tl: 'Pamimili', my: 'ဈေးဝယ်' },
-    COMMUNICATION: { ja: '通信', vi: 'Liên lạc', en: 'Communication', zh: '通讯', id: 'Komunikasi', tl: 'Komunikasyon', my: 'ဆက်သွယ်ရေး' },
-    CHILDCARE: { ja: '育児', vi: 'Chăm sóc trẻ', en: 'Childcare', zh: '育儿', id: 'Penitipan Anak', tl: 'Pag-aalaga ng Bata', my: 'ကလေးပြုစုခြင်း' },
-    LEGAL_RIGHTS: { ja: '法律・権利', vi: 'Pháp luật & Quyền', en: 'Legal Rights', zh: '法律权益', id: 'Hak Hukum', tl: 'Legal na Karapatan', my: 'ဥပဒေအခွင့်အရေး' },
-    CULTURE: { ja: '文化', vi: 'Văn hóa', en: 'Culture', zh: '文化', id: 'Budaya', tl: 'Kultura', my: 'ယဉ်ကျေးမှု' },
-    FOOD: { ja: '食事', vi: 'Ẩm thực', en: 'Food', zh: '饮食', id: 'Makanan', tl: 'Pagkain', my: 'အစားအသောက်' },
-    HEALTHCARE: { ja: '医療', vi: 'Y tế', en: 'Healthcare', zh: '医疗', id: 'Kesehatan', tl: 'Pangangalagang Pangkalusugan', my: 'ကျန်းမာရေးစောင့်ရှောက်မှု' },
-    DISASTER: { ja: '防災', vi: 'Phòng chống thiên tai', en: 'Disaster Prep', zh: '防灾', id: 'Bencana', tl: 'Pag-iwas sa Sakuna', my: 'သဘာဝဘေးအန္တရာယ်ကြိုတင်ကာကွယ်ရေး' },
-    WORK: { ja: '仕事', vi: 'Công việc', en: 'Work', zh: '工作', id: 'Pekerjaan', tl: 'Trabaho', my: 'အလုပ်' },
-    popular: { ja: '人気の記事', vi: 'Bài viết phổ biến', en: 'Popular Articles', zh: '热门文章', id: 'Artikel Populer', tl: 'Mga Sikat na Artikulo', my: 'လူကြိုက်များသောဆောင်းပါး' },
-  };
-  return texts[key]?.[locale] || texts[key]?.['en'] || key;
+// SVGアイコンコンポーネント
+function SvgIcon({ size = 24, color = 'currentColor', children }: { size?: number; color?: string; children: React.ReactNode }) {
+  return (
+    <svg width={size} height={size} viewBox="0 0 24 24" fill="none" stroke={color} strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
+      {children}
+    </svg>
+  );
 }
 
-const popularArticles = [
-  { title: { ja: '日本の銀行口座の開き方', en: 'How to Open a Bank Account in Japan' }, category: 'banking', id: 'open-bank-account', views: 12500 },
-  { title: { ja: 'ゴミの分別ルール完全ガイド', en: 'Complete Guide to Garbage Sorting' }, category: 'garbage', id: 'garbage-sorting-rules', views: 10200 },
-  { title: { ja: '在留カードの住所変更・更新手続き', en: 'Updating and Renewing Your Residence Card' }, category: 'legal_rights', id: 'residence-card-update', views: 9800 },
-  { title: { ja: '国民健康保険の加入手続き', en: 'Joining National Health Insurance' }, category: 'banking', id: 'national-health-insurance', views: 8900 },
-  { title: { ja: '電車の乗り方完全ガイド', en: 'Complete Guide to Riding Trains' }, category: 'transport', id: 'reading-train-map', views: 8500 },
-];
+function IconHome({ size = 24, color = 'currentColor' }: { size?: number; color?: string }) {
+  return (
+    <SvgIcon size={size} color={color}>
+      <path d="M3 9.5L12 3l9 6.5V20a1 1 0 0 1-1 1H4a1 1 0 0 1-1-1V9.5z" />
+      <polyline points="9 21 9 12 15 12 15 21" />
+    </SvgIcon>
+  );
+}
+
+function IconUniversity({ size = 24, color = 'currentColor' }: { size?: number; color?: string }) {
+  return (
+    <SvgIcon size={size} color={color}>
+      <circle cx="12" cy="10" r="1" />
+      <path d="M22 20V8h-4l-6-4-6 4H2v12" />
+      <path d="M6 20v-6" />
+      <path d="M18 20v-6" />
+      <path d="M2 20h20" />
+    </SvgIcon>
+  );
+}
+
+function IconTrain({ size = 24, color = 'currentColor' }: { size?: number; color?: string }) {
+  return (
+    <SvgIcon size={size} color={color}>
+      <rect width="16" height="16" x="4" y="3" rx="2" />
+      <path d="M4 11h16" />
+      <path d="M12 3v8" />
+      <path d="m8 19-2 3" />
+      <path d="m18 22-2-3" />
+    </SvgIcon>
+  );
+}
+
+function IconCalculator({ size = 24, color = 'currentColor' }: { size?: number; color?: string }) {
+  return (
+    <SvgIcon size={size} color={color}>
+      <rect width="16" height="20" x="4" y="2" rx="2" />
+      <line x1="8" x2="16" y1="6" y2="6" />
+      <line x1="16" x2="16" y1="14" y2="18" />
+      <path d="M8 10h.01" />
+      <path d="M12 10h.01" />
+      <path d="M16 10h.01" />
+      <path d="M8 14h.01" />
+      <path d="M12 14h.01" />
+    </SvgIcon>
+  );
+}
+
+function IconTrash2({ size = 24, color = 'currentColor' }: { size?: number; color?: string }) {
+  return (
+    <SvgIcon size={size} color={color}>
+      <path d="M3 6h18" />
+      <path d="M19 6v14c0 1-1 2-2 2H7c-1 0-2-1-2-2V6" />
+      <path d="M8 6V4c0-1 1-2 2-2h4c1 0 2 1 2 2v2" />
+    </SvgIcon>
+  );
+}
+
+function IconAlert({ size = 24, color = 'currentColor' }: { size?: number; color?: string }) {
+  return (
+    <SvgIcon size={size} color={color}>
+      <path d="m21.73 18-8-14a2 2 0 0 0-3.48 0l-8 14A2 2 0 0 0 4 21h16a2 2 0 0 0 1.73-3Z" />
+      <path d="M12 9v4" />
+      <path d="M12 17h.01" />
+    </SvgIcon>
+  );
+}
+
+function IconShoppingCart({ size = 24, color = 'currentColor' }: { size?: number; color?: string }) {
+  return (
+    <SvgIcon size={size} color={color}>
+      <circle cx="8" cy="21" r="1" />
+      <circle cx="19" cy="21" r="1" />
+      <path d="M2.05 2.05h2l2.66 12.42a2 2 0 0 0 2 1.58h9.78a2 2 0 0 0 1.95-1.57l1.65-7.43H5.12" />
+    </SvgIcon>
+  );
+}
+
+function IconSmartphone({ size = 24, color = 'currentColor' }: { size?: number; color?: string }) {
+  return (
+    <SvgIcon size={size} color={color}>
+      <rect width="14" height="20" x="5" y="2" rx="2" />
+      <path d="M12 18h.01" />
+    </SvgIcon>
+  );
+}
+
+function IconBaby({ size = 24, color = 'currentColor' }: { size?: number; color?: string }) {
+  return (
+    <SvgIcon size={size} color={color}>
+      <path d="M9 12h.01" />
+      <path d="M15 12h.01" />
+      <path d="M10 16c.5.3 1.2.5 2 .5s1.5-.2 2-.5" />
+      <path d="M19 6.3a9 9 0 0 1 1.8 3.9 2 2 0 0 1 0 3.6 9 9 0 0 1-17.6 0 2 2 0 0 1 0-3.6A9 9 0 0 1 12 3c2 0 3.5 1.1 3.5 2.5s-.9 2.5-2 2.5c-.8 0-1.5-.4-1.5-1" />
+    </SvgIcon>
+  );
+}
+
+function IconScale({ size = 24, color = 'currentColor' }: { size?: number; color?: string }) {
+  return (
+    <SvgIcon size={size} color={color}>
+      <path d="m16 16 3-8 3 8c-.87.65-1.92 1-3 1s-2.13-.35-3-1Z" />
+      <path d="m2 16 3-8 3 8c-.87.65-1.92 1-3 1s-2.13-.35-3-1Z" />
+      <path d="M7 21h10" />
+      <path d="M12 3v18" />
+      <path d="M3 7h2c2 0 5-1 7-2 2 1 5 2 7 2h2" />
+    </SvgIcon>
+  );
+}
+
+function IconHeart({ size = 24, color = 'currentColor' }: { size?: number; color?: string }) {
+  return (
+    <SvgIcon size={size} color={color}>
+      <path d="M19 14c1.49-1.46 3-3.21 3-5.5A5.5 5.5 0 0 0 16.5 3c-1.76 0-3 .5-4.5 2-1.5-1.5-2.74-2-4.5-2A5.5 5.5 0 0 0 2 8.5c0 2.3 1.5 4.05 3 5.5l7 7Z" />
+    </SvgIcon>
+  );
+}
+
+function IconUtensils({ size = 24, color = 'currentColor' }: { size?: number; color?: string }) {
+  return (
+    <SvgIcon size={size} color={color}>
+      <path d="M3 2v7c0 1.1.9 2 2 2h4a2 2 0 0 0 2-2V2" />
+      <path d="M7 2v20" />
+      <path d="M21 15V2v0a5 5 0 0 0-5 5v6c0 1.1.9 2 2 2h3Zm0 0v7" />
+    </SvgIcon>
+  );
+}
+
+function IconStethoscope({ size = 24, color = 'currentColor' }: { size?: number; color?: string }) {
+  return (
+    <SvgIcon size={size} color={color}>
+      <path d="M4.8 2.3A.3.3 0 1 0 5 2H4a2 2 0 0 0-2 2v5a6 6 0 0 0 6 6a6 6 0 0 0 6-6V4a2 2 0 0 0-2-2h-1a.2.2 0 1 0 .3.3" />
+      <path d="M8 15v1a6 6 0 0 0 6 6a6 6 0 0 0 6-6v-4" />
+      <circle cx="20" cy="10" r="2" />
+    </SvgIcon>
+  );
+}
+
+function IconGraduationCap({ size = 24, color = 'currentColor' }: { size?: number; color?: string }) {
+  return (
+    <SvgIcon size={size} color={color}>
+      <path d="M22 10v6M2 10l10-5 10 5-10 5z" />
+      <path d="M6 12v5c3 3 9 3 12 0v-5" />
+    </SvgIcon>
+  );
+}
+
+function IconBanknote({ size = 24, color = 'currentColor' }: { size?: number; color?: string }) {
+  return (
+    <SvgIcon size={size} color={color}>
+      <rect width="20" height="12" x="2" y="6" rx="2" />
+      <circle cx="12" cy="12" r="2" />
+      <path d="M6 12h.01M18 12h.01" />
+    </SvgIcon>
+  );
+}
+
+function IconSearch({ size = 24, color = 'currentColor' }: { size?: number; color?: string }) {
+  return (
+    <SvgIcon size={size} color={color}>
+      <circle cx="11" cy="11" r="8" />
+      <path d="m21 21-4.35-4.35" />
+    </SvgIcon>
+  );
+}
+
+type CategoryItem = {
+  label: string;
+  color: string;
+  bgColor: string;
+  href: string;
+  icon: React.FC<{ size?: number; color?: string }>;
+};
 
 export default function LifeGuidePage() {
   const params = useParams();
   const locale = params.locale as string;
   const [searchQuery, setSearchQuery] = useState('');
 
-  const filteredCategories = searchQuery
-    ? categories.filter((cat) =>
-        t(locale, cat.key).toLowerCase().includes(searchQuery.toLowerCase())
-      )
+  const categories: CategoryItem[] = [
+    { label: '住居', color: '#1D6ADE', bgColor: '#EEF4FF', href: `/${locale}/life/housing`, icon: IconHome },
+    { label: '行政手続', color: '#7B2FBE', bgColor: '#F3EEFF', href: `/${locale}/life/legal_rights`, icon: IconUniversity },
+    { label: '交通', color: '#0891B2', bgColor: '#E0F5FB', href: `/${locale}/life/transport`, icon: IconTrain },
+    { label: '税金・年金', color: '#B45309', bgColor: '#FEF3C7', href: `/${locale}/life/tax_pension`, icon: IconCalculator },
+    { label: 'ゴミ出し', color: '#059669', bgColor: '#D1FAE5', href: `/${locale}/life/garbage`, icon: IconTrash2 },
+    { label: '緊急対応', color: '#DC2626', bgColor: '#FEE2E2', href: `/${locale}/life/emergency`, icon: IconAlert },
+    { label: '買い物', color: '#D97706', bgColor: '#FEF3C7', href: `/${locale}/life/shopping`, icon: IconShoppingCart },
+    { label: '通信', color: '#4F46E5', bgColor: '#EEF2FF', href: `/${locale}/life/communication`, icon: IconSmartphone },
+    { label: '育児', color: '#DB2777', bgColor: '#FCE7F3', href: `/${locale}/life/childcare`, icon: IconBaby },
+    { label: '法律・権利', color: '#374151', bgColor: '#F3F4F6', href: `/${locale}/life/legal_rights`, icon: IconScale },
+    { label: '文化・慣習', color: '#E11D48', bgColor: '#FFF1F2', href: `/${locale}/life/culture`, icon: IconHeart },
+    { label: '食事', color: '#65A30D', bgColor: '#F7FEE7', href: `/${locale}/life/food`, icon: IconUtensils },
+    { label: '医療', color: '#DC2626', bgColor: '#FEE2E2', href: `/${locale}/life/healthcare`, icon: IconStethoscope },
+    { label: '教育', color: '#1D6ADE', bgColor: '#EEF4FF', href: `/${locale}/life/work`, icon: IconGraduationCap },
+    { label: '銀行', color: '#059669', bgColor: '#D1FAE5', href: `/${locale}/life/banking`, icon: IconBanknote },
+  ];
+
+  const filtered = searchQuery
+    ? categories.filter((c) => c.label.includes(searchQuery))
     : categories;
 
   return (
-    <div className="space-y-6">
-      {/* ヘッダー */}
-      <div>
-        <h2 className="text-2xl font-bold text-slate-800">{t(locale, 'title')}</h2>
-        <p className="text-sm text-text-light mt-1">{t(locale, 'subtitle')}</p>
-      </div>
+    <div style={{ backgroundColor: C.bg, minHeight: '100vh', paddingBottom: 100 }}>
+      <div style={{ padding: '24px 16px 0' }}>
+        {/* ページヘッダー */}
+        <div style={{ marginBottom: 20 }}>
+          <p style={{ fontSize: 9.5, fontFamily: 'Montserrat, sans-serif', fontWeight: 600, textTransform: 'uppercase', letterSpacing: '0.08em', color: C.ink5, marginBottom: 4 }}>
+            mediflow
+          </p>
+          <h1 style={{ fontSize: 24, fontWeight: 700, color: C.ink, margin: 0, lineHeight: 1.2 }}>
+            生活ガイド
+          </h1>
+          <p style={{ fontSize: 13, color: C.ink4, marginTop: 4, marginBottom: 0 }}>
+            日本生活のすべてがここに
+          </p>
+        </div>
 
-      {/* 検索バー */}
-      <div className="relative">
-        <Search className="absolute left-3 top-1/2 -translate-y-1/2 h-5 w-5 text-slate-400" />
-        <input
-          type="text"
-          placeholder={t(locale, 'search')}
-          value={searchQuery}
-          onChange={(e) => setSearchQuery(e.target.value)}
-          className="w-full rounded-xl border border-slate-200 bg-white py-3 pl-10 pr-4 text-sm focus:border-blue-500 focus:outline-none focus:ring-2 focus:ring-blue-500/20"
-        />
-      </div>
+        {/* 検索バー */}
+        <div style={{
+          display: 'flex',
+          alignItems: 'center',
+          gap: 10,
+          backgroundColor: C.surface,
+          borderRadius: 16,
+          padding: '13px 16px',
+          marginBottom: 20,
+          boxShadow: '0 2px 12px rgba(0,0,0,0.05), 0 0 0 0.5px rgba(0,0,0,0.04)',
+        }}>
+          <IconSearch size={16} color={C.ink5} />
+          <input
+            type="text"
+            placeholder="カテゴリを検索..."
+            value={searchQuery}
+            onChange={(e) => setSearchQuery(e.target.value)}
+            style={{
+              flex: 1,
+              border: 'none',
+              outline: 'none',
+              fontSize: 15,
+              color: C.ink,
+              backgroundColor: 'transparent',
+            }}
+          />
+        </div>
 
-      {/* カテゴリグリッド */}
-      <div className="grid grid-cols-3 gap-3">
-        {filteredCategories.map((cat, index) => {
-          const Icon = cat.icon;
-          return (
-            <motion.div
-              key={cat.key}
-              initial={{ opacity: 0, y: 20 }}
-              animate={{ opacity: 1, y: 0 }}
-              transition={{ delay: index * 0.05 }}
-            >
-              <Link href={`/${locale}/life/${cat.key.toLowerCase()}`}>
-                <Card hoverable className="flex flex-col items-center gap-2 py-4">
-                  <div className={`rounded-xl p-3 ${cat.color}`}>
-                    <Icon className="h-6 w-6" />
+        {/* カテゴリグリッド */}
+        <div style={{
+          display: 'grid',
+          gridTemplateColumns: 'repeat(3, 1fr)',
+          gap: 10,
+        }}>
+          {filtered.map((cat) => {
+            const Icon = cat.icon;
+            return (
+              <Link
+                key={cat.label}
+                href={cat.href}
+                style={{ textDecoration: 'none' }}
+              >
+                <div style={{
+                  backgroundColor: C.surface,
+                  borderRadius: 18,
+                  padding: '16px 8px 14px',
+                  display: 'flex',
+                  flexDirection: 'column',
+                  alignItems: 'center',
+                  gap: 8,
+                  boxShadow: '0 2px 10px rgba(0,0,0,0.05), 0 0 0 0.5px rgba(0,0,0,0.04)',
+                }}>
+                  <div style={{
+                    width: 50,
+                    height: 50,
+                    borderRadius: 15,
+                    backgroundColor: cat.bgColor,
+                    display: 'flex',
+                    alignItems: 'center',
+                    justifyContent: 'center',
+                    flexShrink: 0,
+                  }}>
+                    <Icon size={24} color={cat.color} />
                   </div>
-                  <span className="text-xs font-medium text-slate-700 text-center leading-tight">
-                    {t(locale, cat.key)}
+                  <span style={{
+                    fontSize: 11,
+                    fontWeight: 500,
+                    color: C.ink2,
+                    textAlign: 'center',
+                    lineHeight: 1.3,
+                  }}>
+                    {cat.label}
                   </span>
-                </Card>
+                </div>
               </Link>
-            </motion.div>
-          );
-        })}
-      </div>
-
-      {/* 人気の記事 */}
-      <div>
-        <h3 className="text-lg font-bold text-slate-800 mb-3">{t(locale, 'popular')}</h3>
-        <div className="space-y-2">
-          {popularArticles.map((article, index) => (
-            <motion.div
-              key={index}
-              initial={{ opacity: 0, x: -20 }}
-              animate={{ opacity: 1, x: 0 }}
-              transition={{ delay: 0.3 + index * 0.05 }}
-            >
-                  <Link href={`/${locale}/life/${article.category}/${article.id}`}>
-                <Card hoverable padding="sm">
-                  <div className="flex items-center justify-between">
-                    <div className="flex-1 min-w-0">
-                      <p className="text-sm font-medium text-slate-800 truncate">
-                        {locale === 'ja' ? article.title.ja : article.title.en}
-                      </p>
-                      <p className="text-xs text-text-light mt-0.5">
-                        {t(locale, article.category.toUpperCase())} · {article.views.toLocaleString()} views
-                      </p>
-                    </div>
-                    <ChevronRight className="h-4 w-4 text-slate-400 flex-shrink-0 ml-2" />
-                  </div>
-                </Card>
-              </Link>
-            </motion.div>
-          ))}
+            );
+          })}
         </div>
       </div>
     </div>
